@@ -14,7 +14,13 @@ export function ErrorPage() {
                 {/*
                     Graphic from https://undraw.co/
                 */}
-                <img src={PAGE_NOT_FOUND_IMAGE} className="h-48"></img>
+                <img
+                    src={PAGE_NOT_FOUND_IMAGE}
+                    className="h-48 w-auto"
+                    alt="Ilustración de un error 404 con montañas de fondo y un sol parcialmente cubierto por nubes. El número '0' está estilizado como una lupa con una planta creciendo en su interior."
+                    width="860"
+                    height="571"
+                />
                 <h1 className="text-2xl font-bold tracking-tight text-gray-900">{ERROR_MESSAGE}</h1>
             </main>
             <footer className="h-1/5 flex-col gap-4">
