@@ -1,4 +1,5 @@
 import PAGE_NOT_FOUND_IMAGE from "../assets/undraw_page-not-found.svg"
+import { ColorBar } from "../components"
 
 export function ErrorPage() {
     const ERROR_MESSAGE = "¡UPS! Esa página no existe..."
@@ -7,12 +8,7 @@ export function ErrorPage() {
     return (
         <div className="flex h-screen grow flex-col">
             <header className="h-1/5">
-                <div className="flex h-8 w-full overflow-hidden bg-red-700 shadow-md">
-                    <div className="w-1/4 bg-red-700"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-teal-500"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-lime-400"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-amber-500"></div>
-                </div>
+                <ColorBar />
             </header>
             <main className="grid grow-[1] place-items-center">
                 {/*
@@ -23,12 +19,7 @@ export function ErrorPage() {
             </main>
             <footer className="h-1/5 flex-col gap-4">
                 <h2 className="grid h-[calc(100%-2rem)] place-items-center">{FOOTER_MESSAGE}</h2>
-                <div className="flex h-8 w-full overflow-hidden bg-red-700 shadow-md">
-                    <div className="w-1/4 bg-red-700"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-teal-500"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-lime-400"></div>
-                    <div className="w-1/4 skew-x-[-45deg] bg-amber-500"></div>
-                </div>
+                <ColorBar />
             </footer>
         </div>
     )
