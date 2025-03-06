@@ -1,3 +1,5 @@
+import PAGE_NOT_FOUND_IMAGE from "../assets/undraw_page-not-found.svg"
+
 export function ErrorPage() {
     const ERROR_MESSAGE = "¡UPS! Esa página no existe..."
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -16,7 +18,7 @@ export function ErrorPage() {
                 {/*
                     Graphic from https://undraw.co/
                 */}
-                <img src="src/assets/undraw_page-not-found.svg" className="h-48"></img>
+                <img src={PAGE_NOT_FOUND_IMAGE} className="h-48"></img>
                 <h1 className="text-2xl font-bold tracking-tight text-gray-900">{ERROR_MESSAGE}</h1>
             </main>
             <footer className="h-1/5 flex-col gap-4">
