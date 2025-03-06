@@ -14,7 +14,13 @@ export function WIPPage() {
                 {/*
                     Graphic from https://undraw.co/
                 */}
-                <img src={WIP_IMAGE} className="h-48"></img>
+                <img
+                    src={WIP_IMAGE}
+                    className="h-48 w-auto"
+                    alt="Ilustración de dos personas en una oficina intercambiando documentos. Una está sentada en una silla frente a un escritorio con una computadora, mientras la otra está sentada en un taburete sosteniendo un papel con texto resaltado."
+                    width="810"
+                    height="463"
+                />
                 <h1 className="text-2xl font-bold tracking-tight text-gray-900">{WIP_MESSAGE}</h1>
             </main>
             <footer className="h-1/5 flex-col gap-4">
