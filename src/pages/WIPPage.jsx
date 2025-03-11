@@ -1,6 +1,5 @@
 import WIP_IMAGE from "../assets/undraw_working.svg"
 import { ColorBar } from "../components"
-import { ContactSection } from "../components/ContactSection"
 
 export function WIPPage() {
     const WIP_MESSAGE = "Página aún en construcción..."
@@ -24,7 +23,6 @@ export function WIPPage() {
                 />
                 <h1 className="text-2xl font-bold tracking-tight text-gray-900">{WIP_MESSAGE}</h1>
             </main>
-            <ContactSection />
             <footer className="h-1/5 flex-col gap-4">
                 <h2 className="grid h-[calc(100%-2rem)] place-items-center">{FOOTER_MESSAGE}</h2>
                 <ColorBar />
