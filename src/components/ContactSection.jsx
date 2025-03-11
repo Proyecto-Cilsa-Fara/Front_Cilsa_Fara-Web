@@ -1,5 +1,4 @@
-import { GoMail } from "react-icons/go"
-import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { EmailIcon, FacebookIcon, InstagramIcon, LinkedinIcon, WhatsappIcon } from "../assets/icons"
 
 // Datos de contacto de la organización (Constantes para mejor legibilidad y mantenimiento):
 
@@ -21,19 +20,19 @@ export function ContactSection() {
                 <ul className="space-y-3">
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaWhatsapp className="text-3xl text-red-700" />
+                            <img src={WhatsappIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg font-semibold">{NUMERO}</span>
                     </li>
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <GoMail className="text-3xl text-red-700" />
+                            <img src={EmailIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg">{EMAIL1}</span>
                     </li>
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <GoMail className="text-3xl text-red-700" />
+                            <img src={EmailIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg">{EMAIL2}</span>
                     </li>
@@ -46,19 +45,19 @@ export function ContactSection() {
                 <ul className="space-y-3">
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaFacebook className="text-3xl text-red-700" />
+                            <img src={FacebookIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg">{FACEBOOK}</span>
                     </li>
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaInstagram className="text-3xl text-red-700" />
+                            <img src={InstagramIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg">{INSTAGRAM}</span>
                     </li>
                     <li className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaLinkedin className="text-3xl text-red-700" />
+                            <img src={LinkedinIcon} className="text-3xl text-red-700" />
                         </div>
                         <span className="text-lg font-semibold underline">{LINKEDIN}</span>
                     </li>
