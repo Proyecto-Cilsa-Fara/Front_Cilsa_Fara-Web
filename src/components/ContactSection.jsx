@@ -1,14 +1,6 @@
-import { GoMail } from "react-icons/go"
-import { FaWhatsapp, FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
-
-// Datos de contacto de la organización (Constantes para mejor legibilidad y mantenimiento):
-
-const NUMERO = "+54 9 2215043359"
-const EMAIL1 = "accionrestaurativapaz@gmail.com"
-const EMAIL2 = "accionrestaurativa@hotmail.com"
-const FACEBOOK = "@faceaccionrestaurativa"
-const INSTAGRAM = "@fara.accionrestaurativa"
-const LINKEDIN = "Acción Restaurativa Argentina"
+import { EmailIcon, FacebookIcon, InstagramIcon, LinkedinIcon, WhatsappIcon } from "../assets/icons"
+import { CONTACT_INFO } from "../utils/contactInfo"
+import { Link } from "react-router"
 
 export function ContactSection() {
     /* Seccion de contacto */
@@ -18,51 +10,51 @@ export function ContactSection() {
             {/* Contacto */}
             <div className="text-center md:text-left">
                 <h2 className="mb-4 text-3xl font-bold">CONTÁCTANOS</h2>
-                <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
+                <nav className="space-y-3">
+                    <Link to={CONTACT_INFO.PHONE_LINK} target className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaWhatsapp className="text-3xl text-red-700" />
+                            <img src={WhatsappIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg font-semibold">{NUMERO}</span>
-                    </li>
-                    <li className="flex items-center gap-3">
+                        <span className="text-lg font-semibold">{CONTACT_INFO.PHONE}</span>
+                    </Link>
+                    <Link to={CONTACT_INFO.EMAIL_1_LINK} className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <GoMail className="text-3xl text-red-700" />
+                            <img src={EmailIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg">{EMAIL1}</span>
-                    </li>
-                    <li className="flex items-center gap-3">
+                        <span className="text-lg">{CONTACT_INFO.EMAIL_1}</span>
+                    </Link>
+                    <Link to={CONTACT_INFO.EMAIL_2_LINK} className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <GoMail className="text-3xl text-red-700" />
+                            <img src={EmailIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg">{EMAIL2}</span>
-                    </li>
-                </ul>
+                        <span className="text-lg">{CONTACT_INFO.EMAIL_2}</span>
+                    </Link>
+                </nav>
             </div>
 
             {/* Redes Sociales */}
             <div className="text-center md:text-left">
                 <h2 className="mb-4 text-3xl font-bold">SÍGUENOS EN REDES</h2>
-                <ul className="space-y-3">
-                    <li className="flex items-center gap-3">
+                <nav className="space-y-3">
+                    <Link to={CONTACT_INFO.FACEBOOK_LINK} className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaFacebook className="text-3xl text-red-700" />
+                            <img src={FacebookIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg">{FACEBOOK}</span>
-                    </li>
-                    <li className="flex items-center gap-3">
+                        <span className="text-lg">{CONTACT_INFO.FACEBOOK}</span>
+                    </Link>
+                    <Link to={CONTACT_INFO.INSTAGRAM_LINK} className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaInstagram className="text-3xl text-red-700" />
+                            <img src={InstagramIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg">{INSTAGRAM}</span>
-                    </li>
-                    <li className="flex items-center gap-3">
+                        <span className="text-lg">{CONTACT_INFO.INSTAGRAM}</span>
+                    </Link>
+                    <Link to={CONTACT_INFO.LINKEDIN_LINK} className="flex items-center gap-3">
                         <div className="rounded-lg bg-white p-1">
-                            <FaLinkedin className="text-3xl text-red-700" />
+                            <img src={LinkedinIcon} className="text-3xl text-red-700" />
                         </div>
-                        <span className="text-lg font-semibold underline">{LINKEDIN}</span>
-                    </li>
-                </ul>
+                        <span className="text-lg font-semibold underline">{CONTACT_INFO.LINKEDIN}</span>
+                    </Link>
+                </nav>
             </div>
         </div>
     )
