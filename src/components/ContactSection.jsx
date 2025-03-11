@@ -14,7 +14,7 @@ export function ContactSection() {
     /* Seccion de contacto */
 
     return (
-        <div className="mt-10 flex flex-col justify-center gap-16 bg-red-700 p-12 text-white md:flex-row">
+        <div className="flex w-full flex-col justify-center gap-16 bg-red-700 p-12 text-white md:flex-row">
             {/* Contacto */}
             <div className="text-center md:text-left">
                 <h2 className="mb-4 text-3xl font-bold">CONTÁCTANOS</h2>
