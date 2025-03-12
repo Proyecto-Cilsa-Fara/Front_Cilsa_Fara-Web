@@ -21,30 +21,33 @@ export function Areas() {
 
   return (
     <div className="max-w-4xl mx-auto p-4 text-center">
-      <h2 className="text-2xl font-bold mb-2">NUESTROS EQUIPOS MULTIDISCIPLINARIOS</h2>
-      <p className="text-lg mb-6">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold mb-2">
+        NUESTROS EQUIPOS MULTIDISCIPLINARIOS
+      </h2>
+      <p className="text-base md:text-lg lg:text-xl mb-6">
         La Fundación cuenta con equipos interdisciplinarios que estudian, analizan y desarrollan proyectos en múltiples áreas de incidencia.
       </p>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
         {areas.map((area, index) => (
           <div
             key={index}
-            className={`relative flex flex-col justify-end p-6 text-white font-bold text-center bg-cover bg-center h-64`}
+            className="relative flex flex-col justify-end p-4 md:p-5 lg:p-6 text-white font-bold text-center bg-cover bg-center h-48 md:h-56 lg:h-64"
             style={{
               backgroundImage: `url(${area.image})`,
             }}
           >
-            {/* Capa de color con opacidad (usando el color hexadecimal correspondiente) */}
+            {/* Capa de color con opacidad */}
             <div
               className="absolute top-0 left-0 w-full h-full"
               style={{
-                backgroundColor: area.color, // Aplicando el color hexadecimal
+                backgroundColor: area.color,
                 opacity: 0.5,
               }}
             ></div>
 
             {/* Texto alineado al fondo */}
-            <span className="relative z-10 mb-4 text-3xl text-left text-white"
+            <span
+              className="relative z-10 mb-2 md:mb-3 lg:mb-4 text-lg md:text-xl lg:text-2xl text-left text-white"
               style={{
                 textShadow: '2px 2px 5px rgba(0, 0, 0, 0.8)',
               }}
@@ -57,3 +60,4 @@ export function Areas() {
     </div>
   );
 }
+
