@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router"
-import { ErrorPage, WIPPage } from "./pages"
+import { ErrorPage, LandingPage, WIPPage } from "./pages"
 
 function App() {
     return (
@@ -7,6 +7,7 @@ function App() {
             <Routes>
                 <Route path="/" element={<WIPPage />} />
                 <Route path="*" element={<ErrorPage />} />
+                <Route path="Landing" element={<LandingPage />}/>
             </Routes>
         </BrowserRouter>
     )

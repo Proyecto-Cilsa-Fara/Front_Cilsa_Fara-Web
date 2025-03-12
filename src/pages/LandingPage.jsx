@@ -1,5 +1,6 @@
 import { ColorBar } from "../components"
 import { ContactSection } from "../components/ContactSection"
+import {Areas} from "../components/Areas";
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -31,6 +32,7 @@ export function LandingPage() {
                 <div id="areas" className="flex h-200 w-full items-center justify-center border">
                     <h1 className="text-3x1 font-bold">Aca va el componente Areas</h1>
                 </div>
+                <Areas/>
 
                 {/* Capacitaciones-Voluntariado-Servicios (Reemplazar por componente Capacitaciones al div identificado)*/}
                 <div
