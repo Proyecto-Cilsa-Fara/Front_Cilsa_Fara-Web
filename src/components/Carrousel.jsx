@@ -27,7 +27,7 @@ export function Carrousel() {
   useEffect(() => {
     const interval = setInterval(nextSlide, 12000);
     return () => clearInterval(interval);
-  }, );
+  }, []);
 
   return (
     <div className="w-full h-96 overflow-hidden relative">
@@ -63,12 +63,12 @@ export function Carrousel() {
 
             {/* Contenido */}
             <div className="absolute bottom-10 left-10 text-white w-1/2 max-w-[45%]">
-              <h2 className="text-4xl font-bold drop-shadow-lg uppercase">{slide.text}</h2>
+              <h2 className="text-xl md:text-3xl lg:text-4xl font-bold drop-shadow-lg uppercase">{slide.text}</h2>
               <button
-                className="mt-4 px-6 py-2 text-white text-lg hover:underline "
+                className="mt-4 px-4 md:px-6 lg:px-8 py-2 md:py-3 lg:py-4 text-sm md:text-lg lg:text-xl text-white hover:underline"
                 style={{
                   backgroundColor: slide.buttonColor,
-                  clipPath: 'polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)', // Forma del botón
+                  clipPath: 'polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)',
                 }}
               >
                 {slide.buttonText}
@@ -81,7 +81,7 @@ export function Carrousel() {
       {/* Botón anterior */}
       <button
         onClick={prevSlide}
-        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+        className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 md:p-3 lg:p-4 rounded-full"
       >
         ❮
       </button>
@@ -89,11 +89,12 @@ export function Carrousel() {
       {/* Botón siguiente */}
       <button
         onClick={nextSlide}
-        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-3 rounded-full"
+        className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black bg-opacity-50 text-white p-2 md:p-3 lg:p-4 rounded-full"
       >
         ❯
       </button>
     </div>
   );
 }
+
 
