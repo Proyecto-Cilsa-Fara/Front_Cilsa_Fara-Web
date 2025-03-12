@@ -2,6 +2,7 @@ import { ColorBar } from "../components"
 import { ContactSection } from "../components/ContactSection"
 import {Areas} from "../components/Areas";
 import {Carrousel} from "../components/Carrousel";
+import {AcercaDe} from "../components/AcercaDeFara";
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -21,13 +22,10 @@ export function LandingPage() {
             
             <main className="grid grow-[1] place-items-center">
                 {/* Carrousel Hero Images (Reemplazar por componente Carrousel al div identificado)*/}
-                
                 <Carrousel/>
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
-                <div id="acercaDeFara" className="flex h-50 w-full items-center justify-center bg-blue-500 text-white">
-                    <h1 className="text-3x1 font-bold">Aca va el componente AcercaDeFara</h1>
-                </div>
+                <AcercaDe/>
 
                 {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
                 <Areas/>
