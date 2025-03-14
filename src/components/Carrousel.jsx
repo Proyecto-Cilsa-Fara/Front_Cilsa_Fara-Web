@@ -1,8 +1,8 @@
-import img1 from "../assets/Hero-Carrousel/Hero1.jpg"
-import img2 from "../assets/Hero-Carrousel/Hero2.jpg"
-import img3 from "../assets/Hero-Carrousel/Hero3.jpg"
-import img4 from "../assets/Hero-Carrousel/Hero4.jpg"
-import img5 from "../assets/Hero-Carrousel/Hero5.jpg"
+import img1 from "../assets/Hero-Carrousel/Hero1.webp"
+import img2 from "../assets/Hero-Carrousel/Hero2.webp"
+import img3 from "../assets/Hero-Carrousel/Hero3.webp"
+import img4 from "../assets/Hero-Carrousel/Hero4.webp"
+import img5 from "../assets/Hero-Carrousel/Hero5.webp"
 import { useState, useEffect } from "react"
 
 export function Carrousel() {
