@@ -13,7 +13,7 @@ export function ServiciosSection() {
                         contextos de encierro.
                     </p>
                     <Link to="/capacitaciones" className="group skew-custom bg-white p-1 hover:cursor-pointer">
-                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black">
+                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">VER MÁS</span>
                         </div>
                     </Link>
@@ -26,7 +26,7 @@ export function ServiciosSection() {
                         restaurativo.
                     </p>
                     <Link to="/asesoramiento" className="group skew-custom bg-white p-1 hover:cursor-pointer">
-                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black">
+                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black] group-hover:text-white">
                                 CONSULTAR
                             </span>
@@ -40,7 +40,7 @@ export function ServiciosSection() {
                         Brindamos pasantías y voluntariados en las áreas de acción restaurativa de Fara.
                     </p>
                     <Link to="/participa" className="group skew-custom bg-white p-1 hover:cursor-pointer">
-                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black">
+                        <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">PARTICIPA</span>
                         </div>
                     </Link>
