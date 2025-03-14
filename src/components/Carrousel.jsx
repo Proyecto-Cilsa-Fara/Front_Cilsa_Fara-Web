@@ -60,7 +60,7 @@ export function Carrousel() {
     }
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 12000)
+        const interval = setInterval(nextSlide, 3000)
         return () => clearInterval(interval)
     }, [])
 
