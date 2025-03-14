@@ -5,50 +5,50 @@ import img4 from "../assets/Hero-Carrousel/Hero4.webp"
 import img5 from "../assets/Hero-Carrousel/Hero5.webp"
 import { useState, useEffect } from "react"
 
-export function Carrousel() {
-    const slides = [
-        {
-            image: img1,
-            text: "Impulsamos prácticas restaurativas",
-            color1: "#A82428A1",
-            color2: "#A8242878",
-            buttonText: "Contáctanos",
-            buttonColor: "#e3a647",
-        },
-        {
-            image: img2,
-            text: "Las donaciones nos ayudan a restaurar vidas",
-            color1: "#E3A647A1",
-            color2: "#E3A647A1",
-            buttonText: "Dona hoy",
-            buttonColor: "#C0322D",
-        },
-        {
-            image: img3,
-            text: "Capacitate con nuestras pasantías restaurativas",
-            color1: "#2FAEA5A1",
-            color2: "#2FAEA5A1",
-            buttonText: "Más información",
-            buttonColor: "#C0322D",
-        },
-        {
-            image: img4,
-            text: "Súmate a nuestros voluntariados",
-            color1: "#3999BFA1",
-            color2: "#3999BFA1",
-            buttonText: "Más información",
-            buttonColor: "#C0322D",
-        },
-        {
-            image: img5,
-            text: "Nuestros servicios para organizaciones",
-            color1: "#B9CE48A1",
-            color2: "#B9CE48A1",
-            buttonText: "Más información",
-            buttonColor: "#C0322D",
-        },
-    ]
+const slides = [
+    {
+        image: img1,
+        text: "Impulsamos prácticas restaurativas",
+        color1: "#A82428A1",
+        color2: "#A8242878",
+        buttonText: "Contáctanos",
+        buttonColor: "#e3a647",
+    },
+    {
+        image: img2,
+        text: "Las donaciones nos ayudan a restaurar vidas",
+        color1: "#E3A647A1",
+        color2: "#E3A647A1",
+        buttonText: "Dona hoy",
+        buttonColor: "#C0322D",
+    },
+    {
+        image: img3,
+        text: "Capacitate con nuestras pasantías restaurativas",
+        color1: "#2FAEA5A1",
+        color2: "#2FAEA5A1",
+        buttonText: "Más información",
+        buttonColor: "#C0322D",
+    },
+    {
+        image: img4,
+        text: "Súmate a nuestros voluntariados",
+        color1: "#3999BFA1",
+        color2: "#3999BFA1",
+        buttonText: "Más información",
+        buttonColor: "#C0322D",
+    },
+    {
+        image: img5,
+        text: "Nuestros servicios para organizaciones",
+        color1: "#B9CE48A1",
+        color2: "#B9CE48A1",
+        buttonText: "Más información",
+        buttonColor: "#C0322D",
+    },
+]
 
+export function Carrousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
 
     const nextSlide = () => {
