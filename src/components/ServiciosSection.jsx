@@ -11,7 +11,7 @@ export function ServiciosSection() {
                         Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en
                         contextos de encierro.
                     </p>
-                    <button className="skew-custom bg-teal-500 bg-white p-1 transition-all hover:bg-black hover:text-black">
+                    <button className="skew-custom bg-teal-500 p-1 transition-all hover:bg-black hover:text-black">
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">VER MÁS</span>
                         </div>
@@ -24,7 +24,7 @@ export function ServiciosSection() {
                         Asesoramos a organismos y organizaciones en la gestión de conflictos con un enfoque integral y
                         restaurativo.
                     </p>
-                    <button className="skew-custom bg-teal-500 bg-white p-1 transition-all hover:bg-black hover:text-black">
+                    <button className="skew-custom bg-teal-500 p-1 transition-all hover:bg-black hover:text-black">
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">PARTICIPA</span>
                         </div>
@@ -36,7 +36,7 @@ export function ServiciosSection() {
                     <p className="text-md flex-grow font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">
                         Brindamos pasantías y voluntariados en las áreas de acción restaurativa de Fara.
                     </p>
-                    <button className="skew-custom bg-teal-500 bg-white p-1 transition-all hover:bg-black hover:text-black">
+                    <button className="skew-custom bg-teal-500 p-1 transition-all hover:bg-black hover:text-black">
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">CONSULTAR</span>
                         </div>
