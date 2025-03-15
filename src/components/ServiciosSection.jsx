@@ -12,7 +12,11 @@ export function ServiciosSection() {
                         Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en
                         contextos de encierro.
                     </p>
-                    <Link to="/capacitaciones" className="group skew-custom bg-white p-1 hover:cursor-pointer">
+                    <Link
+                        to="/capacitaciones"
+                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        aria-label="Ver más sobre capacitaciones"
+                    >
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">VER MÁS</span>
                         </div>
@@ -25,7 +29,11 @@ export function ServiciosSection() {
                         Asesoramos a organismos y organizaciones en la gestión de conflictos con un enfoque integral y
                         restaurativo.
                     </p>
-                    <Link to="/asesoramiento" className="group skew-custom bg-white p-1 hover:cursor-pointer">
+                    <Link
+                        to="/asesoramiento"
+                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        aria-label="Consultar sobre servicios"
+                    >
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black] group-hover:text-white">
                                 CONSULTAR
@@ -39,7 +47,11 @@ export function ServiciosSection() {
                     <p className="text-md flex-grow font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">
                         Brindamos pasantías y voluntariados en las áreas de acción restaurativa de Fara.
                     </p>
-                    <Link to="/participa" className="group skew-custom bg-white p-1 hover:cursor-pointer">
+                    <Link
+                        to="/participa"
+                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        aria-label="Participar en voluntariado"
+                    >
                         <div className="skew-custom text-md bg-teal-500 px-6 py-1.5 font-bold drop-shadow-[0.7px_0.7px_0.7px_black] transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
                             <span className="drop-shadow-[0.7px_0.7px_0.7px_black]">PARTICIPA</span>
                         </div>
