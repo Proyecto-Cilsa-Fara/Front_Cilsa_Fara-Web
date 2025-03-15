@@ -7,6 +7,9 @@ function App() {
             <Routes>
                 <Route path="/" element={<WIPPage />} />
                 <Route path="/landing" element={<LandingPage />} />
+                <Route path="/asesoramiento" element={<WIPPage />} />
+                <Route path="/capacitaciones" element={<WIPPage />} />
+                <Route path="/participa" element={<WIPPage />} />
                 <Route path="*" element={<ErrorPage />} />
             </Routes>
         </BrowserRouter>

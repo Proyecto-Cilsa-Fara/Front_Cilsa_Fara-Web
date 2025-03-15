@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.skew-custom {
+    clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+}
