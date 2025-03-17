@@ -16,4 +16,7 @@ export const CONTACT_INFO = {
 
     LINKEDIN: "Acción Restaurativa Argentina",
     LINKEDIN_LINK: "https://www.linkedin.com/in/acci%C3%B3n-restaurativa-argentina-42b011214/",
+
+    YOUTUBE: "@FARA-ARGENTINA",
+    YOUTUBE_LINK: "https://www.youtube.com/@fara-argentina",
 }
