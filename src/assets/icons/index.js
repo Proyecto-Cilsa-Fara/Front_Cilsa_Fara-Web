@@ -9,6 +9,8 @@ import LinkedinIcon from "./ICONO-LinkedIn.svg"
 import LinkedinTransparentIcon from "./ICONO-Linkedin-transparente.svg"
 import ManoIcon from "./ICONO-MANO.svg"
 import TuercaIcon from "./ICONO-TUERCA.svg"
+import YoutubeIcon from "./ICONO-Youtube.svg"
+import YoutubeTransparentIcon from "./ICONO-Youtube-transparente.svg"
 import WhatsappIcon from "./ICONO-Whatsapp.svg"
 import WhatsappTransparentIcon from "./ICONO-Whatsapp-transparente.svg"
 
@@ -24,6 +26,8 @@ export {
     LinkedinTransparentIcon,
     ManoIcon,
     TuercaIcon,
+    YoutubeIcon,
+    YoutubeTransparentIcon,
     WhatsappIcon,
     WhatsappTransparentIcon,
 }
