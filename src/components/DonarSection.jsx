@@ -1,14 +1,15 @@
 import { Link } from "react-router"
+import DonacionesImage from "../assets/donaciones-a-bahia-blanca.webp"
 
 export function DonarSection() {
     return (
-        <div className="relative flex w-full items-center justify-center bg-gray-100">
+        <section className="relative flex w-full items-center justify-center bg-gray-100">
             {/* Imagen de fondo */}
             <div
                 className="absolute inset-0 bg-cover opacity-15"
+                aria-hidden="true"
                 style={{
-                    backgroundImage:
-                        "url('https://fotos.perfil.com/2025/03/14/trim/987/555/donaciones-a-bahia-blanca-1985357.jpeg')",
+                    backgroundImage: `url(${DonacionesImage})`,
                 }}
             ></div>
 
@@ -43,6 +44,6 @@ export function DonarSection() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
