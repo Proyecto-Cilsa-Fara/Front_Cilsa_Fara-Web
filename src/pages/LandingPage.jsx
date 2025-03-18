@@ -1,4 +1,4 @@
-import { ColorBar } from "../components"
+import { ColorBar, ServiciosSection } from "../components"
 import { ContactSection, DonarSection } from "../components/index"
 
 export function LandingPage() {
@@ -32,15 +32,7 @@ export function LandingPage() {
                     <h1 className="text-3x1 font-bold">Aca va el componente Areas</h1>
                 </div>
 
-                {/* Capacitaciones-Voluntariado-Servicios (Reemplazar por componente Capacitaciones al div identificado)*/}
-                <div
-                    id="capacitaciones"
-                    className="flex h-100 w-full items-center justify-center bg-green-500 text-white"
-                >
-                    <h1 className="text-3x1 font-bold">
-                        Aca va el componente Capacitaciones - Voluntariado - Servicios
-                    </h1>
-                </div>
+                <ServiciosSection />
 
                 <DonarSection />
 
