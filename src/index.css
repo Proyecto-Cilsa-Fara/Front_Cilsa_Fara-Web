@@ -1,1 +1,13 @@
 @import "tailwindcss";
+
+.skew-custom {
+    clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+}
+
+.poligonoDonar {
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 22% 100%);
+}
+
+.poligonoDonar2 {
+    clip-path: polygon(0 8%, 100% 8%, 100% 100%, 19% 100%);
+}
