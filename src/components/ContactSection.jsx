@@ -3,6 +3,7 @@ import {
     FacebookTransparentIcon,
     InstagramTransparentIcon,
     LinkedinTransparentIcon,
+    YoutubeTransparentIcon,
     WhatsappTransparentIcon,
 } from "../assets/icons"
 import { CONTACT_INFO } from "../utils/contactInfo"
@@ -73,15 +74,13 @@ export function ContactSection() {
                         <img src={LinkedinTransparentIcon} className="w-10" alt="Linkedin" />
                         <span className="text-lg font-semibold">{CONTACT_INFO.LINKEDIN}</span>
                     </Link>
-
-                    {/*  EN EL SIGUIENTE ELEMENTO MODIFICAR LINKEDIN POR DATOS DE YOUTUBE CUANDO ESTEN  */}
                     <Link
-                        to={CONTACT_INFO.LINKEDIN_LINK}
+                        to={CONTACT_INFO.YOUTUBE_LINK}
                         className="flex items-center gap-3"
                         aria-label="Síguenos en Youtube"
                     >
-                        <img src={LinkedinTransparentIcon} className="w-10" alt="Youtube" />
-                        <span className="text-lg font-semibold">{CONTACT_INFO.LINKEDIN}</span>
+                        <img src={YoutubeTransparentIcon} className="w-10" alt="Youtube" />
+                        <span className="text-lg font-semibold">{CONTACT_INFO.YOUTUBE}</span>
                     </Link>
                 </nav>
             </div>
