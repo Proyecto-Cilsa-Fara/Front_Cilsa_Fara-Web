@@ -3,7 +3,7 @@ import DonacionesImage from "../assets/donaciones-a-bahia-blanca.webp"
 
 export function DonarSection() {
     return (
-        <section className="relative flex w-full items-center justify-center bg-gray-100">
+        <section className="relative flex w-full items-center justify-center overflow-hidden bg-gray-100">
             {/* Imagen de fondo */}
             <div
                 className="absolute inset-0 bg-cover opacity-15"
