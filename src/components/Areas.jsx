@@ -11,7 +11,7 @@ export function Areas() {
   const areas = [
     { name: "Círculos de arte", image: imgCircArt, color: "#3999BFAB" },
     { name: "Educación e inclusión de grupos vulnerables", image: Educacion, color: "#E3A647D1" },
-    { name: "Escuela de oficios emprende- dores", image: Oficios, color: "#B9CE48C4" },
+    { name: "Escuela de oficios emprendedores", image: Oficios, color: "#B9CE48C4" },
     { name: "Facilitación y mediación", image: Facilitacion, color: "#C0322DC2" },
     { name: "Justicia para víctimas", image: Justicia, color: "#C0322DC2" },
     { name: "Niñez y juventud", image: Niñez, color: "#2FAEA5B5" },
