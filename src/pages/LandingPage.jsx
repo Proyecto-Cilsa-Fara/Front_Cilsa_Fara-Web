@@ -1,5 +1,5 @@
 import { ColorBar, ServiciosSection } from "../components"
-import { ContactSection } from "../components/ContactSection"
+import { ContactSection, DonarSection } from "../components/index"
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -34,10 +34,7 @@ export function LandingPage() {
 
                 <ServiciosSection />
 
-                {/* Donar (Reemplazar por componente Donar al div identificado)*/}
-                <div id="donar" className="flex h-100 w-full items-center justify-center bg-yellow-500 text-white">
-                    <h1 className="text-3x1 font-bold">Aca va el componente Donar</h1>
-                </div>
+                <DonarSection />
 
                 {/* Aliados Restaurativos (Reemplazar por componente Aliados al div identificado)*/}
                 <div id="aliados" className="flex h-150 w-full items-center justify-center border">
