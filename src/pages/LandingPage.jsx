@@ -1,7 +1,7 @@
 import { ColorBar, ServiciosSection } from "../components"
-import { ContactSection, DonarSection } from "../components/index"
-import {Areas} from "../components/Areas";
-import {Carrousel} from "../components/Carrousel";
+import { ContactSection, DonarSection, AliadosSection } from "../components/index"
+import { Areas } from "../components/Areas"
+import { Carrousel } from "../components/Carrousel"
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -18,11 +18,11 @@ export function LandingPage() {
                     <span className="text-lg font-semibold">Links</span>
                 </nav>
             </header>
-            
+
             <main className="grid grow-[1] place-items-center">
                 {/* Carrousel Hero Images (Reemplazar por componente Carrousel al div identificado)*/}
-                
-                <Carrousel/>
+
+                <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
                 <div id="acercaDeFara" className="flex h-50 w-full items-center justify-center bg-blue-500 text-white">
@@ -30,16 +30,14 @@ export function LandingPage() {
                 </div>
 
                 {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
-                <Areas/>
+                <Areas />
 
                 <ServiciosSection />
 
                 <DonarSection />
 
-                {/* Aliados Restaurativos (Reemplazar por componente Aliados al div identificado)*/}
-                <div id="aliados" className="flex h-150 w-full items-center justify-center border">
-                    <h1 className="text-3x1 font-bold">Aca va el componente Aliados Restaurativos</h1>
-                </div>
+                <AliadosSection />
+
                 <ContactSection />
             </main>
             <footer className="h-1/5 flex-col gap-4">
