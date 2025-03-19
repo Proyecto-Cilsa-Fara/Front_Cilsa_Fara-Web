@@ -18,22 +18,42 @@ export function LoginPage() {
                     <h2 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h2>
                     <form className="w-full max-w-md p-6">
                         <div className="mb-4">
-                            <label className="mb-2 block font-semibold text-gray-700">Correo Electrónico</label>
-                            <input
-                                type="email"
-                                className="w-full rounded-sm border border-black p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                                required
-                            />
+                            <label
+                                htmlFor="loginEmail"
+                                className="relative block min-h-[50px] rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
+                            >
+                                <input
+                                    type="email"
+                                    id="loginEmail"
+                                    className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
+                                    placeholder="Correo electrónico"
+                                    autoComplete="off"
+                                />
+
+                                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                                    Correo electrónico
+                                </span>
+                            </label>
                         </div>
                         <div className="mb-4">
-                            <label className="mb-2 block font-semibold text-gray-700">Contraseña</label>
-                            <input
-                                type="password"
-                                className="w-full rounded-sm border border-black p-3 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                                required
-                            />
+                            <label
+                                htmlFor="loginPass"
+                                className="relative block min-h-[50px] rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
+                            >
+                                <input
+                                    type="password"
+                                    id="loginPass"
+                                    className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
+                                    placeholder="Contraseña"
+                                    autoComplete="off"
+                                />
+
+                                <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
+                                    Contraseña
+                                </span>
+                            </label>
                         </div>
-                        <button className="w-1/3 bg-lime-400 py-2 font-bold text-black uppercase transition hover:bg-lime-500">
+                        <button className="w-1/3 bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white">
                             Iniciar
                         </button>
                     </form>
