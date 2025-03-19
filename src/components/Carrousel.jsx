@@ -1,5 +1,5 @@
 import { img1, img2, img3, img4, img5 } from "../assets/hero-carrousel"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef, useCallback } from "react"
 
 const slides = [
     {
@@ -46,19 +46,27 @@ const slides = [
 
 export function Carrousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
+    const intervalRef = useRef(null)
 
-    const nextSlide = () => {
+    const nextSlide = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-    }
+        resetInterval()
+    }, [])
 
-    const prevSlide = () => {
+    const prevSlide = useCallback(() => {
         setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length)
-    }
+        resetInterval()
+    }, [])
+
+    const resetInterval = useCallback(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current)
+        intervalRef.current = setInterval(nextSlide, 3000)
+    }, [nextSlide])
 
     useEffect(() => {
-        const interval = setInterval(nextSlide, 3000)
-        return () => clearInterval(interval)
-    }, [])
+        resetInterval()
+        return () => clearInterval(intervalRef.current)
+    }, [resetInterval])
 
     return (
         <div className="relative h-96 w-full overflow-hidden">
