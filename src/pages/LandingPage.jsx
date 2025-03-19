@@ -1,5 +1,5 @@
-import { ColorBar } from "../components"
-import { ContactSection } from "../components/ContactSection"
+import { ColorBar, ServiciosSection } from "../components"
+import { ContactSection, DonarSection } from "../components/index"
 import {Areas} from "../components/Areas";
 import {Carrousel} from "../components/Carrousel";
 
@@ -32,20 +32,9 @@ export function LandingPage() {
                 {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
                 <Areas/>
 
-                {/* Capacitaciones-Voluntariado-Servicios (Reemplazar por componente Capacitaciones al div identificado)*/}
-                <div
-                    id="capacitaciones"
-                    className="flex h-100 w-full items-center justify-center bg-green-500 text-white"
-                >
-                    <h1 className="text-3x1 font-bold">
-                        Aca va el componente Capacitaciones - Voluntariado - Servicios
-                    </h1>
-                </div>
+                <ServiciosSection />
 
-                {/* Donar (Reemplazar por componente Donar al div identificado)*/}
-                <div id="donar" className="flex h-100 w-full items-center justify-center bg-yellow-500 text-white">
-                    <h1 className="text-3x1 font-bold">Aca va el componente Donar</h1>
-                </div>
+                <DonarSection />
 
                 {/* Aliados Restaurativos (Reemplazar por componente Aliados al div identificado)*/}
                 <div id="aliados" className="flex h-150 w-full items-center justify-center border">
