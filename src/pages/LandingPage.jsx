@@ -9,7 +9,7 @@ export function LandingPage() {
 
     return (
         <div className="flex h-screen grow flex-col">
-            <header className="h-auto">
+            <header className="top-0 h-auto">
                 <ColorBar />
                 {/* Reemplazar etiqueta nav por componente Navbar */}
                 <NavBar />

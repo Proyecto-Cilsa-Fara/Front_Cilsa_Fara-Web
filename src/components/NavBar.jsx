@@ -14,7 +14,7 @@ export default function Navbar() {
                         {isOpen ? <img src={X} className="h-8 w-8" /> : <img src={MenuIcon} className="h-8 w-8" />}
                     </button>
 
-                    <Link to="#" className="text-xl font-bold">
+                    <Link to="#">
                         <img src="/web-app-manifest-512x512.png" alt="Logo" className="w-20" />
                     </Link>
                 </div>
@@ -22,17 +22,17 @@ export default function Navbar() {
                 {/* Menú principal */}
                 <ul className="mr-12 ml-auto hidden space-x-6 font-bold uppercase md:flex">
                     <li>
-                        <Link to="#" className="hover:text-gray-400">
+                        <Link to="#" className="hover:underline">
                             Institucional
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="hover:text-gray-400">
+                        <Link to="#" className="hover:underline">
                             Capacitaciones
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="hover:text-gray-400">
+                        <Link to="#" className="hover:underline">
                             Socios
                         </Link>
                     </li>
@@ -40,8 +40,12 @@ export default function Navbar() {
 
                 {/* Botones en la barra de navegación */}
                 <div className="flex space-x-4">
-                    <button className="rounded-lg bg-blue-500 px-4 py-2 hover:bg-blue-600">Doná</button>
-                    <button className="rounded-lg bg-green-500 px-4 py-2 hover:bg-green-600">Participá</button>
+                    <button className="skew-custom bg-blue-500 px-4 py-2 text-white uppercase hover:bg-blue-600">
+                        <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Doná</p>
+                    </button>
+                    <button className="skew-custom bg-red-700 text-white hover:bg-red-800">
+                        <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Participá</p>
+                    </button>
                 </div>
             </div>
 
@@ -49,17 +53,17 @@ export default function Navbar() {
             {isOpen && (
                 <ul className="mt-4 flex flex-col space-y-2 p-4 font-bold uppercase md:hidden">
                     <li>
-                        <Link to="#" className="block py-2 hover:text-gray-400">
+                        <Link to="#" className="block py-2">
                             Institucional
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="block py-2 hover:text-gray-400">
+                        <Link to="#" className="block py-2">
                             Capacitaciones
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="block py-2 hover:text-gray-400">
+                        <Link to="#" className="block py-2">
                             Socios
                         </Link>
                     </li>
