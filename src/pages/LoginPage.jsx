@@ -9,8 +9,11 @@ export function LoginPage() {
             <main className="flex h-screen bg-white">
                 {/* Contenedor del Formulario */}
                 <div className="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
+                    <p className="text-md m-auto w-full text-left font-semibold underline">
+                        <a href="/landing">← Volver a Inicio</a>
+                    </p>
                     <img
-                        src="../public/web-app-manifest-512x512.png"
+                        src="/web-app-manifest-512x512.png"
                         className="m-auto h-32 w-auto"
                         alt="Logo Acción Restaurativa Argentina"
                     />
