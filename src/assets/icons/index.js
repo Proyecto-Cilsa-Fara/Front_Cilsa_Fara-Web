@@ -13,6 +13,8 @@ import YoutubeIcon from "./ICONO-Youtube.svg"
 import YoutubeTransparentIcon from "./ICONO-Youtube-transparente.svg"
 import WhatsappIcon from "./ICONO-Whatsapp.svg"
 import WhatsappTransparentIcon from "./ICONO-Whatsapp-transparente.svg"
+import X from "./ICONO-X.svg"
+import MenuIcon from "./ICONO-MENU.svg"
 
 export {
     BoneteIcon,
@@ -30,4 +32,6 @@ export {
     YoutubeTransparentIcon,
     WhatsappIcon,
     WhatsappTransparentIcon,
+    X,
+    MenuIcon,
 }

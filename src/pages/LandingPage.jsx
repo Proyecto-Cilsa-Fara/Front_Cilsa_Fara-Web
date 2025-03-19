@@ -1,28 +1,24 @@
 import { ColorBar, ServiciosSection } from "../components"
 import { ContactSection, DonarSection } from "../components/index"
-import {Areas} from "../components/Areas";
-import {Carrousel} from "../components/Carrousel";
+import { Areas } from "../components/Areas"
+import { Carrousel } from "../components/Carrousel"
+import NavBar from "../components/NavBar"
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
 
     return (
         <div className="flex h-screen grow flex-col">
-            <header className="h-1/5">
+            <header className="h-auto">
                 <ColorBar />
-
                 {/* Reemplazar etiqueta nav por componente Navbar */}
-                <nav className="flex items-center justify-between p-7">
-                    <h1 className="text-3xl font-bold">Logo FARA</h1>
-                    <h2 className="font-bold text-red-500">Aca va el componente Navbar</h2>
-                    <span className="text-lg font-semibold">Links</span>
-                </nav>
+                <NavBar />
             </header>
-            
+
             <main className="grid grow-[1] place-items-center">
                 {/* Carrousel Hero Images (Reemplazar por componente Carrousel al div identificado)*/}
-                
-                <Carrousel/>
+
+                <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
                 <div id="acercaDeFara" className="flex h-50 w-full items-center justify-center bg-blue-500 text-white">
@@ -30,7 +26,7 @@ export function LandingPage() {
                 </div>
 
                 {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
-                <Areas/>
+                <Areas />
 
                 <ServiciosSection />
 
