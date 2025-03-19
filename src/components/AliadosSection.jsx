@@ -1,4 +1,5 @@
 import { Link } from "react-router"
+import * as aliadosImages from "../assets/aliados-fara"
 
 export function AliadosSection() {
     /* Seccion de aliados */
@@ -17,6 +18,39 @@ export function AliadosSection() {
                 Ellos ya nos están acompañando en nuestra misión. <br />
                 ¿Te interesa sumar tu empresa?
             </p>
+
+            <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+                <div className="p-2">
+                    <img src={aliadosImages.AtalycImage} alt="Logo de ATALyC" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.BuenosAiresImage} alt="Logo de la Provincia de Buenos Aires" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.ComnapazMexicoImage} alt="Logo de Comnapaz México" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.FundacionGuillermoSnopekImage} alt="Logo de la Fundación Guillermo Snopek" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.InceipImage} alt="Logo de INCEIP" className="h-auto rounded-2xl w-full  max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.MinisterioPublicoDeLaDefensaImage} alt="Logo del Ministerio Público de la Defensa" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.RACI} alt="Logo de RACI" className="h-auto rounded-2xl w-full  max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.RockefellerCenterImage} alt="Logo de Rockefeller Center" className="h-auto rounded-2xl w-full  max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.ServicioPenitenciarioBonaerenseImage} alt="Logo del Servicio Penitenciario Bonaerense" className="h-auto rounded-2xl w-full max-w-36" />
+                </div>
+                <div className="p-2">
+                    <img src={aliadosImages.SipinnaImage} alt="Logo de SIPINNA" className="h-auto rounded-2xl w-full  max-w-36" />
+                </div>
+            </div>
 
             <Link
                 className="skew-custom bg-[#E3A647] px-10 py-2 text-xl font-bold md:text-2xl"
