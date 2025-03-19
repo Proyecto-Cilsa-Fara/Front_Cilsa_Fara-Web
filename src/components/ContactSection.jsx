@@ -20,7 +20,6 @@ export function ContactSection() {
                 <nav className="space-y-3" aria-label="Opciones de contacto">
                     <Link
                         to={CONTACT_INFO.PHONE_LINK}
-                        target
                         className="flex items-center gap-3"
                         aria-label="Envíanos un mensaje por Whatsapp"
                     >
