@@ -1,24 +1,33 @@
 import { ColorBar } from "../components"
+import { useForm } from "react-hook-form"
+
 export function LoginPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
+    const {
+        register,
+        formState: { errors },
+        handleSubmit,
+    } = useForm()
+    const onSubmit = (data) => {
+        console.log(data)
+    }
     return (
         <div className="flex h-screen grow flex-col">
-            <header className="h-1/5">
+            <header className="flex h-1/5">
                 <ColorBar />
             </header>
             <main className="flex h-screen bg-white">
                 {/* Contenedor del Formulario */}
                 <div className="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
-                    <p className="text-md m-auto w-full text-left font-semibold underline">
-                        <a href="/landing">← Volver a Inicio</a>
-                    </p>
-                    <img
-                        src="/web-app-manifest-512x512.png"
-                        className="m-auto h-32 w-auto"
-                        alt="Logo Acción Restaurativa Argentina"
-                    />
+                    <a href="/landing" className="m-auto box-border block">
+                        <img
+                            src="/web-app-manifest-512x512.png"
+                            className="h-32 w-auto p-2"
+                            alt="Logo Acción Restaurativa Argentina"
+                        />
+                    </a>
                     <h2 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h2>
-                    <form className="w-full max-w-md p-6">
+                    <form className="w-full max-w-md p-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="mb-4">
                             <label
                                 htmlFor="loginEmail"
@@ -30,13 +39,21 @@ export function LoginPage() {
                                     className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
                                     placeholder="Correo electrónico"
                                     autoComplete="off"
-                                    required
+                                    {...register("loginEmail", {
+                                        required: true,
+                                        pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                                        maxLength: 20,
+                                    })}
                                 />
-
                                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                                     Correo electrónico
                                 </span>
                             </label>
+                            {errors.loginEmail?.type === "required" && (
+                                <div className="mt-3 w-full rounded-sm border-l-6 border-l-red-600 bg-red-200 p-2">
+                                    <p className="text-sm font-semibold">Por favor ingrese un email válido</p>
+                                </div>
+                            )}
                         </div>
                         <div className="mb-4">
                             <label
@@ -49,22 +66,27 @@ export function LoginPage() {
                                     className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
                                     placeholder="Contraseña"
                                     autoComplete="off"
-                                    required
+                                    {...register("loginPass", { required: true, minLength: 8, maxLength: 20 })}
                                 />
 
                                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
                                     Contraseña
                                 </span>
                             </label>
+                            {errors.loginPass?.type === "required" && (
+                                <div className="mt-3 w-full rounded-sm border-l-6 border-l-red-600 bg-red-200 p-2">
+                                    <p className="text-sm font-semibold">Contraseña incorrecta.</p>
+                                </div>
+                            )}
                         </div>
                         <button
-                            className="w-1/3 cursor-pointer bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white"
+                            className="block w-1/2 cursor-pointer bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white"
                             type="submit"
                         >
-                            Iniciar
+                            Iniciar sesión
                         </button>
                     </form>
-                    <div className="mb-auto p-6">
+                    <div className="mb-auto p-3">
                         <p className="mt-4 text-center text-gray-800">
                             ¿Olvidaste las credenciales?{" "}
                             <a href="#" className="underline">
@@ -90,7 +112,7 @@ export function LoginPage() {
                     />
                 </div>
             </main>
-            <footer className="flex-col gap-4">
+            <footer className="flex h-1/5">
                 <ColorBar />
             </footer>
         </div>
