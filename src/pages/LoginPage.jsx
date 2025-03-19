@@ -30,6 +30,7 @@ export function LoginPage() {
                                     className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
                                     placeholder="Correo electrónico"
                                     autoComplete="off"
+                                    required
                                 />
 
                                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
@@ -48,6 +49,7 @@ export function LoginPage() {
                                     className="peer w-full border-none bg-transparent placeholder-transparent focus:border-transparent focus:ring-0 focus:outline-none"
                                     placeholder="Contraseña"
                                     autoComplete="off"
+                                    required
                                 />
 
                                 <span className="pointer-events-none absolute start-2.5 top-0 -translate-y-1/2 bg-white px-1 text-xs text-gray-700 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-focus:top-0 peer-focus:text-xs">
@@ -55,7 +57,10 @@ export function LoginPage() {
                                 </span>
                             </label>
                         </div>
-                        <button className="w-1/3 bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white">
+                        <button
+                            className="w-1/3 cursor-pointer bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white"
+                            type="submit"
+                        >
                             Iniciar
                         </button>
                     </form>
@@ -67,18 +72,21 @@ export function LoginPage() {
                             </a>
                         </p>
                         <p className="mt-4 cursor-pointer text-center text-gray-800 underline">
-                            <a>Contáctate con el administrador de la página.</a>
+                            <a href="#">Contáctate con el administrador de la página.</a>
                         </p>
                     </div>
-                    <p className="mt-auto text-center text-gray-600">{FOOTER_MESSAGE}</p>
+                    <p className="mt-auto text-center text-gray-600" aria-label="Mensaje de footer">
+                        {FOOTER_MESSAGE}
+                    </p>
                 </div>
 
                 {/* Contenedor de la Imagen (Se oculta en pantallas pequeñas) */}
                 <div className="hidden w-1/2 items-center justify-center bg-cover md:flex">
                     <img
                         src="https://s3-alpha-sig.figma.com/img/c040/157a/02b257935a70d16c34e26febb90c0fa4?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TuW-MKx9Epfc32~LCUMzkf1xKLmq0Mn6qXYaGG-Y5bCm8W53hjhrpxfAxYcG8B2QMOE0P7wc8zIcsZIuRHdmz3I4diuMyHtpCCabcEaoJaxvamoJIdpS2Ag-vjAvoDLgu0lGf8Gsf04bKA4h8Smml~yfGezTnWR3NjHDsf31wrVcYZivcsO-T~KjKLIf9NxDA9EseGvbSOvBxuUYIOYuzY-wtW5igdLDsQ74QO~OXtpo9MnKYqz6AEXQk1uUP0SuI-U1qHR7ddfVSBYkraLWUy4d9U9X97iz3U5yacowwAcI1fmrx0YG9H622diAIDXJrh0x2Ck7-OA7Ti-sZWO9jA__"
-                        alt="#"
+                        alt="Imagen de Acción Restaurativa Argentina"
                         className="h-screen w-full object-cover"
+                        loading="lazy"
                     />
                 </div>
             </main>
