@@ -53,8 +53,8 @@ export function AliadosSection() {
             </div>
 
             <Link
-                className="skew-custom bg-[#E3A647] px-10 py-2 text-xl font-bold md:text-2xl"
-                to="/"
+                className="skew-custom grid place-items-center bg-[#E3A647] min-h-12 min-w-12 pr-8 pl-6 text-xl font-bold md:text-2xl"
+                to="/socios"
                 aria-label="Alíate a la fundación"
             >
                 ALÍATE
