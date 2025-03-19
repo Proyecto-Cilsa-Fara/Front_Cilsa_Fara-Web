@@ -122,7 +122,7 @@ export function Carrousel() {
             {/* Botón anterior */}
             <button
                 onClick={prevSlide}
-                className="bg-opacity-50 absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white lg:left-4"
+                className="bg-opacity-50 absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer lg:left-4"
             >
                 ❮
             </button>
@@ -130,7 +130,7 @@ export function Carrousel() {
             {/* Botón siguiente */}
             <button
                 onClick={nextSlide}
-                className="bg-opacity-50 absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white lg:right-4"
+                className="bg-opacity-50 absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer lg:right-4"
             >
                 ❯
             </button>
