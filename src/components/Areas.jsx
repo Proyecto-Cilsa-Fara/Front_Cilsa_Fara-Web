@@ -32,7 +32,7 @@ export function Areas() {
                 {areas.map((area, index) => (
                     <div
                         key={index}
-                        className="relative flex h-48 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white md:h-56 md:p-5 lg:h-64 lg:p-6"
+                        className="relative flex h-48 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-64 lg:p-6"
                         style={{
                             backgroundImage: `url(${area.image})`,
                         }}
@@ -47,12 +47,7 @@ export function Areas() {
                         ></div>
 
                         {/* Texto alineado al fondo */}
-                        <span
-                            className="relative z-10 mb-2 text-left text-lg text-white md:mb-3 md:text-xl lg:mb-4 lg:text-2xl"
-                            style={{
-                                textShadow: "2px 2px 5px rgba(0, 0, 0, 0.8)",
-                            }}
-                        >
+                        <span className="text-outline-lg relative z-10 mb-2 text-left text-lg text-white md:mb-3 md:text-xl lg:mb-4 lg:text-2xl">
                             {area.name}
                         </span>
                     </div>
