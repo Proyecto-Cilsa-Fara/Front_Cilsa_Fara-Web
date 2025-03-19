@@ -10,6 +10,7 @@ function App() {
                 <Route path="/asesoramiento" element={<WIPPage />} />
                 <Route path="/capacitaciones" element={<WIPPage />} />
                 <Route path="/participa" element={<WIPPage />} />
+                <Route path="/socios" element={<WIPPage />} />
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="Landing" element={<LandingPage />}/>
             </Routes>
