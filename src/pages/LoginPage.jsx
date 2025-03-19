@@ -5,16 +5,15 @@ export function LoginPage() {
         <div className="flex h-screen grow flex-col">
             <header className="h-1/5">
                 <ColorBar />
-                {/* Reemplazar etiqueta nav por componente Navbar */}
-                <nav className="flex items-center justify-between p-7">
-                    <img src="/public/web-app-manifest-512x512.png" alt="#" className="h-24" />
-                    <h2 className="font-bold text-red-500">Aca va el componente Navbar</h2>
-                    <span className="text-lg font-semibold">Links</span>
-                </nav>
             </header>
             <main className="flex h-screen bg-white">
                 {/* Contenedor del Formulario */}
                 <div className="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
+                    <img
+                        src="../public/web-app-manifest-512x512.png"
+                        className="m-auto h-32 w-auto"
+                        alt="Logo Acción Restaurativa Argentina"
+                    />
                     <h2 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h2>
                     <form className="w-full max-w-md p-6">
                         <div className="mb-4">
@@ -57,7 +56,7 @@ export function LoginPage() {
                             Iniciar
                         </button>
                     </form>
-                    <div>
+                    <div className="mb-auto p-6">
                         <p className="mt-4 text-center text-gray-800">
                             ¿Olvidaste las credenciales?{" "}
                             <a href="#" className="underline">
@@ -68,7 +67,7 @@ export function LoginPage() {
                             <a>Contáctate con el administrador de la página.</a>
                         </p>
                     </div>
-                    <p className="mt-4 text-center text-gray-600">{FOOTER_MESSAGE}</p>
+                    <p className="mt-auto text-center text-gray-600">{FOOTER_MESSAGE}</p>
                 </div>
 
                 {/* Contenedor de la Imagen (Se oculta en pantallas pequeñas) */}
