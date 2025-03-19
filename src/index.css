@@ -11,3 +11,21 @@
 .poligonoDonar2 {
     clip-path: polygon(0 8%, 100% 8%, 100% 100%, 19% 100%);
 }
+
+.text-outline-lg {
+    color: white; /* Color del texto */
+    text-shadow:
+        -0.7px -0.7px 0 black,
+        0.7px -0.7px 0 black,
+        -0.7px 0.7px 0 black,
+        0.7px 0.7px 0 black;
+}
+
+.text-outline-sm {
+    color: white; /* Color del texto */
+    text-shadow:
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+}
