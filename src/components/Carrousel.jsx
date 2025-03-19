@@ -102,11 +102,11 @@ export function Carrousel() {
 
                         {/* Contenido */}
                         <div className="absolute bottom-10 left-15 w-1/2 max-w-[45%] text-white lg:left-20">
-                            <h2 className="stroke-black stroke-1 text-xl font-bold uppercase md:text-3xl lg:text-4xl">
+                            <h2 className="text-outline-lg text-xl font-bold uppercase md:text-3xl lg:text-4xl">
                                 {slide.text}
                             </h2>
                             <button
-                                className="mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:underline lg:text-xl"
+                                className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:underline lg:text-xl"
                                 style={{
                                     backgroundColor: slide.buttonColor,
                                     clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
