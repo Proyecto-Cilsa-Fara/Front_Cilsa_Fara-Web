@@ -1,8 +1,4 @@
-import img1 from "../assets/Hero-Carrousel/Hero1.webp"
-import img2 from "../assets/Hero-Carrousel/Hero2.webp"
-import img3 from "../assets/Hero-Carrousel/Hero3.webp"
-import img4 from "../assets/Hero-Carrousel/Hero4.webp"
-import img5 from "../assets/Hero-Carrousel/Hero5.webp"
+import { img1, img2, img3, img4, img5 } from "../assets/hero-carrousel"
 import { useState, useEffect } from "react"
 
 const slides = [
