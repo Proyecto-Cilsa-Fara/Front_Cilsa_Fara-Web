@@ -101,12 +101,12 @@ export function Carrousel() {
                         ></div>
 
                         {/* Contenido */}
-                        <div className="absolute bottom-10 left-10 w-1/2 max-w-[45%] text-white">
-                            <h2 className="text-xl font-bold uppercase drop-shadow-lg md:text-3xl lg:text-4xl">
+                        <div className="absolute bottom-10 left-15 w-1/2 max-w-[45%] text-white lg:left-20">
+                            <h2 className="stroke-black stroke-1 text-xl font-bold uppercase md:text-3xl lg:text-4xl">
                                 {slide.text}
                             </h2>
                             <button
-                                className="mt-4 px-4 py-2 text-sm text-white hover:underline md:px-6 md:py-3 md:text-lg lg:px-8 lg:py-4 lg:text-xl"
+                                className="mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:underline lg:text-xl"
                                 style={{
                                     backgroundColor: slide.buttonColor,
                                     clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
@@ -122,7 +122,7 @@ export function Carrousel() {
             {/* Botón anterior */}
             <button
                 onClick={prevSlide}
-                className="bg-opacity-50 absolute top-1/2 left-4 -translate-y-1/2 transform rounded-full bg-black p-2 text-white md:p-3 lg:p-4"
+                className="bg-opacity-50 absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white lg:left-4"
             >
                 ❮
             </button>
@@ -130,7 +130,7 @@ export function Carrousel() {
             {/* Botón siguiente */}
             <button
                 onClick={nextSlide}
-                className="bg-opacity-50 absolute top-1/2 right-4 -translate-y-1/2 transform rounded-full bg-black p-2 text-white md:p-3 lg:p-4"
+                className="bg-opacity-50 absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white lg:right-4"
             >
                 ❯
             </button>
