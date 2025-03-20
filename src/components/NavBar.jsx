@@ -3,7 +3,7 @@ import { Link } from "react-router"
 import { X, MenuIcon } from "../assets/icons"
 import faraLogoImage from "../assets/LOGO-FARA.webp"
 
-export default function Navbar() {
+export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
