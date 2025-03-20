@@ -24,7 +24,7 @@ export function ErrorPage() {
                 <h1 className="text-2xl font-bold tracking-tight text-gray-900">{ERROR_MESSAGE}</h1>
             </main>
             <footer className="h-1/5 flex-col gap-4">
-                <h2 className="grid h-[calc(100%-2rem)] place-items-center">{FOOTER_MESSAGE}</h2>
+                <h2 className="grid h-[calc(100%-1rem)] place-items-center">{FOOTER_MESSAGE}</h2>
                 <ColorBar />
             </footer>
         </div>
