@@ -1,5 +1,5 @@
 import { Link } from "react-router"
-import * as aliadosImages from "../assets/aliados-fara"
+import { aliadosImages } from "../assets/aliados-fara"
 
 export function AliadosSection() {
     /* Seccion de aliados */
@@ -20,40 +20,26 @@ export function AliadosSection() {
             </p>
 
             <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-                <div className="p-2">
-                    <img src={aliadosImages.AtalycImage} alt="Logo de ATALyC" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.BuenosAiresImage} alt="Logo de la Provincia de Buenos Aires" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.ComnapazMexicoImage} alt="Logo de Comnapaz México" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.FundacionGuillermoSnopekImage} alt="Logo de la Fundación Guillermo Snopek" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.InceipImage} alt="Logo de INCEIP" className="h-auto rounded-2xl w-full  max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.MinisterioPublicoDeLaDefensaImage} alt="Logo del Ministerio Público de la Defensa" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.RACI} alt="Logo de RACI" className="h-auto rounded-2xl w-full  max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.RockefellerCenterImage} alt="Logo de Rockefeller Center" className="h-auto rounded-2xl w-full  max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.ServicioPenitenciarioBonaerenseImage} alt="Logo del Servicio Penitenciario Bonaerense" className="h-auto rounded-2xl w-full max-w-36" />
-                </div>
-                <div className="p-2">
-                    <img src={aliadosImages.SipinnaImage} alt="Logo de SIPINNA" className="h-auto rounded-2xl w-full  max-w-36" />
-                </div>
+                {aliadosImages.map((aliado, index) => {
+                    const aliadoName = aliado
+                        .split("/")
+                        .pop()
+                        .replace(/Image/i, "")
+                        .replace(/\.[^/.]+$/, "")
+                    return (
+                        <div className="p-2" key={index}>
+                            <img
+                                src={aliado}
+                                alt={"Logo de " + aliadoName}
+                                className="h-auto w-full max-w-36 rounded-2xl"
+                            />
+                        </div>
+                    )
+                })}
             </div>
 
             <Link
-                className="skew-custom grid place-items-center bg-[#E3A647] min-h-12 min-w-12 pr-8 pl-6 text-xl font-bold md:text-2xl"
+                className="skew-custom grid min-h-12 min-w-12 place-items-center bg-[#E3A647] pr-8 pl-6 text-xl font-bold md:text-2xl"
                 to="/socios"
                 aria-label="Alíate a la fundación"
             >
