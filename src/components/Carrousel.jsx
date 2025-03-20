@@ -69,7 +69,7 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <div className="relative h-96 w-full overflow-hidden">
+        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden">
             <div
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -77,7 +77,7 @@ export function Carrousel() {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className="relative h-96 w-full flex-shrink-0 bg-cover bg-center"
+                        className="relative h-[calc(100vh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
                         {/* Capa de color con transparencia 1 */}
