@@ -60,7 +60,7 @@ export function Carrousel() {
 
     const resetInterval = useCallback(() => {
         if (intervalRef.current) clearInterval(intervalRef.current)
-        intervalRef.current = setInterval(nextSlide, 3000)
+        intervalRef.current = setInterval(nextSlide, 300000)
     }, [nextSlide])
 
     useEffect(() => {
@@ -69,7 +69,7 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <div className="relative h-96 w-full overflow-hidden">
+        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden">
             <div
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -77,32 +77,28 @@ export function Carrousel() {
                 {slides.map((slide, index) => (
                     <div
                         key={index}
-                        className="relative h-96 w-full flex-shrink-0 bg-cover bg-center"
+                        className="relative h-[calc(100vh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
                         {/* Capa de color con transparencia 1 */}
                         <div
-                            className="absolute h-full w-full"
+                            className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
                             style={{
                                 background: `linear-gradient(to bottom, ${slide.color1}, ${slide.color1})`,
-                                opacity: 0.5,
-                                clipPath: "polygon(0% 0%, 50% 0%, 40% 100%, 0% 100%)",
                             }}
                         ></div>
 
                         {/* Capa de color con transparencia 2 */}
                         <div
-                            className="absolute h-full w-full"
+                            className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
                             style={{
                                 background: `linear-gradient(to bottom, ${slide.color2}, ${slide.color2})`,
-                                opacity: 0.5,
-                                clipPath: "polygon(0% 10%, 55% 10%, 45% 100%, 0% 100%)",
                             }}
                         ></div>
 
                         {/* Contenido */}
-                        <div className="absolute bottom-10 left-15 w-1/2 max-w-[45%] text-white lg:left-20">
-                            <h2 className="text-outline-lg text-xl font-bold uppercase md:text-3xl lg:text-4xl">
+                        <div className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
+                            <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
                                 {slide.text}
                             </h2>
                             <button

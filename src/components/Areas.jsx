@@ -22,9 +22,11 @@ export function Areas() {
     ]
 
     return (
-        <div className="mx-auto max-w-4xl p-4 text-center">
-            <h2 className="mb-2 text-xl font-bold md:text-2xl lg:text-3xl">NUESTROS EQUIPOS MULTIDISCIPLINARIOS</h2>
-            <p className="mb-6 text-base md:text-lg lg:text-xl">
+        <div className="grid place-items-center px-4 py-16 text-pretty lg:px-32 lg:py-32">
+            <h2 className="mb-6 text-center text-2xl font-bold md:text-3xl lg:text-5xl">
+                NUESTROS EQUIPOS MULTIDISCIPLINARIOS
+            </h2>
+            <p className="md:text-2lg mb-12 text-pretty lg:text-3xl">
                 La Fundación cuenta con equipos interdisciplinarios que estudian, analizan y desarrollan proyectos en
                 múltiples áreas de incidencia.
             </p>
@@ -32,7 +34,7 @@ export function Areas() {
                 {areas.map((area, index) => (
                     <div
                         key={index}
-                        className="relative flex h-48 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-64 lg:p-6"
+                        className="relative flex h-64 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-96 lg:p-6"
                         style={{
                             backgroundImage: `url(${area.image})`,
                         }}
@@ -42,12 +44,11 @@ export function Areas() {
                             className="absolute top-0 left-0 h-full w-full"
                             style={{
                                 backgroundColor: area.color,
-                                opacity: 0.5,
                             }}
                         ></div>
 
                         {/* Texto alineado al fondo */}
-                        <span className="text-outline-lg relative z-10 mb-2 text-left text-lg text-white md:mb-3 md:text-xl lg:mb-4 lg:text-2xl">
+                        <span className="text-outline-sm relative z-10 mb-2 text-left text-lg text-white md:mb-3 md:text-xl lg:mb-4 lg:text-3xl">
                             {area.name}
                         </span>
                     </div>
