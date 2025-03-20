@@ -13,9 +13,9 @@ export function ContactSection() {
     /* Seccion de contacto */
 
     return (
-        <div className="flex w-full flex-col justify-center gap-9 bg-red-700 p-10 text-white lg:flex-row lg:gap-18 lg:p-20">
+        <div className="flex w-full flex-col justify-center gap-9 bg-red-700 p-10 text-white md:flex-row md:gap-18 md:p-20">
             {/* Contacto */}
-            <div className="text-center lg:text-left">
+            <div className="text-center md:text-left">
                 <h2 className="mb-4 text-xl font-bold lg:text-3xl">CONTÁCTANOS</h2>
                 <nav className="space-y-3" aria-label="Opciones de contacto">
                     <Link
@@ -46,7 +46,7 @@ export function ContactSection() {
             </div>
 
             {/* Redes Sociales */}
-            <div className="text-center lg:text-left">
+            <div className="text-center md:text-left">
                 <h2 className="mb-4 text-xl font-bold lg:text-3xl">SÍGUENOS EN REDES</h2>
                 <nav className="space-y-3" aria-label="Nuestras redes sociales">
                     <Link
