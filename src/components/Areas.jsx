@@ -30,11 +30,11 @@ export function Areas() {
                 La Fundación cuenta con equipos interdisciplinarios que estudian, analizan y desarrollan proyectos en
                 múltiples áreas de incidencia.
             </p>
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 xl:grid-cols-4">
                 {areas.map((area, index) => (
                     <div
                         key={index}
-                        className="relative flex h-64 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-96 lg:p-6"
+                        className="relative flex h-64 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-96"
                         style={{
                             backgroundImage: `url(${area.image})`,
                         }}
@@ -48,7 +48,7 @@ export function Areas() {
                         ></div>
 
                         {/* Texto alineado al fondo */}
-                        <span className="text-outline-sm relative z-10 mb-2 text-left text-lg text-white md:mb-3 md:text-xl lg:mb-4 lg:text-3xl">
+                        <span className="text-outline-sm relative z-10 mb-2 text-left text-sm text-white md:mb-3 md:text-xl lg:mb-4 lg:text-3xl">
                             {area.name}
                         </span>
                     </div>
