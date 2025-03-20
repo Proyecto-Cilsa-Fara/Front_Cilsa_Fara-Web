@@ -53,10 +53,16 @@ export default function Navbar() {
 
                     {/* Botones en la barra de navegación */}
                     <div className="hidden gap-4 md:flex">
-                        <Link className="text-outline-lg skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase hover:cursor-pointer hover:bg-blue-600">
+                        <Link
+                            to="/donar"
+                            className="text-outline-lg skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase hover:cursor-pointer hover:bg-blue-600"
+                        >
                             DONÁ
                         </Link>
-                        <Link className="skew-custom text-outline-lg min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-xl font-bold text-white hover:cursor-pointer hover:bg-red-800">
+                        <Link
+                            to="/participa"
+                            className="skew-custom text-outline-lg min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-xl font-bold text-white hover:cursor-pointer hover:bg-red-800"
+                        >
                             PARTICIPÁ
                         </Link>
                     </div>
@@ -67,27 +73,33 @@ export default function Navbar() {
             {isOpen && (
                 <ul className="mt-4 flex flex-col gap-2 font-bold uppercase md:hidden">
                     <li>
-                        <Link to="#" className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer">
+                        <Link
+                            to="/institucional"
+                            className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer"
+                        >
                             Institucional
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer">
+                        <Link
+                            to="/capacitaciones"
+                            className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer"
+                        >
                             Capacitaciones
                         </Link>
                     </li>
                     <li>
-                        <Link to="#" className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer">
+                        <Link to="/socios" className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer">
                             Socios
                         </Link>
                     </li>
                     <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-blue-500 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
-                        <Link to="#" className="text-outline-sm">
+                        <Link to="/donar" className="text-outline-sm">
                             DONÁ
                         </Link>
                     </li>
                     <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-red-700 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
-                        <Link to="#" className="text-outline-sm">
+                        <Link to="/participa" className="text-outline-sm">
                             PARTICIPÁ
                         </Link>
                     </li>
