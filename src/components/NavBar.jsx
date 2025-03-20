@@ -8,7 +8,7 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white p-4 text-black">
-            <div className="container flex items-center justify-between">
+            <div className="flex w-full items-center justify-between">
                 <Link to="#" className="hover:cursor-pointer">
                     <img
                         src={faraLogoImage}
@@ -53,10 +53,10 @@ export default function Navbar() {
 
                     {/* Botones en la barra de navegación */}
                     <div className="hidden gap-4 md:flex">
-                        <button className="skew-custom min-h-12 min-w-48 bg-blue-500 py-2 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
+                        <button className="skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
                             <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Doná</p>
                         </button>
-                        <button className="skew-custom min-h-12 min-w-48 bg-red-700 py-2 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
+                        <button className="skew-custom min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
                             <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Participá</p>
                         </button>
                     </div>
