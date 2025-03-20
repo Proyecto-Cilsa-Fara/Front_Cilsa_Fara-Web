@@ -25,11 +25,19 @@
     clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
 }
 
-.skew-hero-image-1 {
+.skew-hero-image-desktop-1 {
     clip-path: polygon(0% 0%, 50% 0%, 40% 100%, 0% 100%);
 }
 
-.skew-hero-image-2 {
+.skew-hero-image-desktop-2 {
+    clip-path: polygon(0% 10%, 55% 10%, 45% 100%, 0% 100%);
+}
+
+.skew-hero-image-mobile-1 {
+    clip-path: polygon(0% 0%, 50% 0%, 40% 100%, 0% 100%);
+}
+
+.skew-hero-image-mobile-2 {
     clip-path: polygon(0% 10%, 55% 10%, 45% 100%, 0% 100%);
 }
 
