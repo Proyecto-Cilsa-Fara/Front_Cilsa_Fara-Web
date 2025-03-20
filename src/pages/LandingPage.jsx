@@ -14,8 +14,8 @@ export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
 
     return (
-        <div className="flex h-screen grow flex-col">
-            <header className="top-0 h-auto">
+        <div className="flex min-h-screen grow flex-col">
+            <header className="flex flex-col">
                 <ColorBar />
 
                 <NavBar />
