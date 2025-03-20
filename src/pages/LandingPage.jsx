@@ -37,8 +37,8 @@ export function LandingPage() {
 
                 <ContactSection />
             </main>
-            <footer className="h-1/5 flex-col gap-4">
-                <h2 className="grid h-[calc(100%-2rem)] place-items-center p-4">{FOOTER_MESSAGE}</h2>
+            <footer className="flex-col gap-4">
+                <p className="grid h-[calc(100%-1rem)] place-items-center p-4 text-sm">{FOOTER_MESSAGE}</p>
                 <ColorBar />
             </footer>
         </div>
