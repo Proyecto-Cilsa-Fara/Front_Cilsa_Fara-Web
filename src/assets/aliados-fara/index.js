@@ -9,7 +9,7 @@ import RockefellerCenterImage from "./Rockefeller-Center.webp"
 import ServicioPenitenciarioBonaerenseImage from "./Servicio-Penitenciario-Bonaerense.webp"
 import SipinnaImage from "./SIPINNA.webp"
 
-export {
+const aliadosImages = [
     AtalycImage,
     BuenosAiresImage,
     ComnapazMexicoImage,
@@ -20,4 +20,6 @@ export {
     RockefellerCenterImage,
     ServicioPenitenciarioBonaerenseImage,
     SipinnaImage,
-}
+]
+
+export { aliadosImages }
