@@ -2,21 +2,17 @@ import { ColorBar, ServiciosSection } from "../components"
 import { ContactSection, DonarSection, AliadosSection } from "../components/index"
 import { Areas } from "../components/Areas"
 import { Carrousel } from "../components/Carrousel"
+import NavBar from "../components/NavBar"
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
 
     return (
         <div className="flex h-screen grow flex-col">
-            <header className="h-1/5">
+            <header className="top-0 h-auto">
                 <ColorBar />
-
                 {/* Reemplazar etiqueta nav por componente Navbar */}
-                <nav className="flex items-center justify-between p-7">
-                    <h1 className="text-3xl font-bold">Logo FARA</h1>
-                    <h2 className="font-bold text-red-500">Aca va el componente Navbar</h2>
-                    <span className="text-lg font-semibold">Links</span>
-                </nav>
+                <NavBar />
             </header>
 
             <main className="grid grow-[1] place-items-center">
