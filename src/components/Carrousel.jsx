@@ -97,8 +97,8 @@ export function Carrousel() {
                         ></div>
 
                         {/* Contenido */}
-                        <div className="absolute bottom-10 left-15 w-1/2 text-white lg:left-20">
-                            <h2 className="text-outline-lg max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
+                        <div className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
+                            <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
                                 {slide.text}
                             </h2>
                             <button
