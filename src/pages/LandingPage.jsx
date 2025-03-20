@@ -16,13 +16,11 @@ export function LandingPage() {
         <div className="flex h-screen grow flex-col">
             <header className="top-0 h-auto">
                 <ColorBar />
-                {/* Reemplazar etiqueta nav por componente NavBar */}
+
                 <NavBar />
             </header>
 
             <main className="grid grow-[1] place-items-center">
-                {/* Carrousel Hero Images (Reemplazar por componente Carrousel al div identificado)*/}
-
                 <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
@@ -30,7 +28,6 @@ export function LandingPage() {
                     <h1 className="text-3x1 font-bold">Aca va el componente AcercaDeFara</h1>
                 </div>
 
-                {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
                 <Areas />
 
                 <ServiciosSection />
