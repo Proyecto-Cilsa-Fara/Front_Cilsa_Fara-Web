@@ -1,4 +1,5 @@
 import {
+    AcercaDe,
     ColorBar,
     ServiciosSection,
     ContactSection,
@@ -24,9 +25,7 @@ export function LandingPage() {
                 <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
-                <div id="acercaDeFara" className="flex h-50 w-full items-center justify-center bg-blue-500 text-white">
-                    <h1 className="text-3x1 font-bold">Aca va el componente AcercaDeFara</h1>
-                </div>
+                <AcercaDe />
 
                 <Areas />
 
