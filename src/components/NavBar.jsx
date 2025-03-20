@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Link } from "react-router"
 import { X, MenuIcon } from "../assets/icons"
+import faraLogoImage from "../assets/LOGO-FARA.webp"
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -9,7 +10,11 @@ export default function Navbar() {
         <nav className="bg-white p-4 text-black">
             <div className="container flex items-center justify-between">
                 <Link to="#">
-                    <img src="/web-app-manifest-512x512.png" alt="Logo" className="w-20" />
+                    <img
+                        src={faraLogoImage}
+                        alt="Logo de FARA que actúa como link a la página de inicio."
+                        className="h-12 w-auto"
+                    />
                 </Link>
 
                 <div className="flex gap-8">
