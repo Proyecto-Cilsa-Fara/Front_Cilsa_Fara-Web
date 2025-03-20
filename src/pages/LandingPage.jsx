@@ -1,5 +1,5 @@
 import { ColorBar, ServiciosSection } from "../components"
-import { ContactSection, DonarSection } from "../components/index"
+import { ContactSection, DonarSection, AliadosSection } from "../components/index"
 import { Areas } from "../components/Areas"
 import { Carrousel } from "../components/Carrousel"
 import NavBar from "../components/NavBar"
@@ -32,10 +32,8 @@ export function LandingPage() {
 
                 <DonarSection />
 
-                {/* Aliados Restaurativos (Reemplazar por componente Aliados al div identificado)*/}
-                <div id="aliados" className="flex h-150 w-full items-center justify-center border">
-                    <h1 className="text-3x1 font-bold">Aca va el componente Aliados Restaurativos</h1>
-                </div>
+                <AliadosSection />
+
                 <ContactSection />
             </main>
             <footer className="h-1/5 flex-col gap-4">
