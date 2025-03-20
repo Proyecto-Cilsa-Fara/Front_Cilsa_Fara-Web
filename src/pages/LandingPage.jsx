@@ -1,5 +1,5 @@
 import { ColorBar, ServiciosSection } from "../components"
-import { ContactSection, DonarSection, AliadosSection } from "../components/index"
+import { ContactSection, DonarSection, AliadosSection, AcercaDe } from "../components/index"
 import { Areas } from "../components/Areas"
 import { Carrousel } from "../components/Carrousel"
 import NavBar from "../components/NavBar"
@@ -21,9 +21,7 @@ export function LandingPage() {
                 <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
-                <div id="acercaDeFara" className="flex h-50 w-full items-center justify-center bg-blue-500 text-white">
-                    <h1 className="text-3x1 font-bold">Aca va el componente AcercaDeFara</h1>
-                </div>
+                <AcercaDe />
 
                 {/* Areas de incidencia (Reemplazar por componente Areas al div identificado)*/}
                 <Areas />
