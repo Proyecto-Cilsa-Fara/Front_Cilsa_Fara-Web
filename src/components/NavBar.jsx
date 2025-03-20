@@ -55,13 +55,13 @@ export function NavBar() {
                     <div className="hidden gap-4 md:flex">
                         <Link
                             to="/donar"
-                            className="text-outline-lg skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase hover:cursor-pointer hover:bg-blue-600"
+                            className="text-outline-lg skew-custom bg-fara-cyan hover:bg-fara-gold min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
                         >
                             DONÁ
                         </Link>
                         <Link
                             to="/participa"
-                            className="skew-custom text-outline-lg min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-xl font-bold text-white hover:cursor-pointer hover:bg-red-800"
+                            className="skew-custom text-outline-lg bg-fara-red hover:bg-fara-strong-red min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white transition-colors duration-300 ease-in-out hover:cursor-pointer"
                         >
                             PARTICIPÁ
                         </Link>
