@@ -60,7 +60,7 @@ export function Carrousel() {
 
     const resetInterval = useCallback(() => {
         if (intervalRef.current) clearInterval(intervalRef.current)
-        intervalRef.current = setInterval(nextSlide, 300000)
+        intervalRef.current = setInterval(nextSlide, 3000)
     }, [nextSlide])
 
     useEffect(() => {
