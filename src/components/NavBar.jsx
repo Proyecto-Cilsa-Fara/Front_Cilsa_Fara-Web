@@ -27,7 +27,7 @@ export default function Navbar() {
                     <ul className="hidden gap-4 font-bold uppercase md:flex">
                         <li>
                             <Link
-                                to="#"
+                                to="/institucional"
                                 className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer hover:underline"
                             >
                                 Institucional
@@ -35,7 +35,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
-                                to="#"
+                                to="/capacitaciones"
                                 className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer hover:underline"
                             >
                                 Capacitaciones
@@ -43,7 +43,7 @@ export default function Navbar() {
                         </li>
                         <li>
                             <Link
-                                to="#"
+                                to="/socios"
                                 className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer hover:underline"
                             >
                                 Socios
@@ -53,12 +53,12 @@ export default function Navbar() {
 
                     {/* Botones en la barra de navegación */}
                     <div className="hidden gap-4 md:flex">
-                        <button className="skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
-                            <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Doná</p>
-                        </button>
-                        <button className="skew-custom min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
-                            <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Participá</p>
-                        </button>
+                        <Link className="text-outline-lg skew-custom min-h-12 min-w-12 bg-blue-500 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase hover:cursor-pointer hover:bg-blue-600">
+                            DONÁ
+                        </Link>
+                        <Link className="skew-custom text-outline-lg min-h-12 min-w-12 bg-red-700 py-2 pr-8 pl-6 text-xl font-bold text-white hover:cursor-pointer hover:bg-red-800">
+                            PARTICIPÁ
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -81,15 +81,15 @@ export default function Navbar() {
                             Socios
                         </Link>
                     </li>
-                    <li className="self-center">
-                        <button className="skew-custom min-h-12 min-w-48 bg-blue-500 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
-                            <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Doná</p>
-                        </button>
+                    <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-blue-500 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
+                        <Link to="#" className="text-outline-sm">
+                            DONÁ
+                        </Link>
                     </li>
-                    <li className="self-center">
-                        <button className="skew-custom min-h-12 min-w-48 bg-red-700 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
-                            <p className="text-xl font-bold drop-shadow-[0.7px_0.7px_0.7px_black]">Participá</p>
-                        </button>
+                    <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-red-700 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
+                        <Link to="#" className="text-outline-sm">
+                            PARTICIPÁ
+                        </Link>
                     </li>
                 </ul>
             )}
