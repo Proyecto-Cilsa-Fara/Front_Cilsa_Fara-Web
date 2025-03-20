@@ -1,8 +1,13 @@
-import { ColorBar, ServiciosSection } from "../components"
-import { ContactSection, DonarSection, AliadosSection } from "../components/index"
-import { Areas } from "../components/Areas"
-import { Carrousel } from "../components/Carrousel"
-import NavBar from "../components/NavBar"
+import {
+    ColorBar,
+    ServiciosSection,
+    ContactSection,
+    DonarSection,
+    AliadosSection,
+    Areas,
+    Carrousel,
+    NavBar,
+} from "../components/index"
 
 export function LandingPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -11,7 +16,7 @@ export function LandingPage() {
         <div className="flex h-screen grow flex-col">
             <header className="top-0 h-auto">
                 <ColorBar />
-                {/* Reemplazar etiqueta nav por componente Navbar */}
+                {/* Reemplazar etiqueta nav por componente NavBar */}
                 <NavBar />
             </header>
 
