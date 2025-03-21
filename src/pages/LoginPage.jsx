@@ -14,10 +14,10 @@ export function LoginPage() {
     }
     return (
         <div className="flex h-screen grow flex-col">
-            <header className="flex h-1/5">
+            <header>
                 <ColorBar />
             </header>
-            <main className="flex h-screen bg-white">
+            <main className="flex min-h-[calc(100vh-2rem)] bg-white">
                 {/* Contenedor del Formulario */}
                 <div className="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
                     <a href="/landing" className="m-auto box-border block">
@@ -32,7 +32,7 @@ export function LoginPage() {
                         <div className="mb-4">
                             <label
                                 htmlFor="loginEmail"
-                                className="relative block min-h-[50px] rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
+                                className="relative block min-h-12 rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
                             >
                                 <input
                                     type="email"
@@ -51,7 +51,7 @@ export function LoginPage() {
                                 </span>
                             </label>
                             {errors.loginEmail?.type === "required" && (
-                                <div className="mt-3 w-full rounded-sm border-l-6 border-l-red-600 bg-red-200 p-2">
+                                <div className="border-l-fara-strong-red mt-3 w-full rounded-sm border-l-6 bg-red-200 p-2">
                                     <p className="text-sm font-semibold">Por favor ingrese un email válido</p>
                                 </div>
                             )}
@@ -59,7 +59,7 @@ export function LoginPage() {
                         <div className="mb-4">
                             <label
                                 htmlFor="loginPass"
-                                className="relative block min-h-[50px] rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
+                                className="relative block min-h-12 rounded-sm border border-black p-3 shadow-xs focus-within:border-black focus-within:ring-1 focus-within:ring-black"
                             >
                                 <input
                                     type="password"
@@ -75,13 +75,13 @@ export function LoginPage() {
                                 </span>
                             </label>
                             {errors.loginPass?.type === "required" && (
-                                <div className="mt-3 w-full rounded-sm border-l-6 border-l-red-600 bg-red-200 p-2">
+                                <div className="border-l-fara-strong-red mt-3 w-full rounded-sm border-l-6 bg-red-200 p-2">
                                     <p className="text-sm font-semibold">Contraseña incorrecta.</p>
                                 </div>
                             )}
                         </div>
                         <button
-                            className="block w-1/2 cursor-pointer bg-lime-400 py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white"
+                            className="bg-fara-lime mx-auto block w-1/2 cursor-pointer py-2 font-bold text-black uppercase transition hover:border-black hover:bg-black hover:text-white focus:border-black focus:bg-black focus:text-white active:border-black active:bg-black active:text-white"
                             type="submit"
                         >
                             Iniciar sesión
@@ -113,7 +113,7 @@ export function LoginPage() {
                     />
                 </div>
             </main>
-            <footer className="flex h-1/5">
+            <footer>
                 <ColorBar />
             </footer>
         </div>
