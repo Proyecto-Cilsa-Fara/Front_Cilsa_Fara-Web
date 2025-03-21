@@ -57,15 +57,15 @@ export function NavBar() {
                     <div className="hidden gap-4 md:flex">
                         <Link
                             to="/donar"
-                            className="text-outline-lg skew-custom bg-fara-cyan hover:bg-fara-gold min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                            className="text-outline-lg skew-custom bg-fara-cyan hover:bg-fara-gold active:bg-fara-gold focus:bg-fara-gold min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
                         >
-                            DONÁ
+                            Doná
                         </Link>
                         <Link
                             to="/participa"
-                            className="skew-custom text-outline-lg bg-fara-red hover:bg-fara-strong-red min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                            className="skew-custom text-outline-lg bg-fara-red active:bg-fara-strong-red hover:bg-fara-strong-red focus:bg-fara-strong-red min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
                         >
-                            PARTICIPÁ
+                            Participá
                         </Link>
                     </div>
                 </div>
@@ -95,14 +95,20 @@ export function NavBar() {
                             Socios
                         </Link>
                     </li>
-                    <li className="skew-custom bg-fara-cyan hover:bg-fara-gold grid min-h-12 min-w-48 place-items-center self-center pr-8 pl-6 text-white uppercase hover:cursor-pointer">
-                        <Link to="/donar" className="text-outline-sm">
-                            DONÁ
+                    <li className="grid place-items-center">
+                        <Link
+                            to="/donar"
+                            className="skew-custom group bg-fara-cyan hover:bg-fara-gold active:bg-fara-gold focus:bg-fara-gold text-outline-sm grid min-h-12 w-48 place-items-center self-center pr-8 pl-6 text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                        >
+                            Doná
                         </Link>
                     </li>
-                    <li className="skew-custom bg-fara-red hover:bg-fara-strong-red grid min-h-12 min-w-48 place-items-center self-center pr-8 pl-6 text-white hover:cursor-pointer">
-                        <Link to="/participa" className="text-outline-sm">
-                            PARTICIPÁ
+                    <li className="grid place-items-center">
+                        <Link
+                            to="/participa"
+                            className="skew-custom bg-fara-red active:bg-fara-strong-red hover:bg-fara-strong-red focus:bg-fara-strong-red text-outline-sm grid min-h-12 w-48 place-items-center self-center pr-8 pl-6 text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                        >
+                            Participá
                         </Link>
                     </li>
                 </ul>
