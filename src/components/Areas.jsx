@@ -35,7 +35,7 @@ export function Areas() {
                 {areas.map((area, index) => (
                     <Link
                         key={index}
-                        className="relative flex h-64 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg hover:cursor-pointer md:h-56 md:p-5 lg:h-96"
+                        className="relative flex h-64 flex-col justify-end bg-cover bg-center p-4 text-center font-bold text-white drop-shadow-lg transition-opacity duration-300 ease-in-out hover:cursor-pointer hover:opacity-50 focus:opacity-50 active:opacity-50 md:h-56 md:p-5 lg:h-96"
                         to="/socios"
                         aria-label={`Ver más acerca de ${area.name}.`}
                         style={{
