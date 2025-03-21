@@ -5,40 +5,35 @@ const slides = [
     {
         image: img1,
         text: "Impulsamos prácticas restaurativas",
-        color1: "#A82428A1",
-        color2: "#A8242878",
+        color: "#A82428A1",
         buttonText: "Contáctanos",
         buttonColor: "#e3a647",
     },
     {
         image: img2,
         text: "Las donaciones nos ayudan a restaurar vidas",
-        color1: "#E3A647A1",
-        color2: "#E3A647A1",
+        color: "#E3A647A1",
         buttonText: "Dona hoy",
         buttonColor: "#C0322D",
     },
     {
         image: img3,
         text: "Capacitate con nuestras pasantías restaurativas",
-        color1: "#2FAEA5A1",
-        color2: "#2FAEA5A1",
+        color: "#2FAEA5A1",
         buttonText: "Más información",
         buttonColor: "#C0322D",
     },
     {
         image: img4,
         text: "Súmate a nuestros voluntariados",
-        color1: "#3999BFA1",
-        color2: "#3999BFA1",
+        color: "#3999BFA1",
         buttonText: "Más información",
         buttonColor: "#C0322D",
     },
     {
         image: img5,
         text: "Nuestros servicios para organizaciones",
-        color1: "#B9CE48A1",
-        color2: "#B9CE48A1",
+        color: "#B9CE48A1",
         buttonText: "Más información",
         buttonColor: "#C0322D",
     },
@@ -69,7 +64,7 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden">
+        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
             <div
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -84,7 +79,7 @@ export function Carrousel() {
                         <div
                             className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
                             style={{
-                                background: `linear-gradient(to bottom, ${slide.color1}, ${slide.color1})`,
+                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
                             }}
                         ></div>
 
@@ -92,7 +87,7 @@ export function Carrousel() {
                         <div
                             className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
                             style={{
-                                background: `linear-gradient(to bottom, ${slide.color2}, ${slide.color2})`,
+                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
                             }}
                         ></div>
 
@@ -102,7 +97,7 @@ export function Carrousel() {
                                 {slide.text}
                             </h2>
                             <button
-                                className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:underline lg:text-xl"
+                                className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
                                 style={{
                                     backgroundColor: slide.buttonColor,
                                     clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
@@ -118,7 +113,7 @@ export function Carrousel() {
             {/* Botón anterior */}
             <button
                 onClick={prevSlide}
-                className="bg-opacity-50 absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer lg:left-4"
+                className="absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
             >
                 ❮
             </button>
@@ -126,7 +121,7 @@ export function Carrousel() {
             {/* Botón siguiente */}
             <button
                 onClick={nextSlide}
-                className="bg-opacity-50 absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer lg:right-4"
+                className="absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:right-4"
             >
                 ❯
             </button>
