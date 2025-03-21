@@ -9,7 +9,7 @@ export function NavBar() {
     return (
         <nav className="bg-white p-4 text-black">
             <div className="flex w-full items-center justify-between">
-                <Link to="#" className="hover:cursor-pointer">
+                <Link to="/" className="hover:cursor-pointer">
                     <img
                         src={faraLogoImage}
                         alt="Logo de FARA que actúa como link a la página de inicio."
