@@ -1,6 +1,7 @@
 import { ColorBar } from "../components"
 import { useForm } from "react-hook-form"
 import BannerVertical from "../assets/Login-Image.webp"
+import { Link } from "react-router"
 
 export function LoginPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -20,13 +21,13 @@ export function LoginPage() {
             <main className="flex min-h-[calc(100vh-2rem)] bg-white">
                 {/* Contenedor del Formulario */}
                 <div className="flex w-full flex-col items-center justify-center p-8 md:w-1/2">
-                    <a href="/landing" className="m-auto box-border block">
+                    <Link to="/" className="m-auto box-border block" aria-label="Volver a la página de inicio de FARA.">
                         <img
                             src="/web-app-manifest-512x512.png"
                             className="h-32 w-auto p-2"
                             alt="Imagotipo de la Fundación Acción Restaurativa Argentina"
                         />
-                    </a>
+                    </Link>
                     <h1 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h1>
                     <form className="w-full max-w-md p-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="mb-4">
@@ -90,12 +91,12 @@ export function LoginPage() {
                     <div className="mb-auto p-3">
                         <p className="mt-4 text-center text-gray-800">
                             ¿Olvidaste las credenciales?{" "}
-                            <a href="#" className="underline">
+                            <Link to="/recuperar-contraseña" className="underline">
                                 Recuperar
-                            </a>
+                            </Link>
                         </p>
                         <p className="mt-4 cursor-pointer text-center text-gray-800 underline">
-                            <a href="#">Contáctate con el administrador de la página.</a>
+                            <Link to="/contacto-administrador">Contáctate con el administrador de la página.</Link>
                         </p>
                     </div>
                     <p className="mt-auto text-center text-gray-600" aria-label="Mensaje de footer">
