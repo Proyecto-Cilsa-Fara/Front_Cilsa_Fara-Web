@@ -23,7 +23,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Envíanos un mensaje por Whatsapp"
                     >
-                        <img src={WhatsappTransparentIcon} className="w-10" alt="Whatsapp" />
+                        <img src={WhatsappTransparentIcon} className="w-10" alt="Logo de Whatsapp" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.PHONE}</span>
                     </Link>
                     <Link
@@ -31,7 +31,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Envíanos un correo electrónico"
                     >
-                        <img src={EmailTransparentIcon} className="w-10" alt="Correo electrónico" />
+                        <img src={EmailTransparentIcon} className="w-10" alt="Icono del correo electrónico Gmail" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.EMAIL_1}</span>
                     </Link>
                     <Link
@@ -39,7 +39,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Envíanos un correo electrónico"
                     >
-                        <img src={EmailTransparentIcon} className="w-10" alt="Correo electrónico" />
+                        <img src={EmailTransparentIcon} className="w-10" alt="Icono del correo electrónico Hotmail" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.EMAIL_2}</span>
                     </Link>
                 </nav>
@@ -54,7 +54,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Síguenos en Facebook"
                     >
-                        <img src={FacebookTransparentIcon} className="w-10" alt="Facebook" />
+                        <img src={FacebookTransparentIcon} className="w-10" alt="Logo de Facebook" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.FACEBOOK}</span>
                     </Link>
                     <Link
@@ -62,7 +62,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Síguenos en Instagram"
                     >
-                        <img src={InstagramTransparentIcon} className="w-10" alt="Instagram" />
+                        <img src={InstagramTransparentIcon} className="w-10" alt="Logo de Instagram" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.INSTAGRAM}</span>
                     </Link>
                     <Link
@@ -70,7 +70,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Síguenos en Linkedin"
                     >
-                        <img src={LinkedinTransparentIcon} className="w-10" alt="Linkedin" />
+                        <img src={LinkedinTransparentIcon} className="w-10" alt="Logo de Linkedin" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.LINKEDIN}</span>
                     </Link>
                     <Link
@@ -78,7 +78,7 @@ export function ContactSection() {
                         className="flex items-center gap-3"
                         aria-label="Síguenos en Youtube"
                     >
-                        <img src={YoutubeTransparentIcon} className="w-10" alt="Youtube" />
+                        <img src={YoutubeTransparentIcon} className="w-10" alt="Logo de Youtube" />
                         <span className="text-sm font-semibold lg:text-lg">{CONTACT_INFO.YOUTUBE}</span>
                     </Link>
                 </nav>
