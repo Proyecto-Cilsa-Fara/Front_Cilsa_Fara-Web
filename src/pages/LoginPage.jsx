@@ -1,5 +1,6 @@
 import { ColorBar } from "../components"
 import { useForm } from "react-hook-form"
+import BannerVertical from "../assets/Login-Image.webp"
 
 export function LoginPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -105,7 +106,7 @@ export function LoginPage() {
                 {/* Contenedor de la Imagen (Se oculta en pantallas pequeñas) */}
                 <div className="hidden w-1/2 items-center justify-center bg-cover md:flex">
                     <img
-                        src="https://s3-alpha-sig.figma.com/img/c040/157a/02b257935a70d16c34e26febb90c0fa4?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=TuW-MKx9Epfc32~LCUMzkf1xKLmq0Mn6qXYaGG-Y5bCm8W53hjhrpxfAxYcG8B2QMOE0P7wc8zIcsZIuRHdmz3I4diuMyHtpCCabcEaoJaxvamoJIdpS2Ag-vjAvoDLgu0lGf8Gsf04bKA4h8Smml~yfGezTnWR3NjHDsf31wrVcYZivcsO-T~KjKLIf9NxDA9EseGvbSOvBxuUYIOYuzY-wtW5igdLDsQ74QO~OXtpo9MnKYqz6AEXQk1uUP0SuI-U1qHR7ddfVSBYkraLWUy4d9U9X97iz3U5yacowwAcI1fmrx0YG9H622diAIDXJrh0x2Ck7-OA7Ti-sZWO9jA__"
+                        src={BannerVertical}
                         alt="Imagen de Acción Restaurativa Argentina"
                         className="h-screen w-full object-cover"
                         loading="lazy"
