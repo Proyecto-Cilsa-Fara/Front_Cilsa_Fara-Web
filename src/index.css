@@ -8,17 +8,17 @@
     */
 
     --color-fara-strong-red: #d34240;
-    --color-fara-red: #c27270;
-    --color-fara-gold: #e7b365;
-    --color-fara-lime: #c2d161;
-    --color-fara-teal: #70c2b4;
-    --color-fara-cyan: #65b1cd;
+    --color-fara-red: #a82428;
+    --color-fara-gold: #e3a647;
+    --color-fara-lime: #b9ce48;
+    --color-fara-teal: #2faea5;
+    --color-fara-cyan: #52a6c7;
 
-    --color-fara-old-red: #a82428;
-    --color-fara-old-gold: #e3a647;
-    --color-fara-old-lime: #b9ce48;
-    --color-fara-old-teal: #2faea5;
-    --color-fara-old-cyan: #52a6c7;
+    --color-fara-old-red: #c27270;
+    --color-fara-old-gold: #e7b365;
+    --color-fara-old-lime: #c2d161;
+    --color-fara-old-teal: #70c2b4;
+    --color-fara-old-cyan: #65b1cd;
 }
 
 .skew-custom {
