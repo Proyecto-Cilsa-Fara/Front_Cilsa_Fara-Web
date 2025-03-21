@@ -1,1 +1,52 @@
 @import "tailwindcss";
+
+@theme {
+    /*
+        Para crear colores PASTELES, en teoría del color
+        generalmente se recomienda usar HSL para configurar
+        aproximadamente saturación 35-40% y luminosidad 60-70%
+    */
+
+    --color-fara-strong-red: #d34240;
+    --color-fara-red: #c27270;
+    --color-fara-gold: #e7b365;
+    --color-fara-lime: #c2d161;
+    --color-fara-teal: #70c2b4;
+    --color-fara-cyan: #65b1cd;
+
+    --color-fara-old-red: #a82428;
+    --color-fara-old-gold: #e3a647;
+    --color-fara-old-lime: #b9ce48;
+    --color-fara-old-teal: #2faea5;
+    --color-fara-old-cyan: #52a6c7;
+}
+
+.skew-custom {
+    clip-path: polygon(0 0, 100% 0%, 94% 100%, 0% 100%);
+}
+
+.poligonoDonar {
+    clip-path: polygon(5% 0, 100% 0, 100% 100%, 22% 100%);
+}
+
+.poligonoDonar2 {
+    clip-path: polygon(0 8%, 100% 8%, 100% 100%, 19% 100%);
+}
+
+.text-outline-lg {
+    color: white; /* Color del texto */
+    text-shadow:
+        -0.7px -0.7px 0 black,
+        0.7px -0.7px 0 black,
+        -0.7px 0.7px 0 black,
+        0.7px 0.7px 0 black;
+}
+
+.text-outline-sm {
+    color: white; /* Color del texto */
+    text-shadow:
+        -0.5px -0.5px 0 black,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+}
