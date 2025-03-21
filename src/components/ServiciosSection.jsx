@@ -6,7 +6,7 @@ export function ServiciosSection() {
         <div className="bg-fara-teal grid min-h-screen place-items-center px-5 py-16 text-white md:px-20">
             <div className="grid gap-8 text-center md:grid-cols-3">
                 <div className="flex h-full flex-col items-center gap-5">
-                    <img src={BoneteIcon} className="h-37 p-10 lg:h-48" alt="Icono de un gorro de graduacion" />
+                    <img src={BoneteIcon} className="h-37 p-10 lg:h-48" alt="Icono de un gorro de graduación" />
                     <h3 className="text-outline-sm text-2xl font-bold lg:text-3xl">CAPACITACIONES</h3>
                     <p className="text-md text-outline-sm flex-grow font-bold">
                         Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en
