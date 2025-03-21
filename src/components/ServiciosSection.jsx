@@ -17,7 +17,7 @@ export function ServiciosSection() {
                         className="group skew-custom bg-white p-1 hover:cursor-pointer"
                         aria-label="Ver más sobre capacitaciones"
                     >
-                        <div className="skew-custom text-md bg-fara-teal text-outline-sm px-6 py-1.5 font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
+                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
                             <span className="text-outline-sm">VER MÁS</span>
                         </div>
                     </Link>
@@ -34,7 +34,7 @@ export function ServiciosSection() {
                         className="group skew-custom bg-white p-1 hover:cursor-pointer"
                         aria-label="Consultar sobre servicios"
                     >
-                        <div className="skew-custom text-md bg-fara-teal text-outline-sm px-6 py-1.5 font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
+                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
                             <span className="text-outline-sm group-hover:text-white">CONSULTAR</span>
                         </div>
                     </Link>
@@ -54,7 +54,7 @@ export function ServiciosSection() {
                         className="group skew-custom bg-white p-1 hover:cursor-pointer"
                         aria-label="Participar en voluntariado"
                     >
-                        <div className="skew-custom text-md bg-fara-teal text-outline-sm px-6 py-1.5 font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black">
+                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
                             <span className="text-outline-sm">PARTICIPA</span>
                         </div>
                     </Link>
