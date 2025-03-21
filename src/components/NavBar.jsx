@@ -14,6 +14,8 @@ export function NavBar() {
                         src={faraLogoImage}
                         alt="Logo de FARA que actúa como link a la página de inicio."
                         className="h-12 w-auto"
+                        width="600px"
+                        height="231px"
                     />
                 </Link>
 
