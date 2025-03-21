@@ -27,7 +27,7 @@ export function LoginPage() {
                             alt="Imagotipo de la Fundación Acción Restaurativa Argentina"
                         />
                     </a>
-                    <h2 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h2>
+                    <h1 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h1>
                     <form className="w-full max-w-md p-6" onSubmit={handleSubmit(onSubmit)}>
                         <div className="mb-4">
                             <label
