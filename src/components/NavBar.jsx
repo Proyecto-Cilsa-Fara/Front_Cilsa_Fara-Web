@@ -93,12 +93,12 @@ export function NavBar() {
                             Socios
                         </Link>
                     </li>
-                    <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-blue-500 pr-8 pl-6 text-white uppercase hover:cursor-pointer hover:bg-blue-600">
+                    <li className="skew-custom bg-fara-cyan hover:bg-fara-gold grid min-h-12 min-w-48 place-items-center self-center pr-8 pl-6 text-white uppercase hover:cursor-pointer">
                         <Link to="/donar" className="text-outline-sm">
                             DONÁ
                         </Link>
                     </li>
-                    <li className="skew-custom grid min-h-12 min-w-48 place-items-center self-center bg-red-700 pr-8 pl-6 text-white hover:cursor-pointer hover:bg-red-800">
+                    <li className="skew-custom bg-fara-red hover:bg-fara-strong-red grid min-h-12 min-w-48 place-items-center self-center pr-8 pl-6 text-white hover:cursor-pointer">
                         <Link to="/participa" className="text-outline-sm">
                             PARTICIPÁ
                         </Link>
