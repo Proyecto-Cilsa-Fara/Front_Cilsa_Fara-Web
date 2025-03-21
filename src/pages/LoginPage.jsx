@@ -24,7 +24,7 @@ export function LoginPage() {
                         <img
                             src="/web-app-manifest-512x512.png"
                             className="h-32 w-auto p-2"
-                            alt="Logo Acción Restaurativa Argentina"
+                            alt="Imagotipo de la Fundación Acción Restaurativa Argentina"
                         />
                     </a>
                     <h2 className="mb-4 text-center text-4xl font-bold uppercase">Iniciar sesión</h2>
@@ -107,7 +107,7 @@ export function LoginPage() {
                 <div className="hidden w-1/2 items-center justify-center bg-cover md:flex">
                     <img
                         src={BannerVertical}
-                        alt="Imagen de Acción Restaurativa Argentina"
+                        alt="Mesa de trabajo con una cámara profesional y una laptop abierta mostrando edición de fotos en un estudio luminoso y moderno, con personas conversando en el fondo."
                         className="h-screen w-full object-cover"
                         loading="lazy"
                     />
