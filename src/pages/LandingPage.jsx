@@ -15,7 +15,7 @@ export function LandingPage() {
 
     return (
         <div className="flex min-h-screen grow flex-col">
-            <header className="flex flex-col">
+            <header className="fixed z-10 flex w-full flex-col">
                 <ColorBar />
 
                 <NavBar />
