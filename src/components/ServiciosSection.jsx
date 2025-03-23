@@ -14,12 +14,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/capacitaciones"
-                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        className="after:bg-fara-teal grid min-h-14 min-w-44 place-items-center bg-white text-lg font-bold [clip-path:polygon(0_15%,100%_0,100%_85%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_17%,100%_0,100%_83%,0_100%)] hover:cursor-pointer hover:after:bg-black focus:after:bg-black focus:after:outline-0 active:after:bg-black"
                         aria-label="Ver más sobre capacitaciones"
                     >
-                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
-                            <span className="text-outline-sm">VER MÁS</span>
-                        </div>
+                        <span className="text-outline-sm z-1 uppercase">Ver más</span>
                     </Link>
                 </div>
                 <div className="flex h-full flex-col items-center gap-5">
@@ -31,12 +29,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/asesoramiento"
-                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        className="after:bg-fara-teal grid min-h-14 min-w-44 place-items-center bg-white text-lg font-bold [clip-path:polygon(0_15%,100%_0,100%_85%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_17%,100%_0,100%_83%,0_100%)] hover:cursor-pointer hover:after:bg-black focus:after:bg-black focus:after:outline-0 active:after:bg-black"
                         aria-label="Consultar sobre servicios"
                     >
-                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
-                            <span className="text-outline-sm group-hover:text-white">CONSULTAR</span>
-                        </div>
+                        <span className="text-outline-sm z-1 uppercase">Consultar</span>
                     </Link>
                 </div>
                 <div className="flex h-full flex-col items-center gap-5">
@@ -51,12 +47,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/participa"
-                        className="group skew-custom bg-white p-1 hover:cursor-pointer"
+                        className="after:bg-fara-teal grid min-h-14 min-w-44 place-items-center bg-white text-lg font-bold [clip-path:polygon(0_15%,100%_0,100%_85%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_17%,100%_0,100%_83%,0_100%)] hover:cursor-pointer hover:after:bg-black focus:after:bg-black focus:after:outline-0 active:after:bg-black"
                         aria-label="Participar en voluntariado"
                     >
-                        <div className="skew-custom bg-fara-teal text-outline-sm grid min-h-12 min-w-40 place-items-center px-6 py-1.5 text-lg font-bold transition-colors duration-300 ease-in-out group-hover:bg-black group-focus:bg-black group-active:bg-black">
-                            <span className="text-outline-sm">PARTICIPA</span>
-                        </div>
+                        <span className="text-outline-sm z-1 uppercase">Participá</span>
                     </Link>
                 </div>
             </div>
