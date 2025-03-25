@@ -8,7 +8,7 @@ export function ServiciosSection() {
                 <div className="flex h-full flex-col items-center justify-evenly gap-4 bg-white p-8 [clip-path:polygon(0_5%,100%_0,100%_95%,0_100%)]">
                     <img src={BoneteIcon} className="h-37 p-10 lg:h-48" alt="Icono de un gorro de graduación" />
                     <h3 className="text-2xl font-bold text-black lg:text-3xl">CAPACITACIONES</h3>
-                    <p className="text-md flex-grow font-bold text-black">
+                    <p className="flex-grow text-lg text-black">
                         Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en
                         contextos de encierro.
                     </p>
@@ -25,7 +25,7 @@ export function ServiciosSection() {
                 <div className="flex h-full flex-col items-center justify-evenly gap-4 bg-white p-8 [clip-path:polygon(0_5%,100%_0,100%_95%,0_100%)]">
                     <img src={TuercaIcon} className="h-37 p-10 lg:h-48" alt="Icono ilustrando servicios" />
                     <h3 className="text-2xl font-bold text-black lg:text-3xl">SERVICIOS</h3>
-                    <p className="text-md flex-grow font-bold text-black">
+                    <p className="flex-grow text-lg text-black">
                         Asesoramos a organismos y organizaciones en la gestión de conflictos con un enfoque integral y
                         restaurativo.
                     </p>
@@ -46,7 +46,7 @@ export function ServiciosSection() {
                         alt="Icono ilustrando una mano ofreciendo ayuda"
                     />
                     <h3 className="text-2xl font-bold text-black lg:text-3xl">VOLUNTARIADO</h3>
-                    <p className="text-md flex-grow font-bold text-black">
+                    <p className="flex-grow text-lg text-black">
                         Brindamos pasantías y voluntariados en las áreas de acción restaurativa de Fara.
                     </p>
                     <Link
