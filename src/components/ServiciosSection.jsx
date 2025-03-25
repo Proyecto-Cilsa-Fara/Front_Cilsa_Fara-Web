@@ -14,10 +14,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/capacitaciones"
-                        className="group bg-fara-teal after:bg-fara-teal grid min-h-14 min-w-44 place-items-center text-lg font-bold [clip-path:polygon(0_25%,100%_0,100%_75%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_27%,100%_0,100%_73%,0_100%)] hover:cursor-pointer hover:after:bg-white focus:after:bg-white focus:after:outline-0 active:after:bg-white"
+                        className="group bg-fara-teal border-fara-teal grid min-h-12 min-w-44 place-items-center border-4 text-lg font-bold transition-colors duration-300 ease-in-out hover:bg-white focus:bg-white active:bg-white"
                         aria-label="Ver más sobre capacitaciones"
                     >
-                        <span className="z-1 text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
+                        <span className="text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
                             Ver más
                         </span>
                     </Link>
@@ -31,10 +31,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/asesoramiento"
-                        className="group bg-fara-teal after:bg-fara-teal active:after:bg-whitek grid min-h-14 min-w-44 place-items-center text-lg font-bold [clip-path:polygon(0_25%,100%_0,100%_75%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_27%,100%_0,100%_73%,0_100%)] hover:cursor-pointer hover:after:bg-white focus:after:bg-white focus:after:outline-0"
+                        className="group bg-fara-teal border-fara-teal grid min-h-12 min-w-44 place-items-center border-4 text-lg font-bold transition-colors duration-300 ease-in-out hover:bg-white focus:bg-white active:bg-white"
                         aria-label="Consultar sobre servicios"
                     >
-                        <span className="z-1 text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
+                        <span className="text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
                             Consultar
                         </span>
                     </Link>
@@ -51,10 +51,10 @@ export function ServiciosSection() {
                     </p>
                     <Link
                         to="/participa"
-                        className="group bg-fara-teal after:bg-fara-teal grid min-h-14 min-w-44 place-items-center text-lg font-bold [clip-path:polygon(0_25%,100%_0,100%_75%,0_100%)] after:absolute after:min-h-12 after:min-w-42 after:transition-colors after:duration-300 after:ease-in-out after:[clip-path:polygon(0_27%,100%_0,100%_73%,0_100%)] hover:cursor-pointer hover:after:bg-white focus:after:bg-white focus:after:outline-0 active:after:bg-white"
+                        className="group bg-fara-teal border-fara-teal grid min-h-12 min-w-44 place-items-center border-4 text-lg font-bold transition-colors duration-300 ease-in-out hover:bg-white focus:bg-white active:bg-white"
                         aria-label="Participar en voluntariado"
                     >
-                        <span className="z-1 text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
+                        <span className="text-white uppercase transition-colors duration-300 ease-in-out group-hover:text-black group-focus:text-black group-active:text-black">
                             Participá
                         </span>
                     </Link>
