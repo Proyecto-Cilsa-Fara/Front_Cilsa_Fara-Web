@@ -23,20 +23,29 @@ export function NavBar() {
                 </div>
 
                 {/* Links Centrados */}
-                <div className="absolute left-1/2 hidden -translate-x-1/2 md:flex">
+                <div className="absolute left-1/2 hidden -translate-x-1/2 lg:flex">
                     <ul className="flex gap-4 font-bold uppercase">
-                        <li>
-                            <Link to="/institucional" className="hover:cursor-pointer hover:underline">
+                        <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
+                            <Link
+                                to="/institucional"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                            >
                                 Institucional
                             </Link>
                         </li>
-                        <li>
-                            <Link to="/capacitaciones" className="hover:cursor-pointer hover:underline">
+                        <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
+                            <Link
+                                to="/capacitaciones"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                            >
                                 Capacitaciones
                             </Link>
                         </li>
-                        <li>
-                            <Link to="/socios" className="hover:cursor-pointer hover:underline">
+                        <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
+                            <Link
+                                to="/socios"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                            >
                                 Socios
                             </Link>
                         </li>
@@ -44,14 +53,14 @@ export function NavBar() {
                 </div>
 
                 {/* Botón de menú para móviles */}
-                <div className="ml-auto flex md:hidden">
+                <div className="ml-auto flex lg:hidden">
                     <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle Menu">
                         {isOpen ? <img src={X} className="h-12 w-12" /> : <img src={MenuIcon} className="h-12 w-12" />}
                     </button>
                 </div>
 
                 {/* Botones de Donar y Participar */}
-                <div className="ml-8 hidden gap-4 md:flex">
+                <div className="ml-8 hidden gap-4 lg:flex">
                     <Link
                         to="/donar"
                         className="skew-custom bg-fara-blue hover:bg-fara-gold active:bg-fara-gold focus:bg-fara-gold min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
@@ -69,7 +78,7 @@ export function NavBar() {
 
             {/* Menú desplegable en móviles */}
             {isOpen && (
-                <div className="mt-4 md:hidden">
+                <div className="mt-4 lg:hidden">
                     <ul className="flex flex-col gap-2 font-bold uppercase">
                         <li>
                             <Link
