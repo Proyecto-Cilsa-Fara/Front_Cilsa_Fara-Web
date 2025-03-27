@@ -11,7 +11,10 @@ export function NavBar() {
             <div className="relative flex w-full items-center justify-between">
                 {/* Logo */}
                 <div>
-                    <Link to="/" className="hover:cursor-pointer">
+                    <Link
+                        to="/"
+                        className="grid min-h-12 min-w-12 place-items-center border-4 border-white p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:border-black focus:border-black focus:outline-0 active:border-black active:outline-0"
+                    >
                         <img
                             src={faraLogoImage}
                             alt="Logo de FARA que actúa como link a la página de inicio."
@@ -28,7 +31,7 @@ export function NavBar() {
                         <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
                             <Link
                                 to="/institucional"
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0 active:border-b-black active:outline-0"
                             >
                                 Institucional
                             </Link>
@@ -36,7 +39,7 @@ export function NavBar() {
                         <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
                             <Link
                                 to="/capacitaciones"
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0 active:border-b-black active:outline-0"
                             >
                                 Capacitaciones
                             </Link>
@@ -44,7 +47,7 @@ export function NavBar() {
                         <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
                             <Link
                                 to="/socios"
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0 active:border-b-black active:outline-0"
                             >
                                 Socios
                             </Link>
@@ -79,39 +82,39 @@ export function NavBar() {
             {/* Menú desplegable en móviles */}
             {isOpen && (
                 <div className="mt-4 lg:hidden">
-                    <ul className="flex flex-col gap-2 font-bold uppercase">
-                        <li>
+                    <ul className="flex flex-col gap-4 font-bold uppercase">
+                        <li className="grid min-h-12 min-w-48 place-items-center focus:outline-0">
                             <Link
                                 to="/institucional"
-                                className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer"
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus:outline-0 active:text-white"
                             >
                                 Institucional
                             </Link>
                         </li>
-                        <li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus:outline-0">
                             <Link
                                 to="/capacitaciones"
-                                className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer"
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus:outline-0 active:text-white"
                             >
                                 Capacitaciones
                             </Link>
                         </li>
-                        <li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus:outline-0">
                             <Link
                                 to="/socios"
-                                className="grid min-h-12 min-w-12 place-items-center hover:cursor-pointer"
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus:outline-0 active:text-white"
                             >
                                 Socios
                             </Link>
                         </li>
                         <div className="m-2 text-center">
-                            <hr className="m-12 my-2 mb-4 w-auto" />
+                            <hr className="m-12 my-0 mb-4 w-auto" />
                             <p className="font-bold uppercase">Se parte de nuestra ayuda:</p>
                         </div>
                         <li className="grid place-items-center">
                             <Link
                                 to="/donar"
-                                className="skew-custom group bg-fara-blue hover:bg-fara-gold active:bg-fara-gold focus:bg-fara-gold grid min-h-12 w-48 place-items-center self-center pr-8 pl-6 text-white uppercase shadow-2xl transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                                className="skew-custom group bg-fara-blue hover:bg-fara-gold active:bg-fara-gold focus:bg-fara-gold grid min-h-12 w-48 place-items-center pr-8 pl-6 text-white uppercase shadow-2xl transition-colors duration-300 ease-in-out hover:cursor-pointer"
                             >
                                 Doná
                             </Link>
@@ -119,7 +122,7 @@ export function NavBar() {
                         <li className="grid place-items-center">
                             <Link
                                 to="/participa"
-                                className="skew-custom bg-fara-red active:bg-fara-gold hover:bg-fara-gold focus:bg-fara-gold grid min-h-12 w-48 place-items-center self-center pr-8 pl-6 text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
+                                className="skew-custom bg-fara-red active:bg-fara-gold hover:bg-fara-gold focus:bg-fara-gold grid min-h-12 w-48 place-items-center pr-8 pl-6 text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
                             >
                                 Participá
                             </Link>
