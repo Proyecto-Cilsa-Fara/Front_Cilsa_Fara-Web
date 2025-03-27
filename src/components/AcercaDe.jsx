@@ -12,7 +12,7 @@ export function AcercaDe() {
                     width="1024px"
                 />
                 <h1 className="text-2xl font-extrabold text-balance lg:text-4xl lg:font-bold">
-                    FARA – La Fundación Acción Restaurativa Argentina
+                    FARA – Fundación Acción Restaurativa Argentina
                 </h1>
                 <hr className="my-1 w-4/5 border-1 border-black" />
                 <p className="text-xl text-balance lg:px-5">
