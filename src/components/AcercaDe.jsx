@@ -15,7 +15,7 @@ export function AcercaDe() {
                     FARA – Fundación Acción Restaurativa Argentina
                 </h1>
                 <hr className="my-1 w-4/5 border-1 border-black" />
-                <p className="text-xl text-balance lg:px-5">
+                <p className="max-w-[75ch] text-xl text-balance lg:px-5">
                     Asesoramos, acompañamos y desarrollamos programas basados en el paradigma restaurativo, promoviendo
                     la resolución de conflictos y la reparación del daño. Capacitamos a operadores y profesionales para
                     implementar procesos restaurativos, fomentando el diálogo, la reconciliación y el fortalecimiento de
