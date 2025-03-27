@@ -21,7 +21,7 @@ export function LandingPage() {
                 <NavBar />
             </header>
 
-            <main className="grid grow-[1] place-items-center">
+            <main className="mt-30 grid grow-[1] place-items-center">
                 <Carrousel />
 
                 {/* Acerca de FARA (Reemplazar por componente AcercaDeFara al div identificado)*/}
