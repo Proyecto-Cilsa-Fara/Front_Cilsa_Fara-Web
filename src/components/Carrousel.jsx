@@ -7,35 +7,35 @@ const slides = [
         text: "Impulsamos prácticas restaurativas",
         color: "#A82428A1",
         buttonText: "Contáctanos",
-        buttonColor: "#e3a647",
+        buttonColor: "bg-fara-gold",
     },
     {
         image: img2,
         text: "Las donaciones nos ayudan a restaurar vidas",
         color: "#E3A647A1",
         buttonText: "Dona hoy",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img3,
         text: "Capacitate con nuestras pasantías restaurativas",
         color: "#2FAEA5A1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img4,
         text: "Súmate a nuestros voluntariados",
         color: "#3999BFA1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img5,
         text: "Nuestros servicios para organizaciones",
         color: "#B9CE48A1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
 ]
 
@@ -113,11 +113,7 @@ export function Carrousel() {
                                 </h2>
                                 <button
                                     disabled={currentIndex !== index}
-                                    className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
-                                    style={{
-                                        backgroundColor: slide.buttonColor,
-                                        clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
-                                    }}
+                                    className={`text-outline-sm hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)] hover:cursor-pointer lg:text-xl ${slide.buttonColor}`}
                                     type="button"
                                     aria-label={slide.buttonText}
                                 >
