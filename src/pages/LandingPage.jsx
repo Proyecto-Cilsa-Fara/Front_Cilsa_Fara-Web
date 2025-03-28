@@ -8,6 +8,7 @@ import {
     Areas,
     Carrousel,
     NavBar,
+    DonarFAB,
 } from "../components/index"
 
 export function LandingPage() {
@@ -36,6 +37,8 @@ export function LandingPage() {
                 <AliadosSection />
 
                 <ContactSection />
+
+                <DonarFAB />
             </main>
             <footer className="flex-col gap-4">
                 <p className="grid h-[calc(100%-1rem)] place-items-center p-4 text-sm">{FOOTER_MESSAGE}</p>
