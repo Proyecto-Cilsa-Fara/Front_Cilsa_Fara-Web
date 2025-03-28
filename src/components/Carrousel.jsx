@@ -83,7 +83,7 @@ export function Carrousel() {
 
             {/* Slides del carrusel */}
             <ul
-                className="flex transition-transform duration-1000 ease-in-out"
+                className="flex transition-transform duration-1500 ease-in-out lg:duration-3000"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
                 {slides.map((slide, index) => (
