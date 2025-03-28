@@ -118,8 +118,9 @@ export function Carrousel() {
 
             {/* Botón anterior */}
             <button
+                aria-disabled={currentIndex < 1}
                 type="button"
-                onClick={prevSlide}
+                onClick={currentIndex > 0 ? prevSlide : undefined}
                 aria-label="Slide anterior"
                 className="absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
             >
@@ -128,8 +129,9 @@ export function Carrousel() {
 
             {/* Botón siguiente */}
             <button
+                aria-disabled={currentIndex > slides.length - 2}
                 type="button"
-                onClick={nextSlide}
+                onClick={currentIndex < slides.length - 1 ? nextSlide : undefined}
                 aria-label="Slide siguiente"
                 className="absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:right-4"
             >
