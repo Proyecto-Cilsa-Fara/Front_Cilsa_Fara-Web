@@ -1,13 +1,27 @@
+import FARA_BANNER_IMAGE from "../assets/BANNER-2-1024x267.webp"
+
 export function AcercaDe() {
     return (
-        <section className="bg-fara-cyan flex w-full flex-col gap-8 py-24 text-center text-white shadow-2xl max-sm:p-10 md:px-15 lg:gap-16">
-            <h1 className="text-outline-sm m-auto px-5 text-2xl font-extrabold md:text-4xl">
-                Transformamos vidas a través del paradigma restaurativo
-            </h1>
-            <p className="bg-fara-teal max-w-[65ch] self-center rounded-2xl border-2 border-white p-4 text-left text-pretty text-black shadow-2xs lg:text-3xl">
-                Impulsamos programas que promueven la justicia restaurativa, brindando asesoramiento, acompañamiento y
-                formación a operadores para que generen un impacto duradero en sus comunidades.
-            </p>
+        <section className="bg-fara-cyan w-full p-8 text-center text-black lg:p-24">
+            <div className="flex h-full flex-col items-center justify-evenly gap-4 bg-white p-8 shadow-2xl">
+                <img
+                    src={FARA_BANNER_IMAGE}
+                    alt="Logotipo de la Fundación Acción Restaurativa Argentina con bloques de color y texto"
+                    className="w-128 rounded-2xl shadow-md"
+                    height="267px"
+                    width="1024px"
+                />
+                <h1 className="text-2xl font-extrabold text-balance lg:text-4xl lg:font-bold">
+                    FARA – Fundación Acción Restaurativa Argentina
+                </h1>
+                <hr className="my-1 w-4/5 border-1 border-black" />
+                <p className="max-w-[75ch] text-xl text-balance lg:px-5">
+                    Asesoramos, acompañamos y desarrollamos programas basados en el paradigma restaurativo, promoviendo
+                    la resolución de conflictos y la reparación del daño. Capacitamos a operadores y profesionales para
+                    implementar procesos restaurativos, fomentando el diálogo, la reconciliación y el fortalecimiento de
+                    la comunidad.
+                </p>
+            </div>
         </section>
     )
 }

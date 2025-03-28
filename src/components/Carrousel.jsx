@@ -7,35 +7,35 @@ const slides = [
         text: "Impulsamos prácticas restaurativas",
         color: "#A82428A1",
         buttonText: "Contáctanos",
-        buttonColor: "#e3a647",
+        buttonColor: "bg-fara-gold",
     },
     {
         image: img2,
         text: "Las donaciones nos ayudan a restaurar vidas",
         color: "#E3A647A1",
         buttonText: "Dona hoy",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img3,
         text: "Capacitate con nuestras pasantías restaurativas",
         color: "#2FAEA5A1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img4,
         text: "Súmate a nuestros voluntariados",
         color: "#3999BFA1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
     {
         image: img5,
         text: "Nuestros servicios para organizaciones",
         color: "#B9CE48A1",
         buttonText: "Más información",
-        buttonColor: "#C0322D",
+        buttonColor: "bg-fara-red",
     },
 ]
 
@@ -43,20 +43,23 @@ export function Carrousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
     const intervalRef = useRef(null)
 
-    const nextSlide = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-        resetInterval()
+    const resetInterval = useCallback(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current)
+
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+        }, 3000)
     }, [])
 
     const prevSlide = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length)
+        setCurrentIndex((currentIndex) => (currentIndex - 1 + slides.length) % slides.length)
         resetInterval()
-    }, [])
+    }, [resetInterval])
 
-    const resetInterval = useCallback(() => {
-        if (intervalRef.current) clearInterval(intervalRef.current)
-        intervalRef.current = setInterval(nextSlide, 3000)
-    }, [nextSlide])
+    const nextSlide = useCallback(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+        resetInterval()
+    }, [resetInterval])
 
     useEffect(() => {
         resetInterval()
@@ -64,67 +67,77 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
-            <div
-                className="flex transition-transform duration-1000 ease-in-out"
-                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
-            >
-                {slides.map((slide, index) => (
-                    <div
-                        key={index}
-                        className="relative h-[calc(100vh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
-                        style={{ backgroundImage: `url(${slide.image})` }}
-                    >
-                        {/* Capa de color con transparencia 1 */}
-                        <div
-                            className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
-                            style={{
-                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
-                            }}
-                        ></div>
-
-                        {/* Capa de color con transparencia 2 */}
-                        <div
-                            className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
-                            style={{
-                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
-                            }}
-                        ></div>
-
-                        {/* Contenido */}
-                        <div className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
-                            <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
-                                {slide.text}
-                            </h2>
-                            <button
-                                className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
-                                style={{
-                                    backgroundColor: slide.buttonColor,
-                                    clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
-                                }}
-                            >
-                                {slide.buttonText}
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
-
+        <section className="relative h-[calc(100svh-10rem)] w-full overflow-x-hidden shadow-lg">
             {/* Botón anterior */}
             <button
-                onClick={prevSlide}
-                className="absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
+                aria-disabled={currentIndex < 1}
+                type="button"
+                onClick={currentIndex > 0 ? prevSlide : undefined}
+                onMouseDown={(e) => e.preventDefault()}
+                onBlur={(e) => e.target.blur()}
+                aria-label="Slide anterior"
+                className="absolute top-1/2 left-1 z-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
             >
                 ❮
             </button>
 
+            {/* Slides del carrusel */}
+            <ul
+                className="flex transition-transform duration-1500 ease-in-out lg:duration-3000"
+                style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+            >
+                {slides.map((slide, index) => (
+                    <li
+                        key={index}
+                        className="relative h-[calc(100svh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
+                        style={{ backgroundImage: `url(${slide.image})` }}
+                    >
+                        <figure className="h-full w-full">
+                            {/* Capas de color */}
+                            <div
+                                className="absolute h-full w-full [clip-path:polygon(0_0,85%_0,80%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
+                                style={{
+                                    background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
+                                }}
+                            ></div>
+
+                            <div
+                                className="absolute h-full w-full [clip-path:polygon(0_5%,95%_5%,90%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
+                                style={{
+                                    background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
+                                }}
+                            ></div>
+
+                            {/* Contenido */}
+                            <figcaption className="absolute top-1/2 left-15 flex w-2/3 -translate-y-1/2 flex-col gap-8 text-white lg:left-40">
+                                <h3 className="text-outline-sm lg:[.text-outline-lg] grid h-36 max-w-[16ch] place-items-center text-2xl font-bold uppercase lg:text-4xl">
+                                    {slide.text}
+                                </h3>
+                                <button
+                                    disabled={currentIndex !== index}
+                                    className={`text-outline-sm hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-64 place-items-center pr-8 pl-6 text-xl font-semibold text-white [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)] hover:cursor-pointer lg:text-2xl ${slide.buttonColor}`}
+                                    type="button"
+                                    aria-label={slide.buttonText}
+                                >
+                                    {slide.buttonText}
+                                </button>
+                            </figcaption>
+                        </figure>
+                    </li>
+                ))}
+            </ul>
+
             {/* Botón siguiente */}
             <button
+                type="button"
                 onClick={nextSlide}
+                onMouseDown={(e) => e.preventDefault()}
+                onBlur={(e) => e.target.blur()}
+                aria-label="Slide siguiente"
                 className="absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:right-4"
             >
                 ❯
             </button>
-        </div>
+        </section>
     )
 }
