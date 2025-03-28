@@ -68,6 +68,18 @@ export function Carrousel() {
 
     return (
         <section className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
+            {/* Botón anterior */}
+            <button
+                aria-disabled={currentIndex < 1}
+                type="button"
+                onClick={currentIndex > 0 ? prevSlide : undefined}
+                aria-label="Slide anterior"
+                className="absolute top-1/2 left-1 z-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
+            >
+                ❮
+            </button>
+
+            {/* Slides del carrusel */}
             <ul
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
@@ -100,6 +112,7 @@ export function Carrousel() {
                                     {slide.text}
                                 </h2>
                                 <button
+                                    disabled={currentIndex !== index}
                                     className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
                                     style={{
                                         backgroundColor: slide.buttonColor,
@@ -115,17 +128,6 @@ export function Carrousel() {
                     </li>
                 ))}
             </ul>
-
-            {/* Botón anterior */}
-            <button
-                aria-disabled={currentIndex < 1}
-                type="button"
-                onClick={currentIndex > 0 ? prevSlide : undefined}
-                aria-label="Slide anterior"
-                className="absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
-            >
-                ❮
-            </button>
 
             {/* Botón siguiente */}
             <button
