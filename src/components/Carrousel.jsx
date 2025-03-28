@@ -43,20 +43,23 @@ export function Carrousel() {
     const [currentIndex, setCurrentIndex] = useState(0)
     const intervalRef = useRef(null)
 
-    const nextSlide = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-        resetInterval()
+    const resetInterval = useCallback(() => {
+        if (intervalRef.current) clearInterval(intervalRef.current)
+
+        intervalRef.current = setInterval(() => {
+            setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+        }, 3000)
     }, [])
 
     const prevSlide = useCallback(() => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + slides.length) % slides.length)
+        setCurrentIndex((currentIndex) => (currentIndex - 1 + slides.length) % slides.length)
         resetInterval()
-    }, [])
+    }, [resetInterval])
 
-    const resetInterval = useCallback(() => {
-        if (intervalRef.current) clearInterval(intervalRef.current)
-        intervalRef.current = setInterval(nextSlide, 3000)
-    }, [nextSlide])
+    const nextSlide = useCallback(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
+        resetInterval()
+    }, [resetInterval])
 
     useEffect(() => {
         resetInterval()
