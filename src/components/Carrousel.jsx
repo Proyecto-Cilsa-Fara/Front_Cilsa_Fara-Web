@@ -67,7 +67,7 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <section className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
+        <section className="relative h-[calc(100svh-10rem)] w-full overflow-x-hidden shadow-lg">
             {/* Botón anterior */}
             <button
                 aria-disabled={currentIndex < 1}
@@ -87,33 +87,33 @@ export function Carrousel() {
                 {slides.map((slide, index) => (
                     <li
                         key={index}
-                        className="relative h-[calc(100vh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
+                        className="relative h-[calc(100svh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
                         <figure className="h-full w-full">
                             {/* Capas de color */}
                             <div
-                                className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
+                                className="absolute h-full w-full [clip-path:polygon(0_0,85%_0,80%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
                                 style={{
                                     background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
                                 }}
                             ></div>
 
                             <div
-                                className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
+                                className="absolute h-full w-full [clip-path:polygon(0_5%,95%_5%,90%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
                                 style={{
                                     background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
                                 }}
                             ></div>
 
                             {/* Contenido */}
-                            <figcaption className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
-                                <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
+                            <figcaption className="absolute top-1/2 left-15 flex w-2/3 -translate-y-1/2 flex-col gap-8 text-white lg:left-40">
+                                <h3 className="text-outline-sm lg:[.text-outline-lg] grid h-36 max-w-[16ch] place-items-center text-2xl font-bold uppercase lg:text-4xl">
                                     {slide.text}
-                                </h2>
+                                </h3>
                                 <button
                                     disabled={currentIndex !== index}
-                                    className={`text-outline-sm hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)] hover:cursor-pointer lg:text-xl ${slide.buttonColor}`}
+                                    className={`text-outline-sm hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-64 place-items-center pr-8 pl-6 text-xl font-semibold text-white [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)] hover:cursor-pointer lg:text-2xl ${slide.buttonColor}`}
                                     type="button"
                                     aria-label={slide.buttonText}
                                 >
