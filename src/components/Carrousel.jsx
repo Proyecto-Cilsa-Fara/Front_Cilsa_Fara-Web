@@ -67,55 +67,60 @@ export function Carrousel() {
     }, [resetInterval])
 
     return (
-        <div className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
-            <div
+        <section className="relative h-[calc(100vh-10rem)] w-full overflow-x-hidden shadow-lg">
+            <ul
                 className="flex transition-transform duration-1000 ease-in-out"
                 style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
                 {slides.map((slide, index) => (
-                    <div
+                    <li
                         key={index}
                         className="relative h-[calc(100vh-10rem)] w-full flex-shrink-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slide.image})` }}
                     >
-                        {/* Capa de color con transparencia 1 */}
-                        <div
-                            className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
-                            style={{
-                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
-                            }}
-                        ></div>
-
-                        {/* Capa de color con transparencia 2 */}
-                        <div
-                            className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
-                            style={{
-                                background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
-                            }}
-                        ></div>
-
-                        {/* Contenido */}
-                        <div className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
-                            <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
-                                {slide.text}
-                            </h2>
-                            <button
-                                className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
+                        <figure className="h-full w-full">
+                            {/* Capas de color */}
+                            <div
+                                className="absolute h-full w-full [clip-path:polygon(0_0,65%_0,60%_100%,0_100%)] lg:[clip-path:polygon(0_0,50%_0,40%_100%,0_100%)]"
                                 style={{
-                                    backgroundColor: slide.buttonColor,
-                                    clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
+                                    background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
                                 }}
-                            >
-                                {slide.buttonText}
-                            </button>
-                        </div>
-                    </div>
+                            ></div>
+
+                            <div
+                                className="absolute h-full w-full [clip-path:polygon(0_5%,75%_5%,70%_100%,0_100%)] lg:[clip-path:polygon(0_10%,55%_10%,45%_100%,0_100%)]"
+                                style={{
+                                    background: `linear-gradient(to bottom, ${slide.color}, ${slide.color})`,
+                                }}
+                            ></div>
+
+                            {/* Contenido */}
+                            <figcaption className="absolute top-2/5 left-15 w-1/2 text-white lg:left-40">
+                                <h2 className="text-outline-sm lg:[.text-outline-lg] max-w-[16ch] text-xl font-bold uppercase md:text-3xl lg:text-4xl">
+                                    {slide.text}
+                                </h2>
+                                <button
+                                    className="text-outline-sm mt-4 grid min-h-12 min-w-12 place-items-center pr-8 pl-6 text-sm font-semibold text-white hover:cursor-pointer hover:bg-white lg:text-xl"
+                                    style={{
+                                        backgroundColor: slide.buttonColor,
+                                        clipPath: "polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%)",
+                                    }}
+                                    type="button"
+                                    aria-label={slide.buttonText}
+                                >
+                                    {slide.buttonText}
+                                </button>
+                            </figcaption>
+                        </figure>
+                    </li>
                 ))}
-            </div>
+            </ul>
 
             {/* Botón anterior */}
             <button
+                type="button"
                 onClick={prevSlide}
+                aria-label="Slide anterior"
                 className="absolute top-1/2 left-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:left-4"
             >
                 ❮
@@ -123,11 +128,13 @@ export function Carrousel() {
 
             {/* Botón siguiente */}
             <button
+                type="button"
                 onClick={nextSlide}
+                aria-label="Slide siguiente"
                 className="absolute top-1/2 right-1 min-h-12 min-w-12 -translate-y-1/2 transform rounded-full bg-black text-white hover:cursor-pointer hover:bg-gray-100 hover:text-black focus:bg-gray-100 focus:text-black active:bg-gray-100 active:text-black lg:right-4"
             >
                 ❯
             </button>
-        </div>
+        </section>
     )
 }
