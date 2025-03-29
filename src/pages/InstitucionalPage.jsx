@@ -12,12 +12,12 @@ export function InstitucionalPage() {
             </header>
 
             <main className="mt-30 grid grow-[1] place-items-center">
-                {/* Socios Restaurativos (Reemplazar por componente SociosRestaurativos al div identificado)*/}
+                {/* Socios Restauradores (Reemplazar por componente SociosRestauradores al div identificado)*/}
                 <div
-                    id="SociosRestaurativos"
+                    id="SociosRestauradores"
                     className="bg-fara-red w-full py-100 text-center text-3xl font-bold text-white"
                 >
-                    <h1>Acá va el componente SOCIOSRESTAURATIVOS</h1>
+                    <h1>Acá va el componente SOCIOS RESTAURADORES</h1>
                 </div>
 
                 {/* Acerca De Nosotros (Reemplazar por componente AcercaDeNosotros al div identificado)*/}
