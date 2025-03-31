@@ -4,7 +4,7 @@ import ComnapazMexicoImage from "./Comnapaz-Mexico.webp"
 import FundacionGuillermoSnopekImage from "./Fundacion-Guillermo-Snopek.webp"
 import InceipImage from "./INCEIP.webp"
 import MinisterioPublicoDeLaDefensaImage from "./Ministerio-Publico-de-la-defensa.webp"
-import RACI from "./RACI.webp"
+import RaciImage from "./RACI.webp"
 import RockefellerCenterImage from "./Rockefeller-Center.webp"
 import ServicioPenitenciarioBonaerenseImage from "./Servicio-Penitenciario-Bonaerense.webp"
 import SipinnaImage from "./SIPINNA.webp"
@@ -16,7 +16,7 @@ const aliadosImages = [
     FundacionGuillermoSnopekImage,
     InceipImage,
     MinisterioPublicoDeLaDefensaImage,
-    RACI,
+    RaciImage,
     RockefellerCenterImage,
     ServicioPenitenciarioBonaerenseImage,
     SipinnaImage,
