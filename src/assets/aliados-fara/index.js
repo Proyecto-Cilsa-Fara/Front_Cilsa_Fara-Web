@@ -10,15 +10,15 @@ import ServicioPenitenciarioBonaerenseImage from "./Servicio-Penitenciario-Bonae
 import SipinnaImage from "./SIPINNA.webp"
 
 const aliadosImages = [
-    AtalycImage,
+    ServicioPenitenciarioBonaerenseImage,
     BuenosAiresImage,
     ComnapazMexicoImage,
+    RockefellerCenterImage,
     FundacionGuillermoSnopekImage,
-    InceipImage,
     MinisterioPublicoDeLaDefensaImage,
     RaciImage,
-    RockefellerCenterImage,
-    ServicioPenitenciarioBonaerenseImage,
+    InceipImage,
+    AtalycImage,
     SipinnaImage,
 ]
 
