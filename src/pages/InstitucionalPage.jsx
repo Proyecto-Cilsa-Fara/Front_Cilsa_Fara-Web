@@ -1,4 +1,4 @@
-import { ColorBar, ContactSection, DonarSection, Areas, NavBar, DonarFAB } from "../components/index"
+import { ColorBar, ContactSection, DonarSection, Areas, NavBar, DonarFAB, AcercaDeNosotros } from "../components/index"
 
 export function InstitucionalPage() {
     const FOOTER_MESSAGE = "© 2025 Acción Restaurativa Argentina. Todos los derechos reservados."
@@ -20,10 +20,7 @@ export function InstitucionalPage() {
                     <h1>Acá va el componente SOCIOS RESTAURADORES</h1>
                 </div>
 
-                {/* Acerca De Nosotros (Reemplazar por componente AcercaDeNosotros al div identificado)*/}
-                <div id="AcercaDeNosotros" className="w-full py-100 text-center text-3xl font-bold">
-                    <h1>Acá va el componente ACERCA DE NOSOTROS</h1>
-                </div>
+                <AcercaDeNosotros />
 
                 {/* Integrantes (Reemplazar por componente Integrantes al div identificado)*/}
                 <div id="Integrantes" className="bg-fara-teal w-full py-100 text-center text-3xl font-bold text-white">
