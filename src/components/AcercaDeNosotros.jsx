@@ -2,7 +2,7 @@ import ImagenAcercaDeNosotros from "../assets/Acerca-de-nosotros-image.webp"
 
 export function AcercaDeNosotros() {
     return (
-        <section className="w-full p-8 py-50 text-center text-black">
+        <section className="w-full p-8 pt-20 pb-25 text-center text-black">
             <h1 className="text-xl font-bold sm:text-2xl md:py-10 md:text-3xl lg:text-4xl">ACERCA DE NOSOTROS</h1>
             <div className="flex w-full flex-col items-center md:flex-row md:py-10 2xl:px-40">
                 <img
