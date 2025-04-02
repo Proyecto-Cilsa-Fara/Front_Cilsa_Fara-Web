@@ -12,14 +12,18 @@ import { Link } from "react-router"
 
 export function Areas() {
     const areas = [
-        { name: "Círculos de arte", image: imgCircArt, color: "#3999BFAB" },
-        { name: "Educación e inclusión de grupos vulnerables", image: Educacion, color: "#E3A647D1" },
-        { name: "Escuela de oficios emprendedores", image: Oficios, color: "#B9CE48C4" },
-        { name: "Facilitación y mediación", image: Facilitacion, color: "#C0322DC2" },
-        { name: "Justicia para víctimas", image: Justicia, color: "#C0322DC2" },
-        { name: "Niñez y juventud", image: Niñez, color: "#2FAEA5B5" },
-        { name: "Políticas Públicas", image: Politicas, color: "#47B3DED6" },
-        { name: "Violencia de género y otras violencias", image: Violencia, color: "#E3A647CC" },
+        { name: "Justicia restaurativa para las víctimas", image: Justicia, color: "#C0322DC2" },
+        { name: "Procesos de restauración para conductas agresivas", image: imgCircArt, color: "#3999BFAB" },
+        { name: "Bullyng, acoso, amenazas y daños", image: Educacion, color: "#E3A647D1" },
+        { name: "Violencia y explotación sexual", image: Oficios, color: "#B9CE48C4" },
+        { name: "Delitos en línea, DeepFake y suplantación de identidad", image: Facilitacion, color: "#C0322DC2" },
+        { name: "Prácticas restaurativas en cárceles para prevenir la reincidencia", image: Niñez, color: "#2FAEA5B5" },
+        {
+            name: "Educación restaurativa en escuelas",
+            image: Politicas,
+            color: "#47B3DED6",
+        },
+        { name: "Facilitación, mediación y círculos", image: Violencia, color: "#E3A647CC" },
     ]
 
     return (
