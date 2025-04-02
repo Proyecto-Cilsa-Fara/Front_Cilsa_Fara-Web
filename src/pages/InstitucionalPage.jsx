@@ -7,6 +7,7 @@ import {
     DonarFAB,
     AcercaDeNosotros,
     SociosRestauradores,
+    Legales,
 } from "../components/index"
 
 export function InstitucionalPage() {
@@ -34,10 +35,7 @@ export function InstitucionalPage() {
 
                 <Areas />
 
-                {/* Legales (Reemplazar por componente Legales al div identificado)*/}
-                <div id="Legales" className="bg-fara-gold w-full py-80 text-center text-3xl font-bold text-white">
-                    <h1>Acá va el componente LEGALES</h1>
-                </div>
+                <Legales />
 
                 <ContactSection />
 
