@@ -48,7 +48,7 @@ export function Carrousel() {
 
         intervalRef.current = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-        }, 3000)
+        }, 6000)
     }, [])
 
     const prevSlide = useCallback(() => {
