@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router"
-import { ErrorPage, LandingPage, WIPPage, LoginPage, InstitucionalPage } from "./pages"
+import { ErrorPage, LandingPage, WIPPage, LoginPage, InstitucionalPage, SociosPage } from "./pages"
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 <Route path="/participa" element={<WIPPage />} />
                 <Route path="/recuperar-contraseña" element={<WIPPage />} />
                 <Route path="/contacto-administrador" element={<WIPPage />} />
-                <Route path="/socios" element={<WIPPage />} />
+                <Route path="/socios" element={<SociosPage />} />
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="Landing" element={<LandingPage />} />
             </Routes>
