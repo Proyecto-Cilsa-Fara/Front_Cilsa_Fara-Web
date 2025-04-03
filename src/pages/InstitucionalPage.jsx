@@ -8,6 +8,7 @@ import {
     AcercaDeNosotros,
     SociosRestauradores,
     Legales,
+    Integrantes,
 } from "../components/index"
 
 export function InstitucionalPage() {
@@ -26,10 +27,7 @@ export function InstitucionalPage() {
 
                 <AcercaDeNosotros />
 
-                {/* Integrantes (Reemplazar por componente Integrantes al div identificado)*/}
-                <div id="Integrantes" className="bg-fara-teal w-full py-100 text-center text-3xl font-bold text-white">
-                    <h1>Acá va el componente INTEGRANTES</h1>
-                </div>
+                <Integrantes />
 
                 <DonarSection />
 
