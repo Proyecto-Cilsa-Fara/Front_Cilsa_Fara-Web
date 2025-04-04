@@ -1,4 +1,4 @@
-import { AliadosSection, SociosRestauradores, Layout } from "../components/index"
+import { AliadosSection, SociosRestauradores, Layout, Beneficios } from "../components/index"
 
 export function SociosPage() {
     return (
@@ -7,10 +7,7 @@ export function SociosPage() {
 
             <AliadosSection />
 
-            {/* Beneficios (Reemplazar por componente Beneficios al div identificado)*/}
-            <div id="Beneficios" className="bg-fara-red w-full py-100 text-center text-3xl font-bold text-white">
-                <h2>Acá va el componente Beneficios</h2>
-            </div>
+            <Beneficios />
 
             {/* Equipos-Areas (Reemplazar por componente Equipos-Areas al div identificado)*/}
             <div id="Equipos-Areas" className="bg-fara-gold w-full py-100 text-center text-3xl font-bold text-white">
