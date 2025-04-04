@@ -6,5 +6,7 @@ import Justicia from "./Justicia-para-victimas.webp"
 import Niñez from "./Niñez-y-juventud.webp"
 import Politicas from "./Politicas-Publicas.webp"
 import Violencia from "./Violencia.webp"
+import Explotacion from "./Violencia-y-explotacion.webp"
+import Delitos from "./Delitos-en-linea.webp"
 
-export { imgCircArt, Educacion, Oficios, Facilitacion, Justicia, Niñez, Politicas, Violencia }
+export { Explotacion, Delitos, imgCircArt, Educacion, Oficios, Facilitacion, Justicia, Niñez, Politicas, Violencia }
