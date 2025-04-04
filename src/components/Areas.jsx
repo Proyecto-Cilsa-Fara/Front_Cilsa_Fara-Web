@@ -1,29 +1,25 @@
 import {
     imgCircArt,
     Educacion,
-    Oficios,
-    Facilitacion,
+    Delitos,
     Justicia,
     Niñez,
     Politicas,
+    Explotacion,
     Violencia,
 } from "../assets/equipos-multidisciplinarios"
 import { Link } from "react-router"
 
 export function Areas() {
     const areas = [
-        { name: "Justicia restaurativa para las víctimas", image: Justicia, color: "#C0322DC2" },
-        { name: "Procesos de restauración para conductas agresivas", image: imgCircArt, color: "#3999BFAB" },
+        { name: "Justicia restaurativa para las víctimas", image: Justicia, color: "#C0322DCC" },
+        { name: "Procesos de restauración para conductas agresivas", image: Politicas, color: "#47B3DED6" },
         { name: "Bullyng, acoso, amenazas y daños", image: Educacion, color: "#E3A647D1" },
-        { name: "Violencia y explotación sexual", image: Oficios, color: "#B9CE48C4" },
-        { name: "Delitos en línea, DeepFake y suplantación de identidad", image: Facilitacion, color: "#C0322DC2" },
-        { name: "Prácticas restaurativas en cárceles para prevenir la reincidencia", image: Niñez, color: "#2FAEA5B5" },
-        {
-            name: "Educación restaurativa en escuelas",
-            image: Politicas,
-            color: "#47B3DED6",
-        },
-        { name: "Facilitación, mediación y círculos", image: Violencia, color: "#E3A647CC" },
+        { name: "Violencia y explotación sexual", image: Explotacion, color: "#555555C2" },
+        { name: "Delitos en línea, deepfake y suplantación de identidad", image: Delitos, color: "#555555C2" },
+        { name: "Prácticas restaurativas en cárceles para prevenir la reincidencia", image: Niñez, color: "#b9ce48B5" },
+        { name: "Educación restaurativa en escuelas", image: Violencia, color: "#47B3DED6" },
+        { name: "Facilitación, mediación y círculos", image: imgCircArt, color: "#C0322DCC" },
     ]
 
     return (
