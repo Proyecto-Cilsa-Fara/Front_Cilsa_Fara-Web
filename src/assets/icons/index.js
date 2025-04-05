@@ -16,6 +16,7 @@ import WhatsappTransparentIcon from "./ICONO-Whatsapp-transparente.svg"
 import X from "./ICONO-X.svg"
 import MenuIcon from "./ICONO-MENU.svg"
 import CorrespondentIcon from "./ICONO-CORRESPONSAL.svg"
+import vIcon from "./ICONO-V.svg"
 
 export {
     BoneteIcon,
@@ -36,4 +37,5 @@ export {
     WhatsappTransparentIcon,
     X,
     MenuIcon,
+    vIcon,
 }
