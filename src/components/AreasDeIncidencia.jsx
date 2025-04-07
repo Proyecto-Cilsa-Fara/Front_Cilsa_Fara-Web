@@ -18,7 +18,7 @@ export function AreasDeIncidencia() {
 
             <div className="flex flex-col md:flex-row">
                 <div className="bg-fara-yellow flex flex-col justify-center px-10 py-10 md:w-1/2 xl:pr-20 xl:pl-30">
-                    <h2 className="text-fara-red mb-4 text-left text-xl font-bold md:pr-40 md:text-3xl">
+                    <h2 className="text-fara-red mb-4 text-left text-xl font-bold xl:pr-30 xl:text-3xl">
                         {areaSeleccionada.subtittle}
                     </h2>
 
