@@ -7,7 +7,7 @@ import Justicia from "./justicia.webp"
 import NiñezyJuventud from "./niñez-y-juventud.webp"
 import Oficios from "./oficios.webp"
 
-const AreasDeIncidencia = [
+const Areas = [
     {
         tittle: "VIOLENCIA DE GÉNERO Y OTRAS VIOLENCIAS",
         image: ViolenciaDeGenero,
@@ -131,4 +131,4 @@ const AreasDeIncidencia = [
     },
 ]
 
-export default AreasDeIncidencia
+export { Areas }
