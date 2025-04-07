@@ -15,6 +15,7 @@
     --color-fara-cyan: #52a6c7;
     --color-fara-blue: #21708e;
     --color-fara-gray: #555555;
+    --color-fara-yellow: #eec98f;
 
     --color-fara-old-red: #c27270;
     --color-fara-old-gold: #e7b365;
@@ -65,4 +66,8 @@
         0.5px -0.5px 0 black,
         -0.5px 0.5px 0 black,
         0.5px 0.5px 0 black;
+}
+
+.transition-bg {
+    transition: background-image 0.3s ease-in-out;
 }
