@@ -1,5 +1,9 @@
-import { Layout } from "../components/index"
+import { Layout, AsesoramientoHero } from "../components/index"
 
 export function AsesoramientoPage() {
-    return <Layout></Layout>
+    return (
+        <Layout>
+            <AsesoramientoHero />
+        </Layout>
+    )
 }
