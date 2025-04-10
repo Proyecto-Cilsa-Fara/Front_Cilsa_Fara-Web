@@ -8,6 +8,7 @@ import {
     SociosPage,
     CapacitacionesPage,
     AsesoramientoPage,
+    DonarPage,
 } from "./pages"
 
 function App() {
@@ -20,7 +21,7 @@ function App() {
                 <Route path="/asesoramiento" element={<AsesoramientoPage />} />
                 <Route path="/capacitaciones" element={<CapacitacionesPage />} />
                 <Route path="/institucional" element={<InstitucionalPage />} />
-                <Route path="/donar" element={<WIPPage />} />
+                <Route path="/donar" element={<DonarPage />} />
                 <Route path="/participa" element={<WIPPage />} />
                 <Route path="/recuperar-contraseña" element={<WIPPage />} />
                 <Route path="/contacto-administrador" element={<WIPPage />} />
