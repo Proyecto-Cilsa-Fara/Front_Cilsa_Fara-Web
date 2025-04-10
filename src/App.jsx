@@ -1,5 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router"
-import { ErrorPage, LandingPage, WIPPage, LoginPage, InstitucionalPage, SociosPage, CapacitacionesPage } from "./pages"
+import {
+    ErrorPage,
+    LandingPage,
+    WIPPage,
+    LoginPage,
+    InstitucionalPage,
+    SociosPage,
+    CapacitacionesPage,
+    AsesoramientoPage,
+} from "./pages"
 
 function App() {
     return (
@@ -8,7 +17,7 @@ function App() {
                 <Route path="/" element={<LandingPage />} />
                 <Route path="/landing" element={<LandingPage />} />
                 <Route path="/login" element={<LoginPage />} />
-                <Route path="/asesoramiento" element={<WIPPage />} />
+                <Route path="/asesoramiento" element={<AsesoramientoPage />} />
                 <Route path="/capacitaciones" element={<CapacitacionesPage />} />
                 <Route path="/institucional" element={<InstitucionalPage />} />
                 <Route path="/donar" element={<WIPPage />} />
