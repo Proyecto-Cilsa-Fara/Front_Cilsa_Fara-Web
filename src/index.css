@@ -71,3 +71,5 @@
 .transition-bg {
     transition: background-image 0.3s ease-in-out;
 }
+
+@variant pointer-coarse (@media (pointer: coarse));
