@@ -1,5 +1,6 @@
 import DonarHeroImage from "../assets/Donar-Hero.webp"
 import { Link } from "react-router"
+import { CONTACT_INFO } from "../utils/contactInfo"
 
 export function DonarHero() {
     return (
@@ -16,7 +17,7 @@ export function DonarHero() {
                         La justicia restaurativa empieza cuando alguien cree que es posible. Ese alguien podés ser vos.
                     </h2>
                     <Link
-                        to="/donar"
+                        to={CONTACT_INFO.PHONE_LINK}
                         aria-label="Donar"
                         className="group relative flex w-full items-center justify-center focus:outline-0"
                     >
