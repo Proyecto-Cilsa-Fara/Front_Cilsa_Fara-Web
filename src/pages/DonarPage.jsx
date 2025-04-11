@@ -1,5 +1,9 @@
-import { Layout } from "../components/index"
+import { Layout, DonarHero } from "../components/index"
 
 export function DonarPage() {
-    return <Layout></Layout>
+    return (
+        <Layout>
+            <DonarHero />
+        </Layout>
+    )
 }
