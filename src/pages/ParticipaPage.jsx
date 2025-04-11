@@ -1,3 +1,11 @@
+import { Layout, ParticipaHero, GridParticipa } from "../components/index"
+
 export function ParticipaPage() {
-    return <div>ParticipaPage</div>
+    return (
+        <Layout>
+            <ParticipaHero />
+
+            <GridParticipa />
+        </Layout>
+    )
 }
