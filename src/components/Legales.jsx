@@ -7,12 +7,13 @@ export function Legales() {
             </div>
             <div className="mx-auto w-60 -translate-x-4 -translate-y-16 -skew-x-20 bg-black py-9 sm:w-70 md:w-80"></div>
             <p className="lg:2xl px-4 text-center text-base text-balance md:px-20 md:text-xl xl:px-30">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus laborum eveniet est enim eligendi
-                impedit in corrupti? Nam deleniti distinctio, eveniet molestiae assumenda facere, sapiente quaerat, amet
-                doloribus cupiditate officiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-                laborum eveniet est enim eligendi impedit in corrupti? Nam deleniti distinctio, eveniet molestiae
-                assumenda facere, sapiente quaerat, amet doloribus cupiditate officiis! Lorem ipsum dolor sit amet
-                consectetur adipisicing elit. Repellendus laborum eveniet est enim eligendi
+                La Fundación Acción Argentina es una ONG que trabaja con compromiso y transparencia para transformar
+                realidades. Estamos legalmente inscriptos en la Dirección Provincial de Personas Jurídicas y en el
+                Registro Provincial de Organizaciones de la Comunidad (REPOC), y contamos con todas las habilitaciones
+                fiscales necesarias —incluido nuestro CUIT: 30-71613503-5— para recibir subsidios y donaciones, tanto en
+                dinero como en especie. Gracias a este respaldo, podemos seguir impulsando nuestros proyectos y llegar a
+                quienes más lo necesitan. ¡Sumate vos también y sé parte del cambio! [Colaborá con nuestra causa] — ya
+                sea con tu tiempo, tu aporte o compartiendo nuestra misión.
             </p>
             <div className="absolute bottom-0 h-8 w-full bg-black"></div>
         </section>
