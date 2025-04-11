@@ -12,11 +12,12 @@ export function AcercaDeNosotros() {
                 />
 
                 <p className="text-center text-base text-balance sm:px-20 sm:text-lg md:px-5 md:text-left md:text-2xl">
-                    FARA fue fundada por Silvina y Silvana Paz, con el objetivo de implementar una metodología de acción
-                    e investigación, respetuosa de los Derechos Humanos fundamentales de todos los individuos, a fin
-                    restaurar y fortalecer los lazos sociales y humanitarios. Esto es realizado mediante proyectos de
-                    innovación social que dan una respuesta integral a los conflictos sociales suscitados en distintos
-                    ámbitos, obteniendo respuestas eficaces.
+                    FARA (Fundación Acción Restaurativa Argentina) fue fundada por Silvina y Silvana Paz con el
+                    compromiso de construir comunidades más justas, inclusivas y pacíficas. Su labor se centra en el
+                    desarrollo de proyectos de innovación social basados en la justicia restaurativa, la dignidad humana
+                    y el acceso a derechos fundamentales. A través de una metodología territorial y colaborativa, FARA
+                    impulsa procesos de reparación, diálogo y fortalecimiento de vínculos, generando respuestas
+                    integrales y humanas ante los conflictos sociales.
                 </p>
             </div>
         </section>
