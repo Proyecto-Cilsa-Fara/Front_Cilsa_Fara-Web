@@ -1,9 +1,17 @@
-import { AliadosSection, SociosRestauradores, Layout, Beneficios, AreasDeIncidencia, BannerSumate } from "../components/index"
+import {
+    AliadosSection,
+    SociosRestauradores,
+    SociosHero,
+    Layout,
+    Beneficios,
+    AreasDeIncidencia,
+    BannerSumate,
+} from "../components/index"
 
 export function SociosPage() {
     return (
         <Layout>
-            <SociosRestauradores />
+            <SociosHero />
 
             <AliadosSection />
 
