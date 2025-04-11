@@ -1,9 +1,11 @@
-import { Layout, DonarHero, BannerDonar } from "../components/index"
+import { Layout, DonarHero, BannerDonar, CarrouselDonar } from "../components/index"
 
 export function DonarPage() {
     return (
         <Layout>
             <DonarHero />
+
+            <CarrouselDonar />
 
             <BannerDonar />
         </Layout>
