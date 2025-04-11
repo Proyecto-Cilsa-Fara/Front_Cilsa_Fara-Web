@@ -2,6 +2,8 @@ import { useState } from "react"
 import { Link } from "react-router"
 import { X, MenuIcon } from "../assets/icons"
 import faraLogoImage from "../assets/LOGO-FARA.webp"
+import faraLogoImageRetina from "../assets/LOGO-FARA-retina.webp"
+import faraLogoImage4k from "../assets/LOGO-FARA-4k.webp"
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
@@ -16,11 +18,12 @@ export function NavBar() {
                         className="grid min-h-12 min-w-12 place-items-center border-4 border-white p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:border-black focus:border-black focus:outline-0 active:border-black active:outline-0"
                     >
                         <img
-                            src={faraLogoImage}
                             alt="Logo de FARA que actúa como link a la página de inicio."
+                            src={faraLogoImage}
+                            srcSet={`${faraLogoImageRetina} 2x, ${faraLogoImage4k} 3x`}
                             className="h-12 w-auto"
-                            width="600px"
-                            height="231px"
+                            width="152px"
+                            height="48px"
                         />
                     </Link>
                 </div>
@@ -50,6 +53,14 @@ export function NavBar() {
                                 className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0 active:border-b-black active:outline-0"
                             >
                                 Socios
+                            </Link>
+                        </li>
+                        <li className="group grid min-h-12 min-w-12 place-items-center focus:outline-0">
+                            <Link
+                                to="/asesoramiento"
+                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus:outline-0 active:border-b-black active:outline-0"
+                            >
+                                Asesoramiento
                             </Link>
                         </li>
                     </ul>
@@ -105,6 +116,14 @@ export function NavBar() {
                                 className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus:outline-0 active:text-white"
                             >
                                 Socios
+                            </Link>
+                        </li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus:outline-0">
+                            <Link
+                                to="/asesoramiento"
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus:outline-0 active:text-white"
+                            >
+                                Asesoramiento
                             </Link>
                         </li>
                         <div className="m-2 text-center">

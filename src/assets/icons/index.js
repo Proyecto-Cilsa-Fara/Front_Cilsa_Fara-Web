@@ -15,9 +15,14 @@ import WhatsappIcon from "./ICONO-Whatsapp.svg"
 import WhatsappTransparentIcon from "./ICONO-Whatsapp-transparente.svg"
 import X from "./ICONO-X.svg"
 import MenuIcon from "./ICONO-MENU.svg"
+import CorrespondentIcon from "./ICONO-CORRESPONSAL.svg"
+import vIcon from "./ICONO-V.svg"
+import IconAsesoramiento1 from "./ICON-1.svg"
+import IconAsesoramiento2 from "./ICON-2.svg"
 
 export {
     BoneteIcon,
+    CorrespondentIcon,
     EmailIcon,
     EmailTransparentIcon,
     FacebookIcon,
@@ -34,4 +39,7 @@ export {
     WhatsappTransparentIcon,
     X,
     MenuIcon,
+    vIcon,
+    IconAsesoramiento1,
+    IconAsesoramiento2,
 }
