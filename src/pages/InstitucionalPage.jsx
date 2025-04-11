@@ -1,3 +1,5 @@
+import { useEffect } from "react"
+import { useLocation } from "react-router"
 import {
     DonarSection,
     Areas,
@@ -10,6 +12,11 @@ import {
 } from "../components/index"
 
 export function InstitucionalPage() {
+    const { pathname } = useLocation()
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [pathname])
+
     return (
         <Layout>
             <InstitucionalHero />
