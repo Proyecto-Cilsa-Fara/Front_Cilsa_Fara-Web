@@ -7,14 +7,14 @@ const actividades = [
         title: "Pasantías",
         description:
             "Destinadas a estudiantes de grado y posgrado de universidades nacionales y extranjeras, e integrantes de ONGs de derechos humanos nacionales y extranjeras.",
-        link: "/#",
+        link: "https://wa.me/5492215043359",
         image: PasantiasImage,
     },
     {
         title: "Voluntariados",
         description:
             "Se puede optar por participar de cualquiera de nuestras áreas de incidencia, comunicación y prensa, administración, gestión financiera o legal de FARA.",
-        link: "/#",
+        link: "https://wa.me/5492215043359",
         image: VoluntariadosImage,
     },
 ]
