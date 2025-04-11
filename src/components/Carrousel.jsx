@@ -1,5 +1,6 @@
 import { img1, img2, img3, img4, img5 } from "../assets/hero-carrousel"
 import { useState, useEffect, useRef, useCallback } from "react"
+import { Link } from "react-router"
 
 const slides = [
     {
@@ -8,6 +9,7 @@ const slides = [
         color: "#A82428A1",
         buttonText: "Contáctanos",
         buttonColor: "bg-fara-gold",
+        link: "/#",
     },
     {
         image: img2,
@@ -15,6 +17,7 @@ const slides = [
         color: "#E3A647A1",
         buttonText: "Dona hoy",
         buttonColor: "bg-fara-red",
+        link: "/donar",
     },
     {
         image: img3,
@@ -22,6 +25,7 @@ const slides = [
         color: "#2FAEA5A1",
         buttonText: "Más información",
         buttonColor: "bg-fara-red",
+        link: "/capacitaciones",
     },
     {
         image: img4,
@@ -29,6 +33,7 @@ const slides = [
         color: "#3999BFA1",
         buttonText: "Más información",
         buttonColor: "bg-fara-red",
+        link: "/participa",
     },
     {
         image: img5,
@@ -36,6 +41,7 @@ const slides = [
         color: "#B9CE48A1",
         buttonText: "Más información",
         buttonColor: "bg-fara-red",
+        link: "/asesoramiento",
     },
 ]
 
@@ -113,14 +119,15 @@ export function Carrousel() {
                                 <h3 className="text-outline-sm lg:[.text-outline-lg] grid h-36 max-w-[16ch] place-items-center text-2xl font-bold uppercase lg:text-4xl">
                                     {slide.text}
                                 </h3>
-                                <button
+                                <Link
                                     disabled={currentIndex !== index}
                                     className={`text-outline-sm hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-64 place-items-center pr-8 pl-6 text-xl font-semibold text-white [clip-path:polygon(0_0,100%_0,90%_100%,0_100%)] hover:cursor-pointer lg:text-2xl ${slide.buttonColor}`}
                                     type="button"
+                                    to={slide.link}
                                     aria-label={slide.buttonText}
                                 >
                                     {slide.buttonText}
-                                </button>
+                                </Link>
                             </figcaption>
                         </figure>
                     </li>
