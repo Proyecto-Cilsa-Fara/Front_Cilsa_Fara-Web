@@ -45,7 +45,7 @@ export function ServiciosSection() {
                     />
                     <h3 className="text-2xl font-bold text-black lg:text-3xl">VOLUNTARIADO</h3>
                     <p className="flex-grow px-4 text-xl text-black">
-                        Brindamos pasantías y voluntariados en las áreas de acción restaurativa de Fara.
+                        Brindamos pasantías y voluntariados en las áreas de acción restaurativa de FARA.
                     </p>
                     <Link
                         to="/participa"
