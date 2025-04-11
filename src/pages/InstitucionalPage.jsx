@@ -3,6 +3,7 @@ import {
     Areas,
     AcercaDeNosotros,
     SociosRestauradores,
+    InstitucionalHero,
     Legales,
     Integrantes,
     Layout,
@@ -11,7 +12,7 @@ import {
 export function InstitucionalPage() {
     return (
         <Layout>
-            <SociosRestauradores />
+            <InstitucionalHero />
 
             <AcercaDeNosotros />
 
