@@ -22,7 +22,7 @@ export function Integrantes() {
 
             <div
                 ref={containerRef}
-                className={`ml-4 grid w-full grid-cols-1 gap-6 overflow-x-auto p-[0px] py-5 transition-[height] duration-300 ease-in-out sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 ${!showAll ? "h-120 overflow-hidden" : "h-full"}`}
+                className={`ml-4 grid w-full grid-cols-1 gap-6 overflow-x-auto p-[0px] py-5 transition-[height] duration-300 ease-in-out sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 ${!showAll ? "integrantes h-120 overflow-hidden" : "h-full"}`}
             >
                 {INTEGRANTES.map((member, index) => (
                     <div key={index} className="relative m-5 mx-auto h-70 w-70">
