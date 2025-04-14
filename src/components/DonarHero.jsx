@@ -1,6 +1,5 @@
 import DonarHeroImage from "../assets/Donar-Hero.webp"
 import { Link } from "react-router"
-import { CONTACT_INFO } from "../utils/contactInfo"
 
 export function DonarHero() {
     return (
@@ -17,8 +16,8 @@ export function DonarHero() {
                         La justicia restaurativa empieza cuando alguien cree que es posible. Ese alguien podés ser vos.
                     </h2>
                     <Link
-                        to={CONTACT_INFO.PHONE_LINK}
-                        aria-label="Donar"
+                        to="https://cafecito.app/fundacionfara"
+                        aria-label="Realizar donación, apoyando la justicia restaurativa."
                         className="group relative flex w-full items-center justify-center focus:outline-0"
                     >
                         <div className="pointer-coarse:translate-none! pointer-coarse:-z-10! skew-custom absolute inset-0 -z-10 m-auto h-1/6 w-12 bg-[#E3A647] transition-transform duration-700 group-hover:z-5 group-hover:-translate-x-11 group-hover:-translate-y-16 group-focus:z-10 group-focus:-translate-x-11 group-focus:-translate-y-16 group-active:z-10 group-active:-translate-x-11 group-active:-translate-y-16 lg:w-15 lg:group-hover:-translate-x-25 lg:group-hover:-translate-y-28"></div>
