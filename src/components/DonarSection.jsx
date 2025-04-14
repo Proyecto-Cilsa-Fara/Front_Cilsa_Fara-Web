@@ -18,8 +18,8 @@ export function DonarSection() {
                         </em>
                     </p>
                     <Link
-                        to="/donar"
-                        aria-label="Donar"
+                        to="https://cafecito.app/fundacionfara"
+                        aria-label="Realizar donación"
                         className="group relative w-full items-center justify-center focus:outline-0"
                     >
                         <div className="skew-custom absolute inset-0 m-auto h-1/6 w-12 bg-[#E3A647] transition-transform duration-300 group-hover:-translate-x-11 group-hover:-translate-y-20 group-focus:-translate-x-11 group-focus:-translate-y-20 group-active:-translate-x-11 group-active:-translate-y-20 lg:w-15 lg:group-hover:-translate-x-25 lg:group-hover:-translate-y-28"></div>
