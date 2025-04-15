@@ -10,7 +10,7 @@ export function CardParticipa({ title, description, image, link }) {
                 <img
                     src={image}
                     alt={`Imagen de ${title}`}
-                    className="aspect-3/2 self-center lg:max-w-2/3"
+                    className="aspect-3/2 self-center rounded-2xl lg:max-w-2/3"
                     width="1024px"
                     height="690px"
                 />
