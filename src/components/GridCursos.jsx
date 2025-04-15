@@ -7,56 +7,41 @@ const cursos = [
         title: "Justicia restaurativa aplicada al ámbito judicial",
         description:
             "Esta diplomatura responde a una necesidad crucial de formación en el ámbito judicial y legal en la relación con las prácticas restaurativas.",
-        link: "/#",
+        link: "https://www.ude.edu.ar/extension/diplomaturas/diplomatura-en-justicia-restaurativa-aplicada-al-ambito-judicial/",
         image: DiplomaturaImage,
     },
     {
-        title: "Nombre del curso que ocupa dos renglones max",
+        title: "Justicia Restaurativa y juventud",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
+            "Aborda herramientas restaurativas para intervenir en conflictos que involucran a jóvenes en distintos contextos.",
+        link: "https://forms.office.com/r/hRa3MLPNib",
         image: CardImage,
     },
     {
-        title: "Nombre del curso que ocupa dos renglones max",
+        title: "Prevención y gestión de la violencia escolar",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
+            "Propone estrategias para prevenir, abordar y transformar situaciones de violencia en el ámbito educativo.",
+        link: "https://forms.office.com/r/h9ZkeLjX2y",
         image: CardImage,
     },
     {
-        title: "Nombre del curso que ocupa dos renglones max",
+        title: "Justicia Restaurativa en contextos de encierro",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
+            "Explora prácticas restaurativas aplicadas al contexto penitenciario y medidas alternativas a la prisión.",
+        link: "https://forms.office.com/r/9vLDkWV5G0",
         image: CardImage,
     },
     {
-        title: "Nombre del curso que ocupa dos renglones max",
+        title: "Justicia Restaurativa y género",
         description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
+            "Reflexiona sobre la justicia restaurativa desde una perspectiva de género y su aplicación en casos específicos.",
+        link: "https://forms.office.com/r/0PW5AmwpY7",
         image: CardImage,
     },
     {
-        title: "Nombre del curso que ocupa dos renglones max",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
-        image: CardImage,
-    },
-    {
-        title: "Nombre del curso que ocupa dos renglones max",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
-        image: CardImage,
-    },
-    {
-        title: "Nombre del curso que ocupa dos renglones max",
-        description:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        link: "/#",
+        title: "Capacitaciones a medida",
+        description: "Contáctanos para indicarnos cuál es tu necesidad académica.",
+        link: "https://forms.office.com/r/mG19C3APS1",
         image: CardImage,
     },
 ]

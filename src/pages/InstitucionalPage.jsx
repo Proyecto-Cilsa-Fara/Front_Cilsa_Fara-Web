@@ -4,7 +4,6 @@ import {
     DonarSection,
     Areas,
     AcercaDeNosotros,
-    SociosRestauradores,
     InstitucionalHero,
     Legales,
     Integrantes,

@@ -4,7 +4,7 @@ import { Link } from "react-router"
 export function ServiciosSection() {
     return (
         <div className="bg-fara-teal grid min-h-screen place-items-center px-5 py-16 text-white md:px-20">
-            <div className="grid gap-8 text-center md:grid-cols-4">
+            <div className="grid gap-8 text-center xl:grid-cols-4">
                 <div className="flex h-full flex-col items-center justify-evenly gap-8 bg-white px-10 pt-8 pb-12 [clip-path:polygon(0_5%,100%_0,100%_95%,0_100%)]">
                     <img src={BoneteIcon} className="h-37 p-10 lg:h-48" alt="Icono de un gorro de graduación" />
                     <h3 className="text-2xl font-bold text-black lg:text-3xl">CAPACITACIONES</h3>
