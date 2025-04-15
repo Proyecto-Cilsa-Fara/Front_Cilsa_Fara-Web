@@ -13,8 +13,11 @@ export function useDocumentMeta(title, description) {
         meta.setAttribute("content", description)
 
         return () => {
-            document.title = "ONG Nombre"
-            meta.setAttribute("content", "")
+            document.title = "FARA - Fundación Acción Restaurativa Argentina"
+            meta.setAttribute(
+                "content",
+                "FARA Argentina: Trabajamos para reparar el perjuicio causado por conflictos, promoviendo la justicia restaurativa, el bienestar y el desarrollo personal. Capacitaciones, publicaciones y más.",
+            )
         }
     }, [title, description])
 }
