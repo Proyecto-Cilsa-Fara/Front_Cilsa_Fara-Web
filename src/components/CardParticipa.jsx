@@ -19,7 +19,7 @@ export function CardParticipa({ title, description, image, link }) {
                     <p className="mb-5 max-w-[75ch] px-5 text-left text-lg lg:text-2xl">{description}</p>
                 </div>
                 <Link
-                    to="/capacitaciones"
+                    to={link}
                     aria-label="Mirá todas nuestras capacitaciones"
                     className="skew-custom bg-fara-blue hover:[.text-outline-lg] hover:bg-fara-red focus:bg-fara-red active:bg-fara-red mx-auto grid min-h-12 w-5/6 min-w-48 place-items-center border-b-2 border-gray-200 pr-8 pl-6 text-base font-bold text-white uppercase transition-colors duration-300 ease-in-out md:w-1/2 md:text-2xl lg:min-h-24 xl:w-2/3"
                 >
