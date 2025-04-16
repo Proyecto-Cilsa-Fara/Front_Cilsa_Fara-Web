@@ -12,6 +12,7 @@ import Objetivo16Image from "./Objetivo16.webp"
 import RockefellerCenterImage from "./Rockefeller-Center.webp"
 import ServicioPenitenciarioBonaerenseImage from "./Servicio-Penitenciario-Bonaerense.webp"
 import SipinnaImage from "./SIPINNA.webp"
+import TeseraMediacioImage from "./TeseraMediacioImage.webp"
 
 const aliadosImages = [
     ServicioPenitenciarioBonaerenseImage,
@@ -26,8 +27,9 @@ const aliadosImages = [
     AtalycImage,
     IIBJImage,
     JusticiaRestaurativaImage,
-    SipinnaImage,
+    TeseraMediacioImage,
     Objetivo16Image,
+    SipinnaImage,
 ]
 
 export { aliadosImages }
