@@ -22,7 +22,7 @@ export function SociosHero() {
                         <h1 className="skew-x-12 text-xl font-bold sm:text-2xl md:text-4xl xl:text-6xl">{TITLE}</h1>
                     </div>
                     <Link
-                        to="/socios"
+                        to="/socios#contacto"
                         aria-label="Apretá para sumarte a FARA"
                         className="active:bg-fara-blue hover:bg-fara-blue focus:bg-fara-blue skew-custom w-auto bg-black px-10 py-3 text-xl font-bold tracking-wide text-white uppercase shadow-2xl transition-colors duration-300 ease-in-out hover:cursor-pointer md:text-2xl"
                     >
