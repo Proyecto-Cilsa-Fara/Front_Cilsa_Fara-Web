@@ -57,7 +57,7 @@ export function AreasDeIncidencia() {
                             <li key={area.tittle}>
                                 <button
                                     onClick={() => setAreaSeleccionada(area)}
-                                    className={`w-full border py-1 text-center text-base font-semibold text-white transition-colors duration-300 ease-in-out hover:cursor-pointer ${
+                                    className={`min-h-12 w-full border py-1 text-center text-base font-semibold text-white transition-colors duration-300 ease-in-out hover:cursor-pointer ${
                                         areaSeleccionada.tittle === area.tittle
                                             ? "bg-fara-red/80"
                                             : "active:bg-fara-gold/80 hover:bg-fara-gold/80 focus:bg-fara-gold/80 bg-gray-950/50"
