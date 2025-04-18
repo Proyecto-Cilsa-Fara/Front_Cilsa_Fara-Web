@@ -9,7 +9,7 @@ const slides = [
         color: "#A82428A1",
         buttonText: "Contáctanos",
         buttonColor: "bg-fara-gold",
-        link: "/#",
+        link: "/#contacto",
     },
     {
         image: img2,

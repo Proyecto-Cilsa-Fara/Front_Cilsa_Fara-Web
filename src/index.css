@@ -72,4 +72,8 @@
     transition: background-image 0.3s ease-in-out;
 }
 
+.integrantes {
+    mask-image: linear-gradient(black 80%, transparent);
+}
+
 @variant pointer-coarse (@media (pointer: coarse));

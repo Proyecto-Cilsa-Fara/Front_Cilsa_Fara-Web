@@ -14,7 +14,7 @@ export function Areas() {
     const areas = [
         { name: "Justicia restaurativa para las víctimas", image: Justicia, color: "#C0322DCC" },
         { name: "Procesos de restauración para conductas agresivas", image: Politicas, color: "#47B3DED6" },
-        { name: "Bullyng, acoso, amenazas y daños", image: Educacion, color: "#E3A647D1" },
+        { name: "Bullying, acoso, amenazas y daños", image: Educacion, color: "#E3A647D1" },
         { name: "Violencia y explotación sexual", image: Explotacion, color: "#555555C2" },
         { name: "Delitos en línea, deepfake y suplantación de identidad", image: Delitos, color: "#555555C2" },
         { name: "Prácticas restaurativas en cárceles para prevenir la reincidencia", image: Niñez, color: "#b9ce48B5" },
