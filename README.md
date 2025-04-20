@@ -9,12 +9,95 @@
 **FARA Argentina:** Trabajamos para reparar el perjuicio causado por conflictos, promoviendo la justicia restaurativa, el bienestar y el desarrollo personal. Capacitaciones, publicaciones y más.
 
 > [!NOTE]
-> Para configurar y ejecutar este proyecto en tu entorno local, sigue las instrucciones detalladas en la documentación específica del **Frontend** y **Backend** respectivamente.
+> Para configurar y ejecutar este proyecto en tu entorno local, sigue las instrucciones detalladas en la documentación específica del **Frontend** (Este documento) y **Backend** respectivamente.
 
 ---
 
-<details align="center">
-    <summary><h2 align="center">👨‍👩‍👧‍👦 Equipo de Desarrollo</h2></summary>
+## Guía para instalación local
+
+> [!NOTE]
+> Si simplemente quieres probar el proyecto como una demo rápida, tienes nuestro [despliegue online de este proyecto frontend](https://fara.onrender.com/)
+
+<details>
+  <summary>Instalación usando git clone 🔧</summary>
+
+### Cómo clonar el proyecto
+
+Sigue estos pasos para clonar el repositorio e instalar las dependencias necesarias:
+
+1. **Clonar el repositorio**    
+    Ejecuta el siguiente comando en tu terminal, reemplazando `URL_DEL_PROYECTO` por el enlace del proyecto:
+
+```sh
+git clone URL_DEL_PROYECTO
+```
+
+2. **OPCIONAL - Cambiar de rama**   
+    Ejecuta el siguiente comando en tu terminal, reemplazando `RAMA` por la rama a utilizar:
+
+```sh
+git checkout RAMA
+```
+
+### Cómo instalar las dependencias del proyecto
+
+1. Ejecuta el siguiente comando en tu terminal:
+
+```sh
+npm install
+```
+
+_Nota: Puedes utilizar otro package manager si así lo deseas; procura revisar las `Tecnologías principales` y también las `Librerías` para comprobar que son compatibles primero_
+
+### Iniciar servidor (en modo `dev`)
+
+```sh
+npm run dev
+```
+</details>
+
+<details>
+  <summary>Instalación descargando comprimido ZIP 🔧</summary>
+
+## Instalación descargando comprimido ZIP 🔧
+
+### Cómo descargar el proyecto
+
+Sigue estos pasos para clonar el repositorio e instalar las dependencias necesarias:
+
+1. **Descargar el proyecto en formato ZIP** 
+    Ir a “code” > download ZIP
+
+2. **Descomprimir el archivo**
+
+3. **OPCIONAL - Cambiar de rama**   
+    Ejecuta el siguiente comando en tu terminal, reemplazando `RAMA` por la rama a utilizar:
+
+```sh
+git checkout RAMA
+```
+
+### Cómo instalar las dependencias del proyecto
+
+1. En la carpeta donde se encuentra “package.json” ejecutar en terminal:
+
+```sh
+npm install
+```
+
+_Nota: Puedes utilizar otro package manager si así lo deseas; procura revisar las `Tecnologías principales` y también las `Librerías` para comprobar que son compatibles primero_
+
+### Iniciar servidor (en modo `dev`)
+
+```sh
+npm run dev
+```
+</details>
+
+---
+
+<details>
+    <summary><h2>👨‍👩‍👧‍👦 Equipo de Desarrollo</h2></summary>
     <table align="center">
         <tr>
             <td><b>Denisse Amaya</b></td>
