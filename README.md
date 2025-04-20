@@ -223,11 +223,10 @@ npm run dev
 En este proyecto, el equipo adquirió experiencia en las siguientes áreas:
 
 *   **Gestión de repositorios complejos con Git:** Se implementó un flujo de trabajo robusto utilizando diversas ramas (branches) y solicitudes de extracción (pull requests) para garantizar la transparencia y el control de versiones durante todo el desarrollo.
+*   **Programación orientada a componentes:** Se dividieron las páginas en componentes que se reutilizaron a lo largo del repositorio para centralizar cambios repetidos como así también facilitar la mantención del código.
+*   **Trabajo con equipos de QA Testing:** Se ajustaron aspectos del diseño de los componentes en base al feedback de nuestro equipo de QA Testing, orientado a accesibilidad web en este caso.
 *   **Colaboración con metodologías ágiles:** Se aplicaron metodologías ágiles como Scrum, utilizando herramientas de gestión de proyectos como Jira y Trello para la planificación, seguimiento y gestión de tareas.
-*   **Seguridad de variables de entorno:** Se implementaron medidas para proteger las variables de entorno sensibles mediante el uso de archivos `.env`, siguiendo las mejores prácticas de seguridad.
-*   **Distribución con Docker:** Se facilitó la distribución y despliegue del backend del proyecto mediante la containerización con Docker, mejorando la portabilidad y la consistencia del entorno.
-*   **Implementación de diseños pixel-perfect:** Se implementaron las interfaces de usuario siguiendo diseños detallados (wireframes) proporcionados por el diseñador UX, buscando la precisión visual y la consistencia con la propuesta de diseño.
-*   **Gestión de incidencias con GitHub Issues:** Se utilizó el sistema de seguimiento de incidencias de GitHub (GitHub Issues) para reportar, analizar y resolver errores y bugs del programa, fomentando la comunicación y la trazabilidad de las correcciones.
+*   **Implementación de diseños pixel-perfect:** Se implementaron las interfaces de usuario siguiendo diseños detallados (wireframes) proporcionados por el equipo de diseñadores UX-UI, buscando la precisión visual y la consistencia con la propuesta de diseño.
 
 ---
 
