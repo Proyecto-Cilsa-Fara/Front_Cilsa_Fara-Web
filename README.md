@@ -1,8 +1,184 @@
-# React + Vite
+<h1 align="center">Fundación Acción Restaurativa Argentina</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<div align="center">
+    <img src="https://github.com/user-attachments/assets/27b43531-4f94-4585-a4ce-9cf92fdece85" alt="FARA Logo" style="display: grid; place-items: center"/>
+</div>
 
-Currently, two official plugins are available:
+<h2>Descripción del Proyecto</h2>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**FARA Argentina:** Trabajamos para reparar el perjuicio causado por conflictos, promoviendo la justicia restaurativa, el bienestar y el desarrollo personal. Capacitaciones, publicaciones y más.
+
+> [!NOTE]
+> Para configurar y ejecutar este proyecto en tu entorno local, sigue las instrucciones detalladas en la documentación específica del **Frontend** y **Backend** respectivamente.
+
+---
+
+<details align="center">
+    <summary><h2 align="center">👨‍👩‍👧‍👦 Equipo de Desarrollo</h2></summary>
+    <table align="center">
+        <tr>
+            <td><b>Denisse Amaya</b></td>
+            <td>UX-UI Designer</td>
+            <td align="center"><a href="https://github.com/DeniiAmaya">@DeniiAmaya</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/denis-amaya-410075138/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Agostina Borroni</b></td>
+            <td>LEAD UX-UI Designer</td>
+            <td align="center"><a href="https://github.com/agosborroni">@agosborroni</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/agostina-paz-borroni-914249145/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Daiana Colquicocha</b></td>
+            <td>Backend Developer</td>
+            <td align="center"><a href="https://github.com/DaiColqui">@DaiColqui</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/daicolqui/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Matías Díaz</b></td>
+            <td>Frontend Developer</td>
+            <td align="center"><a href="https://github.com/mati98ld">@mati98ld</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/matildiaz/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Gerónimo Franco</b></td>
+            <td>QA Tester</td>
+            <td align="center"><a href="https://github.com/Geronimo9321">@Geronimo9321</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/geronimo-ariel-franco-programador-tester/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Leonel Giralde</b></td>
+            <td>Frontend Developer</td>
+            <td align="center"><a href="https://github.com/LeonelGiralde">@LeonelGiralde</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/leonel-giralde/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Octavio Godoy</b></td>
+            <td>UX-UI Designer</td>
+            <td align="center"><a href="https://github.com/octa13">@octa13</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in//"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Sandra Ibarra</b></td>
+            <td>QA tester</td>
+            <td align="center"><a href="https://github.com/sandrayaquelineibarra">@sandrayaquelineibarra</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/sandra-ibarra-023b7720/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Mariano Infante</b></td>
+            <td>LEAD QA Tester</td>
+            <td align="center"><a href="https://github.com/MGIC12">@MGIC12</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/mariano-infante/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Franco Lopez</b></td>
+            <td>Frontend Developer</td>
+            <td align="center"><a href="https://github.com/Lfran92">@Lfran92</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/lopez-franco/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Nicolás Martín</b></td>
+            <td>Backend Developer</td>
+            <td align="center"><a href="https://github.com/nicolasmartin89">@nicolasmartin89</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/nicolas-demis-martin/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Facundo Javier Pacheco Escalante</b></td>
+            <td>QA Tester</td>
+            <td align="center"><a href="https://github.com/javi321321">@Javi321321</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/facundopacheco/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Ricardo Ramos</b></td>
+            <td>Backend Developer</td>
+            <td align="center"><a href="https://github.com/elequipoderiki">@elequipoderiki</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in//"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Ricardo Rolón</b></td>
+            <td>QA Tester</td>
+            <td align="center"><a href="https://github.com/RolRic">@RolRic</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/ricardo-rolon2023/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Daniela Salvo</b></td>
+            <td>QA Tester</td>
+            <td align="center"><a href="https://github.com/DanipSal">@DanipSal</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/danisalvo/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Ian Sosa</b></td>
+            <td>TECH LEAD</td>
+            <td align="center"><a href="https://github.com/sosaian">@sosaian</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/sosaian/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Brenda Tanoni</b></td>
+            <td>QA Tester</td>
+            <td align="center"><a href="https://github.com/tanonibrenda">@tanonibrenda</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/brenda-yohena-tanoni-82430146/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Laura Yachelini</b></td>
+            <td>Frontend Developer</td>
+            <td align="center"><a href="https://github.com/LauYache">@LauYache</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/lauyache/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+        <tr>
+            <td><b>Tomás Zucchi</b></td>
+            <td>Backend Developer</td>
+            <td align="center"><a href="https://github.com/TomasZucchi">@TomasZucchi</a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/tomaszucchi/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+        </tr>
+    </table>
+</details>
+
+---
+
+## Aprendizajes del proyecto
+
+En este proyecto, el equipo adquirió experiencia en las siguientes áreas:
+
+*   **Gestión de repositorios complejos con Git:** Se implementó un flujo de trabajo robusto utilizando diversas ramas (branches) y solicitudes de extracción (pull requests) para garantizar la transparencia y el control de versiones durante todo el desarrollo.
+*   **Colaboración con metodologías ágiles:** Se aplicaron metodologías ágiles como Scrum, utilizando herramientas de gestión de proyectos como Jira y Trello para la planificación, seguimiento y gestión de tareas.
+*   **Seguridad de variables de entorno:** Se implementaron medidas para proteger las variables de entorno sensibles mediante el uso de archivos `.env`, siguiendo las mejores prácticas de seguridad.
+*   **Distribución con Docker:** Se facilitó la distribución y despliegue del backend del proyecto mediante la containerización con Docker, mejorando la portabilidad y la consistencia del entorno.
+*   **Implementación de diseños pixel-perfect:** Se implementaron las interfaces de usuario siguiendo diseños detallados (wireframes) proporcionados por el diseñador UX, buscando la precisión visual y la consistencia con la propuesta de diseño.
+*   **Gestión de incidencias con GitHub Issues:** Se utilizó el sistema de seguimiento de incidencias de GitHub (GitHub Issues) para reportar, analizar y resolver errores y bugs del programa, fomentando la comunicación y la trazabilidad de las correcciones.
+
+---
+
+## Tecnologías principales:
+
+⚙ Node Js - para hacer uso de `npm` (v22.14.0 LTS al momento de este commit)
+
+⚙ Vite - para crear un proyecto React (v6.2.6 al momento de este commit)
+
+⚙ React (v18.3.18 al momento de este commit)
+
+⚙ Tailwind CSS (v4.1.4 al momento de este commit)
+
+⚙ Metodologías ágiles de trabajo - SCRUM usando Trello
+
+⚙ UX/UI - Figma (Figjam; Wireframes; UI Kits)
+
+---
+
+## Librerias:
+
+Para que el proyecto se logre realizar de una manera esperada se utlizaron las siguientes herramientas:
+
+📚 React-dom (Incluido en la creación del proyeto con Vite)
+
+📚 React Router (`npm install react-router`)
+
+📚 React Hook Form (`npm install react-hook-form`)
+
+📚 Tailwind CSS (`npm install tailwindcss @tailwindcss/vite`)
+
+---
+
+### Nota Final
+Este proyecto fue desarrollado durante una práctica laboral organizada por CILSA en colaboración con FARA, por un equipo multidisciplinario inclusivo que aboga por la accesibilidad web.
+
+<a href="https://git.io/typing-svg" align="center"><img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&duration=1000&pause=1000&color=F2F2F2&background=12121200&center=true&vCenter=true&width=435&lines=FARA;CILSA;Frontend" alt="Typing SVG"  style="width: 100vw" /></a>
