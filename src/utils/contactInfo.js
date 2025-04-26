@@ -1,6 +1,9 @@
 export const CONTACT_INFO = {
-    PHONE: "+54 9 221 610-2327",
-    PHONE_LINK: "https://wa.me/5492216102327",
+    PHONE_1: "+54 9 221 610-2327",
+    PHONE_1_LINK: "https://wa.me/5492216102327",
+
+    PHONE_2: "+54 9 221 504-3359",
+    PHONE_2_LINK: "https://wa.me/5492215043359",
 
     EMAIL_1: "accionrestaurativapaz@gmail.com", // Email directo a Fundadora
     EMAIL_1_LINK: "mailto:accionrestaurativapaz@gmail.com",

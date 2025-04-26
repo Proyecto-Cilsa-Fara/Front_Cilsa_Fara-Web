@@ -22,7 +22,7 @@ export function ContactSection() {
                 <h2 className="mb-4 text-xl font-bold uppercase lg:text-3xl">Contacto institucional</h2>
                 <nav className="space-y-3" aria-label="Opciones de contacto">
                     <Link
-                        to={CONTACT_INFO.PHONE_LINK}
+                        to={CONTACT_INFO.PHONE_1_LINK}
                         className="flex min-h-12 items-center gap-3"
                         aria-label="Envíanos un mensaje por Whatsapp"
                     >
@@ -33,7 +33,21 @@ export function ContactSection() {
                             width="61px"
                             height="61px"
                         />
-                        <span className="text-sm font-semibold lg:text-lg">{`Whatsapp: ${CONTACT_INFO.PHONE}`}</span>
+                        <span className="text-sm font-semibold lg:text-lg">{`Whatsapp: ${CONTACT_INFO.PHONE_1}`}</span>
+                    </Link>
+                    <Link
+                        to={CONTACT_INFO.PHONE_2_LINK}
+                        className="flex min-h-12 items-center gap-3"
+                        aria-label="Envíanos un mensaje por Whatsapp"
+                    >
+                        <img
+                            src={WhatsappTransparentIcon}
+                            className="w-10"
+                            alt="Logo de Whatsapp"
+                            width="61px"
+                            height="61px"
+                        />
+                        <span className="text-sm font-semibold lg:text-lg">{`Whatsapp: ${CONTACT_INFO.PHONE_2}`}</span>
                     </Link>
                     <Link
                         to={CONTACT_INFO.EMAIL_1_LINK}
