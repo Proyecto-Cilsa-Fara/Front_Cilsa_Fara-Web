@@ -87,9 +87,7 @@ export function CarrouselDonar() {
                                             <h3 className="place-items-center text-lg font-bold uppercase md:text-2xl lg:text-4xl">
                                                 {slide.tittle}
                                             </h3>
-                                            <p className="px-5 text-left text-xs sm:text-sm md:text-base md:text-lg">
-                                                {slide.text}
-                                            </p>
+                                            <p className="px-5 text-left text-xs sm:text-sm md:text-lg">{slide.text}</p>
                                         </div>
                                     </div>
                                 </figcaption>
