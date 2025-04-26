@@ -1,4 +1,4 @@
-import DiplomaturaImage from "../assets/Diplomatura.webp"
+import { DiplomaturaImage } from "../assets/capacitaciones"
 import { useState, useEffect, useRef, useCallback } from "react"
 
 const slides = [
