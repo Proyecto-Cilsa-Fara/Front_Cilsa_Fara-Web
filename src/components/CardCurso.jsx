@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { Link } from "react-router"
-import CardCursoImage from "../assets/CardCursoImage.webp"
+import { CardCursoImage } from "../assets/capacitaciones"
 
 export function CardCurso({ title, description, image = CardCursoImage, link }) {
     return (
