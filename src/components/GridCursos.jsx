@@ -1,6 +1,5 @@
 import { CardCurso } from "./CardCurso"
-import CardImage from "../assets/CardCursoImage.webp"
-import DiplomaturaImage from "../assets/Diplomatura.webp"
+import { CardCursoImage, DiplomaturaImage } from "../assets/capacitaciones"
 
 const cursos = [
     {
@@ -15,34 +14,34 @@ const cursos = [
         description:
             "Aborda herramientas restaurativas para intervenir en conflictos que involucran a jóvenes en distintos contextos.",
         link: "https://forms.office.com/r/hRa3MLPNib",
-        image: CardImage,
+        image: CardCursoImage,
     },
     {
         title: "Prevención y gestión de la violencia escolar",
         description:
             "Propone estrategias para prevenir, abordar y transformar situaciones de violencia en el ámbito educativo.",
         link: "https://forms.office.com/r/h9ZkeLjX2y",
-        image: CardImage,
+        image: CardCursoImage,
     },
     {
         title: "Justicia Restaurativa en contextos de encierro",
         description:
             "Explora prácticas restaurativas aplicadas al contexto penitenciario y medidas alternativas a la prisión.",
         link: "https://forms.office.com/r/9vLDkWV5G0",
-        image: CardImage,
+        image: CardCursoImage,
     },
     {
         title: "Justicia Restaurativa y género",
         description:
             "Reflexiona sobre la justicia restaurativa desde una perspectiva de género y su aplicación en casos específicos.",
         link: "https://forms.office.com/r/0PW5AmwpY7",
-        image: CardImage,
+        image: CardCursoImage,
     },
     {
         title: "Capacitaciones a medida",
         description: "Contáctanos para indicarnos cuál es tu necesidad académica.",
         link: "https://forms.office.com/r/mG19C3APS1",
-        image: CardImage,
+        image: CardCursoImage,
     },
 ]
 
