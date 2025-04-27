@@ -34,7 +34,7 @@ const INTEGRANTES = [
         name: "Constanza Ochoa",
         position: "Secretaria",
         photo: ConstanzaImage,
-        color: "bg-fara-red",
+        color: "bg-fara-strong-red",
         description:
             "Psicóloga egresada de la UNLP, trabaja en clínica con adolescentes y adultos desde un enfoque interdisciplinario, con perspectiva de derechos humanos, género y comunidad. Desde la Fundación FARA, impulsa espacios de reparación, escucha y transformación social a través de la justicia restaurativa.",
     },
