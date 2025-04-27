@@ -29,10 +29,10 @@ export function Integrantes() {
                     {INTEGRANTES.map((member, index) => (
                         <div
                             key={index}
-                            className="mx-auto mb-8 flex w-full max-w-5xl -skew-x-5 flex-col overflow-hidden bg-white shadow-2xl md:flex-row"
+                            className="mx-auto mb-8 flex w-full max-w-5xl flex-col overflow-hidden bg-white shadow-2xl md:-skew-x-5 md:flex-row"
                         >
                             {/* Imagen */}
-                            <div className="w-full skew-x-5 p-8 md:w-1/3">
+                            <div className="w-full p-8 md:w-1/3 md:skew-x-5">
                                 <img
                                     src={member.photo}
                                     alt={member.name}
@@ -43,10 +43,10 @@ export function Integrantes() {
                             </div>
 
                             {/* Contenido */}
-                            <div className="flex w-full skew-x-5 flex-col justify-center p-6 md:w-2/3">
-                                <h3 className={`mb-2 text-2xl font-bold ${member.color}`}>{member.name}</h3>
-                                <p className="text-fara-gray mb-4 text-lg font-medium">{member.position}</p>
-                                <p className="text-base text-black">{member.description}</p>
+                            <div className="flex w-full flex-col justify-center p-6 md:w-2/3 md:skew-x-5">
+                                <h3 className={`mb-2 p-2 text-2xl font-bold ${member.color}`}>{member.name}</h3>
+                                <p className="text-fara-gray mb-4 px-2 text-lg font-medium">{member.position}</p>
+                                <p className="px-2 text-base text-black">{member.description}</p>
                             </div>
                         </div>
                     ))}
