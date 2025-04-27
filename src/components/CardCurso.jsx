@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { Link } from "react-router"
-import CardCursoImage from "../assets/CardCursoImage.webp"
+import { CardCursoImage } from "../assets/capacitaciones"
 
 export function CardCurso({ title, description, image = CardCursoImage, link }) {
     return (
@@ -17,8 +17,8 @@ export function CardCurso({ title, description, image = CardCursoImage, link }) 
                     height="266px"
                     width="1024px"
                 />
-                <h2 className="w-full p-2 text-center text-lg font-bold lg:text-xl">{title}</h2>
-                <p className="mb-5 max-w-[75ch] px-5 text-justify text-base">{description}</p>
+                <h2 className="h-[2rlh] w-full px-5 py-2 text-lg font-bold lg:text-xl">{title}</h2>
+                <p className="mb-5 h-[5rlh] max-w-[75ch] px-5 text-base text-balance">{description}</p>
             </Link>
         </div>
     )

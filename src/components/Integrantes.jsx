@@ -22,22 +22,35 @@ export function Integrantes() {
 
             <div
                 ref={containerRef}
-                className={`ml-4 grid w-full grid-cols-1 gap-6 overflow-x-auto p-[0px] py-5 transition-[height] duration-300 ease-in-out sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 ${!showAll ? "integrantes h-120 overflow-hidden" : "h-full"}`}
+                className={`mx-auto w-full p-0 py-5 transition-[height] duration-300 ease-in-out ${!showAll ? "integrantes h-140 overflow-hidden" : "h-full"}`}
             >
-                {INTEGRANTES.map((member, index) => (
-                    <div key={index} className="relative m-5 mx-auto h-70 w-70">
-                        <div className="absolute top-8 h-58 w-60 translate-y-10 bg-white"></div>
-                        <img
-                            src={member.photo}
-                            alt={member.name}
-                            className="relative z-5 mx-auto h-50 w-50 -translate-x-5 object-cover"
-                        />
-                        <div className="mx-auto flex h-63 w-55 -translate-x-5 -translate-y-40 flex-col justify-end bg-gray-200 py-7 text-center">
-                            <h3 className={`mx-auto mb-1 w-47 text-lg font-semibold ${member.color}`}>{member.name}</h3>
-                            <p className="text-base">{member.position}</p>
+                {/* OJO: Acá sí los mapeás, pero no pongas `flex` en este contenedor */}
+                <div className="flex flex-col gap-4">
+                    {INTEGRANTES.map((member, index) => (
+                        <div
+                            key={index}
+                            className="mx-auto mb-8 flex w-full max-w-5xl flex-col overflow-hidden bg-white shadow-2xl md:-skew-x-5 md:flex-row"
+                        >
+                            {/* Imagen */}
+                            <div className="w-full p-8 md:w-1/3 md:skew-x-5">
+                                <img
+                                    src={member.photo}
+                                    alt={member.name}
+                                    className="aspect-square overflow-hidden rounded-2xl object-cover object-center"
+                                    width="800px"
+                                    height="800px"
+                                />
+                            </div>
+
+                            {/* Contenido */}
+                            <div className="flex w-full flex-col justify-center p-6 md:w-2/3 md:skew-x-5">
+                                <h3 className={`mb-2 p-2 text-2xl font-bold ${member.color}`}>{member.name}</h3>
+                                <p className="text-fara-gray mb-4 px-2 text-lg font-medium">{member.position}</p>
+                                <p className="px-2 text-base text-black">{member.description}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
 
             <button

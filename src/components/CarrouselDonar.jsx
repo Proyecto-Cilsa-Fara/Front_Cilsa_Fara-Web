@@ -1,4 +1,4 @@
-import DiplomaturaImage from "../assets/Diplomatura.webp"
+import { DiplomaturaImage, EncierroImage, EscolarImage, VoluntariadosImage } from "../assets/carrousel-donar"
 import { useState, useEffect, useRef, useCallback } from "react"
 
 const slides = [
@@ -8,14 +8,19 @@ const slides = [
         text: "Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en contextos de encierro, por ejemplo en nuestra Diplomatura en Justicia Restaurativa aplicada al Ámbito Judicial.",
     },
     {
-        image: DiplomaturaImage,
-        tittle: "Capacitaciones",
-        text: "Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en contextos de encierro, por ejemplo en nuestra Diplomatura en Justicia Restaurativa aplicada al Ámbito Judicial.",
+        image: EncierroImage,
+        tittle: "Nuestro trabajo en Cárceles",
+        text: "Promovemos la Justicia Restaurativa dentro de establecimientos penitenciarios, acompañando procesos de diálogo, reparación y reinserción social a través de talleres, círculos de diálogo y formación a internos y personal penitenciario.",
     },
     {
-        image: DiplomaturaImage,
-        tittle: "Capacitaciones",
-        text: "Capacitamos a profesionales y empleados estatales en resolución de conflictos y trabajo en contextos de encierro, por ejemplo en nuestra Diplomatura en Justicia Restaurativa aplicada al Ámbito Judicial.",
+        image: EscolarImage,
+        tittle: "Nuestro trabajo en Escuelas",
+        text: "Implementamos programas de convivencia pacífica y mediación escolar en instituciones educativas, brindando herramientas para la gestión positiva de conflictos y fortaleciendo comunidades escolares inclusivas y respetuosas.",
+    },
+    {
+        image: VoluntariadosImage,
+        tittle: "Voluntariados",
+        text: "Ofrecemos espacios de voluntariado para quienes desean involucrarse activamente en proyectos de Justicia Restaurativa, facilitando talleres, acompañando procesos comunitarios y generando redes de solidaridad y transformación social.",
     },
 ]
 
@@ -28,7 +33,7 @@ export function CarrouselDonar() {
 
         intervalRef.current = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length)
-        }, 6000)
+        }, 90000)
     }, [])
 
     const prevSlide = useCallback(() => {
@@ -73,21 +78,23 @@ export function CarrouselDonar() {
                     style={{ transform: `translateX(-${currentIndex * 100}%)` }}
                 >
                     {slides.map((slide, index) => (
-                        <li key={index} className="relative h-140 w-full flex-shrink-0 bg-[#555555] bg-cover bg-center">
+                        <li key={index} className="bg-fara-gray relative h-140 w-full flex-shrink-0 bg-cover bg-center">
                             <figure className="h-full w-full">
                                 {/* Contenido */}
-                                <figcaption className="absolute top-1/2 left-1/2 flex w-2/3 -translate-x-1/2 -translate-y-1/2 flex-col gap-2 md:gap-8">
-                                    <div className="mx-auto flex h-full w-full max-w-200 -skew-x-5 flex-col items-center justify-center bg-white p-4 text-center md:flex-row md:p-6 lg:p-8">
+                                <figcaption className="absolute top-1/2 left-1/2 flex h-4/5 w-2/3 -translate-x-1/2 -translate-y-1/2 flex-col gap-2 md:gap-8">
+                                    <div className="mx-auto flex h-full w-full -skew-x-2 flex-col items-center justify-center gap-4 bg-white p-8 text-center md:max-w-400 md:-skew-x-5 md:flex-row md:gap-8 md:p-6 lg:p-16">
                                         <img
                                             src={slide.image}
                                             alt={slide.tittle}
-                                            className="h-40 max-w-50 skew-x-5 sm:h-full"
+                                            className="aspect-3/2 w-80 overflow-hidden rounded-2xl object-cover object-top md:skew-x-5 lg:w-1/3"
+                                            width="1024px"
+                                            height="400px"
                                         />
-                                        <div className="flex skew-x-5 flex-col p-2 text-center md:gap-4">
-                                            <h3 className="place-items-center text-lg font-bold uppercase md:text-2xl lg:text-4xl">
+                                        <div className="flex w-full skew-x-2 flex-col justify-center gap-4 md:skew-x-5 md:gap-8 md:p-2 lg:w-2/3">
+                                            <h3 className="flex w-full text-left text-lg font-bold uppercase md:min-h-[2rlh] md:text-xl lg:text-2xl xl:text-4xl">
                                                 {slide.tittle}
                                             </h3>
-                                            <p className="px-5 text-left text-xs sm:text-sm md:text-base md:text-lg">
+                                            <p className="flex w-full skew-x-2 items-center text-left text-xs text-balance sm:text-sm md:min-h-[5rlh] md:text-lg xl:text-2xl">
                                                 {slide.text}
                                             </p>
                                         </div>
