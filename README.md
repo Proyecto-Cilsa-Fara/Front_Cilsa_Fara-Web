@@ -96,7 +96,7 @@ npm run dev
 
 ---
 
-<details>
+<details open>
     <summary><h2>👨‍👩‍👧‍👦 Equipo de Desarrollo</h2></summary>
     <table align="center">
         <tr>
@@ -139,7 +139,7 @@ npm run dev
             <td><b>Octavio Godoy</b></td>
             <td>UX-UI Designer</td>
             <td align="center"><a href="https://github.com/octa13">@octa13</a></td>
-            <td align="center"><a href="https://www.linkedin.com/in//"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/octaviogodoy13/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
         </tr>
         <tr>
             <td><b>Sandra Ibarra</b></td>
@@ -175,7 +175,7 @@ npm run dev
             <td><b>Ricardo Ramos</b></td>
             <td>Backend Developer</td>
             <td align="center"><a href="https://github.com/elequipoderiki">@elequipoderiki</a></td>
-            <td align="center"><a href="https://www.linkedin.com/in//"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
+            <td align="center"><a href="https://www.linkedin.com/in/ricardo-german-ramos/"><img src="https://github.com/user-attachments/assets/165473a1-ce2f-49c6-81b7-a0639b29e4c7" alt="LinkedIn logo" /></a></td>
         </tr>
         <tr>
             <td><b>Ricardo Rolón</b></td>
