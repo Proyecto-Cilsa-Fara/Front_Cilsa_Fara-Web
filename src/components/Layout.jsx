@@ -1,5 +1,5 @@
 import { Header, Footer, DonarFAB } from "./index"
-import { PropTypes } from "prop-types"
+// import { PropTypes } from "prop-types"
 
 export function Layout({ children }) {
     return (
@@ -17,6 +17,6 @@ export function Layout({ children }) {
     )
 }
 
-Layout.propTypes = {
-    children: PropTypes.node.isRequired,
-}
+// Layout.propTypes = {
+    // children: PropTypes.node.isRequired,
+// }

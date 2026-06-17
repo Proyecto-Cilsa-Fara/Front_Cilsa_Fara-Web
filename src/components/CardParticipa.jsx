@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Link } from "react-router"
 
 export function CardParticipa({ title, description, image, link }) {
@@ -30,9 +30,9 @@ export function CardParticipa({ title, description, image, link }) {
     )
 }
 
-CardParticipa.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-}
+// CardParticipa.propTypes = {
+    // title: PropTypes.string.isRequired,
+    // description: PropTypes.string.isRequired,
+    // image: PropTypes.string.isRequired,
+    // link: PropTypes.string.isRequired,
+// }
