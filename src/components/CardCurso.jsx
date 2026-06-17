@@ -1,4 +1,4 @@
-import PropTypes from "prop-types"
+// import PropTypes from "prop-types"
 import { Link } from "react-router"
 import { CardCursoImage } from "../assets/capacitaciones"
 
@@ -24,9 +24,9 @@ export function CardCurso({ title, description, image = CardCursoImage, link }) 
     )
 }
 
-CardCurso.propTypes = {
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-}
+// CardCurso.propTypes = {
+    // title: PropTypes.string.isRequired,
+    // description: PropTypes.string.isRequired,
+    // image: PropTypes.string.isRequired,
+    // link: PropTypes.string.isRequired,
+// }
