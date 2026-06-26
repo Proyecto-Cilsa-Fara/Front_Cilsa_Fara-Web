@@ -10,6 +10,10 @@ import {
     AsesoramientoPage,
     DonarPage,
     ParticipaPage,
+    GeneroPage,
+    BibliotecaFaraPage,
+    AgendaFaraPage,
+    Testimonios
 } from "./pages"
 
 function App() {
@@ -27,6 +31,12 @@ function App() {
                 <Route path="/recuperar-contraseña" element={<WIPPage />} />
                 <Route path="/contacto-administrador" element={<WIPPage />} />
                 <Route path="/socios" element={<SociosPage />} />
+
+                <Route path="/generoydiversidad" element={<GeneroPage />} />
+                <Route path="/bibliotecafara" element={<BibliotecaFaraPage />} />
+                <Route path="/agendafara" element={<AgendaFaraPage />} />
+                <Route path="/testimonios" element={<Testimonios />} />
+
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="Landing" element={<LandingPage />} />
             </Routes>
