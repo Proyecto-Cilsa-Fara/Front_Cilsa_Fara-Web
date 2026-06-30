@@ -4,9 +4,10 @@ import { Header, Footer, DonarFAB } from "./index"
 export function Layout({ children }) {
     return (
         <div className="flex min-h-screen grow flex-col">
+            <a href="#main-content" className="sr-only focus:not-sr-only">Saltar al contenido principal</a>
             <Header />
 
-            <main className="mt-30 grid grow-[1] place-items-center">
+            <main id="main-content" className="mt-30 grid grow-[1] place-items-center">
                 {children}
 
                 <DonarFAB />
@@ -18,5 +19,5 @@ export function Layout({ children }) {
 }
 
 // Layout.propTypes = {
-    // children: PropTypes.node.isRequired,
+// children: PropTypes.node.isRequired,
 // }
