@@ -18,9 +18,9 @@ export function RecursosInformativos() {
               <h3 className="font-bold">Nombre del recurso</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, incidunt!</p>
             </div>
-            <Link to={"/"} className="flex items-center hover:underline">
-              Link al recurso
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right-icon lucide-arrow-right"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            <Link to={"/"} aria-label="Acceder al recurso: Nombre del recurso" className="flex items-center hover:underline">
+              Acceder al recurso
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-arrow-right-icon lucide-arrow-right" aria-hidden="true" focusable="false"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
             </Link>
           </div>
         </div>
