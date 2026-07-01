@@ -7,148 +7,106 @@ import faraLogoImage4k from "../assets/LOGO-FARA-4k.webp"
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
-    const [dropdownOpen, setDropdownOpen] = useState(false)
-    const dropdownRef = useRef(null)
-    const buttonRef = useRef(null)
     const location = useLocation()
     const institucionalPaths = ["/institucional", "/bibliotecafara", "/agendafara", "/testimonios"]
     const isInstitucionalActive = institucionalPaths.includes(location.pathname)
-
-    useEffect(() => {
-        function handleClickOutside(event) {
-            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-                setDropdownOpen(false)
-            }
-        }
-        document.addEventListener("mousedown", handleClickOutside)
-        return () => document.removeEventListener("mousedown", handleClickOutside)
-    }, [])
 
     return (
         <nav className="bg-white p-4 text-black">
             <div className="relative flex w-full items-center justify-between">
                 {/* Logo */}
-                <div>
-                    <Link
-                        to="/"
-                        aria-current={location.pathname === '/' ? 'page' : undefined}
-                        className="grid min-h-12 min-w-12 place-items-center border-4 border-white p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:border-black focus:border-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-black active:outline-0"
-                    >
-                        <img
-                            alt="Logo de FARA que actúa como link a la página de inicio."
-                            src={faraLogoImage}
-                            srcSet={`${faraLogoImageRetina} 2x, ${faraLogoImage4k} 3x`}
-                            className="h-12 w-auto"
-                            width="152px"
-                            height="48px"
-                        />
-                    </Link>
-                </div>
+                <Link
+                    to="/"
+                    aria-current={location.pathname === '/' ? 'page' : undefined}
+                    className="grid min-h-12 min-w-12 place-items-center border-4 border-white p-2 transition-all duration-300 ease-in-out hover:cursor-pointer hover:border-black focus:border-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-black active:outline-0"
+                >
+                    <img
+                        alt="Logo de FARA que actúa como link a la página de inicio."
+                        src={faraLogoImage}
+                        srcSet={`${faraLogoImageRetina} 2x, ${faraLogoImage4k} 3x`}
+                        className="h-12 w-auto"
+                        width="152px"
+                        height="48px"
+                    />
+                </Link>
 
                 {/* Links Centrados */}
-                <div className="absolute left-1/2 hidden -translate-x-1/2 lg:flex">
-                    <ul className="flex gap-4 font-bold uppercase">
-                        <li ref={dropdownRef} className="relative group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
-                            <button
-                                ref={buttonRef}
-                                onClick={() => setDropdownOpen(!dropdownOpen)}
-                                onKeyDown={(e) => { if (e.key === "Escape") { setDropdownOpen(false); buttonRef.current?.focus() } }}
-                                aria-haspopup="true"
-                                aria-expanded={dropdownOpen}
-                                className={`border-b-4 p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue flex items-center gap-1 ${isInstitucionalActive ? "border-b-black" : "border-b-white"} hover:border-b-black`}
-                            >
-                                Institución
-                                <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    width="16" height="16" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" strokeWidth="2"
-                                    strokeLinecap="round" strokeLinejoin="round"
-                                    aria-hidden="true" focusable="false"
-                                    className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
-                                >
-                                    <path d="m6 9 6 6 6-6" />
-                                </svg>
-                            </button>
+                <ul className="hidden lg:flex items-center gap-2 font-bold uppercase">
+                    <li className="group relative text-left">
+                        <button type="button" className="inline-flex border-b-4 border-b-white justify-center w-full px-2 py-4 font-bold hover:border-b-black focus:outline-none group-focus-within:ring-2 group-focus-within:ring-offset-2 cursor-pointer group-focus-within:ring-fara-blue uppercase 
+                        ">
+                            Institución
+                            <svg className="-mr-1 ml-2 h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
 
-                            {/* Dropdown Menu — visible when open OR on group-hover (desktop pointer:fine) */}
-                            <div className={`${dropdownOpen ? "block" : "hidden"} group-hover:block pointer-coarse:group-hover:hidden absolute left-0 top-full z-10 mt-0 min-w-48 bg-white shadow-lg border border-gray-200`}>
-                                <ul role="menu" className="py-1">
-                                    <li role="none">
-                                        <Link
-                                            to="/institucional"
-                                            role="menuitem"
-                                            aria-current={location.pathname === "/institucional" ? "page" : undefined}
-                                            onClick={() => setDropdownOpen(false)}
-                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
-                                        >
-                                            Sobre Institución
-                                        </Link>
-                                    </li>
-                                    <li role="none">
-                                        <Link
-                                            to="/bibliotecafara"
-                                            role="menuitem"
-                                            aria-current={location.pathname === "/bibliotecafara" ? "page" : undefined}
-                                            onClick={() => setDropdownOpen(false)}
-                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
-                                        >
-                                            Biblioteca FARA
-                                        </Link>
-                                    </li>
-                                    <li role="none">
-                                        <Link
-                                            to="/agendafara"
-                                            role="menuitem"
-                                            aria-current={location.pathname === "/agendafara" ? "page" : undefined}
-                                            onClick={() => setDropdownOpen(false)}
-                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
-                                        >
-                                            Agenda FARA
-                                        </Link>
-                                    </li>
-                                    <li role="none">
-                                        <Link
-                                            to="/testimonios"
-                                            role="menuitem"
-                                            aria-current={location.pathname === "/testimonios" ? "page" : undefined}
-                                            onClick={() => setDropdownOpen(false)}
-                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
-                                        >
-                                            Testimonios
-                                        </Link>
-                                    </li>
-                                </ul>
+                        <div className="origin-top-right absolute right-0 mt-2 w-56 shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none hidden group-focus-within:block">
+                            <div className="py-1">
+                                <Link
+                                    to="/institucional"
+                                    role="menuitem"
+                                    aria-current={location.pathname === "/institucional" ? "page" : undefined}
+                                    className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                >
+                                    Sobre Institución
+                                </Link>
+                                <Link
+                                    to="/bibliotecafara"
+                                    role="menuitem"
+                                    aria-current={location.pathname === "/bibliotecafara" ? "page" : undefined}
+                                    className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                >
+                                    Biblioteca FARA
+                                </Link>
+                                <Link
+                                    to="/agendafara"
+                                    role="menuitem"
+                                    aria-current={location.pathname === "/agendafara" ? "page" : undefined}
+                                    className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                >
+                                    Agenda FARA
+                                </Link>
+                                <Link
+                                    to="/testimonios"
+                                    role="menuitem"
+                                    aria-current={location.pathname === "/testimonios" ? "page" : undefined}
+                                    onClick={() => setDropdownOpen(false)}
+                                    className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                >
+                                    Testimonios
+                                </Link>
                             </div>
-                        </li>
-                        <li className="group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
-                            <Link
-                                to="/capacitaciones"
-                                aria-current={location.pathname === '/capacitaciones' ? 'page' : undefined}
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
-                            >
-                                Capacitaciones
-                            </Link>
-                        </li>
-                        <li className="group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
-                            <Link
-                                to="/socios"
-                                aria-current={location.pathname === '/socios' ? 'page' : undefined}
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
-                            >
-                                Socios
-                            </Link>
-                        </li>
-                        <li className="group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
-                            <Link
-                                to="/asesoramiento"
-                                aria-current={location.pathname === '/asesoramiento' ? 'page' : undefined}
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
-                            >
-                                Asesoramiento
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+                        </div>
+                    </li>
+                    <li className="group focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                        <Link
+                            to="/capacitaciones"
+                            aria-current={location.pathname === '/capacitaciones' ? 'page' : undefined}
+                            className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
+                        >
+                            Capacitaciones
+                        </Link>
+                    </li>
+                    <li className="group focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                        <Link
+                            to="/socios"
+                            aria-current={location.pathname === '/socios' ? 'page' : undefined}
+                            className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
+                        >
+                            Socios
+                        </Link>
+                    </li>
+                    <li className="group focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                        <Link
+                            to="/asesoramiento"
+                            aria-current={location.pathname === '/asesoramiento' ? 'page' : undefined}
+                            className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
+                        >
+                            Asesoramiento
+                        </Link>
+                    </li>
+                </ul>
 
                 {/* Botón de menú para móviles */}
                 <div className="ml-auto flex lg:hidden">
