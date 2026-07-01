@@ -188,10 +188,41 @@ export function NavBar() {
                         <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
                             <Link
                                 to="/institucional"
-                                aria-current={location.pathname === '/institucional' ? 'page' : undefined}
+                                aria-current={location.pathname === "/institucional" ? "page" : undefined}
+                                onClick={() => setIsOpen(false)}
                                 className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:text-white"
                             >
-                                Institucional
+                                Sobre Institución
+                            </Link>
+                        </li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                            <Link
+                                to="/bibliotecafara"
+                                aria-current={location.pathname === "/bibliotecafara" ? "page" : undefined}
+                                onClick={() => setIsOpen(false)}
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:text-white"
+                            >
+                                Biblioteca FARA
+                            </Link>
+                        </li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                            <Link
+                                to="/agendafara"
+                                aria-current={location.pathname === "/agendafara" ? "page" : undefined}
+                                onClick={() => setIsOpen(false)}
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:text-white"
+                            >
+                                Agenda FARA
+                            </Link>
+                        </li>
+                        <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                            <Link
+                                to="/testimonios"
+                                aria-current={location.pathname === "/testimonios" ? "page" : undefined}
+                                onClick={() => setIsOpen(false)}
+                                className="hover:bg-fara-gray focus:bg-fara-gray active:bg-fara-gray grid min-h-12 w-48 place-items-center p-2 transition-colors duration-300 ease-in-out hover:cursor-pointer hover:text-white focus:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:text-white"
+                            >
+                                Testimonios
                             </Link>
                         </li>
                         <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
