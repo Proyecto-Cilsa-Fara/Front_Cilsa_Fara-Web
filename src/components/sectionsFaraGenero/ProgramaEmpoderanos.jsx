@@ -13,26 +13,26 @@ export function ProgramaEmpoderanos() {
         </p>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+      <ul className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Derechos de acción
-        </span>
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+        </li>
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Redes de cuidado
-        </span>
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+        </li>
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Salud mental integral
-        </span>
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+        </li>
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Autonomía económica
-        </span>
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+        </li>
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Acceso a la justicia
-        </span>
-        <span className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
+        </li>
+        <li className="bg-fara-lime/30 px-4 py-5 text-base shadow-md transition-colors duration-300 text-center md:px-7 md:py-8 md:text-xl font-semibold">
           Participación ciudadana
-        </span>
-      </div>
+        </li>
+      </ul>
 
       <Link
         to="/capacitaciones"
