@@ -48,14 +48,77 @@ export function NavBar() {
                 {/* Links Centrados */}
                 <div className="absolute left-1/2 hidden -translate-x-1/2 lg:flex">
                     <ul className="flex gap-4 font-bold uppercase">
-                        <li className="group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
-                            <Link
-                                to="/institucional"
-                                aria-current={location.pathname === '/institucional' ? 'page' : undefined}
-                                className="border-b-4 border-b-white p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
+                        <li ref={dropdownRef} className="relative group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                            <button
+                                ref={buttonRef}
+                                onClick={() => setDropdownOpen(!dropdownOpen)}
+                                onKeyDown={(e) => { if (e.key === "Escape") { setDropdownOpen(false); buttonRef.current?.focus() } }}
+                                aria-haspopup="true"
+                                aria-expanded={dropdownOpen}
+                                className={`border-b-4 p-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue flex items-center gap-1 ${isInstitucionalActive ? "border-b-black" : "border-b-white"} hover:border-b-black`}
                             >
-                                Institucional
-                            </Link>
+                                Institución
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" strokeWidth="2"
+                                    strokeLinecap="round" strokeLinejoin="round"
+                                    aria-hidden="true" focusable="false"
+                                    className={`transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
+                                >
+                                    <path d="m6 9 6 6 6-6" />
+                                </svg>
+                            </button>
+
+                            {/* Dropdown Menu — visible when open OR on group-hover (desktop pointer:fine) */}
+                            <div className={`${dropdownOpen ? "block" : "hidden"} group-hover:block pointer-coarse:group-hover:hidden absolute left-0 top-full z-10 mt-0 min-w-48 bg-white shadow-lg border border-gray-200`}>
+                                <ul role="menu" className="py-1">
+                                    <li role="none">
+                                        <Link
+                                            to="/institucional"
+                                            role="menuitem"
+                                            aria-current={location.pathname === "/institucional" ? "page" : undefined}
+                                            onClick={() => setDropdownOpen(false)}
+                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                        >
+                                            Sobre Institución
+                                        </Link>
+                                    </li>
+                                    <li role="none">
+                                        <Link
+                                            to="/bibliotecafara"
+                                            role="menuitem"
+                                            aria-current={location.pathname === "/bibliotecafara" ? "page" : undefined}
+                                            onClick={() => setDropdownOpen(false)}
+                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                        >
+                                            Biblioteca FARA
+                                        </Link>
+                                    </li>
+                                    <li role="none">
+                                        <Link
+                                            to="/agendafara"
+                                            role="menuitem"
+                                            aria-current={location.pathname === "/agendafara" ? "page" : undefined}
+                                            onClick={() => setDropdownOpen(false)}
+                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                        >
+                                            Agenda FARA
+                                        </Link>
+                                    </li>
+                                    <li role="none">
+                                        <Link
+                                            to="/testimonios"
+                                            role="menuitem"
+                                            aria-current={location.pathname === "/testimonios" ? "page" : undefined}
+                                            onClick={() => setDropdownOpen(false)}
+                                            className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
+                                        >
+                                            Testimonios
+                                        </Link>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                         <li className="group grid min-h-12 min-w-12 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
                             <Link
