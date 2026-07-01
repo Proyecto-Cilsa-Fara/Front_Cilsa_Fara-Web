@@ -24,20 +24,20 @@ export function FaraDescripcion() {
         </div>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 text-white">
-        <span className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
+      <ul className="grid gap-6 md:grid-cols-2 xl:grid-cols-4 text-white">
+        <li className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
           Escucha Activa
-        </span>
-        <span className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
+        </li>
+        <li className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
           Protección
-        </span>
-        <span className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
+        </li>
+        <li className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
           Reparación
-        </span>
-        <span className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
+        </li>
+        <li className="bg-fara-blue px-3 py-5 text-base shadow-md transition-colors duration-300 text-center md:py-9 md:text-2xl uppercase">
           Transformación
-        </span>
-      </div>
+        </li>
+      </ul>
     </section>
   )
 }
