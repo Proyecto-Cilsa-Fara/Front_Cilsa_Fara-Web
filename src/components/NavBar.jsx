@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useRef, useEffect } from "react"
 import { Link, useLocation } from "react-router"
 import { X, MenuIcon } from "../assets/icons"
 import faraLogoImage from "../assets/LOGO-FARA.webp"
@@ -7,7 +7,22 @@ import faraLogoImage4k from "../assets/LOGO-FARA-4k.webp"
 
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
+    const [dropdownOpen, setDropdownOpen] = useState(false)
+    const dropdownRef = useRef(null)
+    const buttonRef = useRef(null)
     const location = useLocation()
+    const institucionalPaths = ["/institucional", "/bibliotecafara", "/agendafara", "/testimonios"]
+    const isInstitucionalActive = institucionalPaths.includes(location.pathname)
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+                setDropdownOpen(false)
+            }
+        }
+        document.addEventListener("mousedown", handleClickOutside)
+        return () => document.removeEventListener("mousedown", handleClickOutside)
+    }, [])
 
     return (
         <nav className="bg-white p-4 text-black">
