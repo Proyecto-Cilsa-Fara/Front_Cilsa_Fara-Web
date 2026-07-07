@@ -44,13 +44,13 @@ export function AliadosSociosSection() {
                 })}
             </div>
 
-            <Link
-                to="/socios#contacto"
+            <a
+                href="mailto:accionrestaurativapaz@gmail.com"
                 aria-label="Alíate a la fundación"
                 className="skew-custom bg-fara-gold hover:[.text-outline-lg] hover:bg-fara-strong-red focus:bg-fara-strong-red active:bg-fara-strong-red hover:text-whitemd:text-3xl grid min-h-12 min-w-48 place-items-center pr-8 pl-6 text-xl font-bold uppercase transition-colors duration-300 ease-in-out hover:text-white focus:text-white active:text-white"
             >
                 Hazte aliado
-            </Link>
+            </a>
         </section>
     )
 }
