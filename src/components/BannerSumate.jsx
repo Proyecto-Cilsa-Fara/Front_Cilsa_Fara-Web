@@ -6,7 +6,9 @@ export function BannerSumate() {
             <h2 className="text-outline-sm text-2xl font-bold text-white xl:text-3xl">
                 ¡SUMATE HOY Y EMPEZÁ A SER PARTE!
             </h2>
-            <img src={vIcon} alt="icono en V" className="mx-auto mt-5 hidden md:block" width="24px" height="24px" />
+            <a href="mailto:accionrestaurativapaz@gmail.com" className="inline-block bg-fara-blue mt-5 hover:bg-fara-gold text-white font-bold py-2 px-4 transition-colors duration-300 ease-in-out" aria-label="Empeza hoy a ser parte">
+                <img src={vIcon} alt="icono en V" className="mx-auto hidden md:block" width="24px" height="24px" />
+            </a>
         </section>
     )
 }
