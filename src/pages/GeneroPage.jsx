@@ -1,7 +1,14 @@
+import { useLocation } from "react-router"
 import { FraseRestaurativa, Layout } from "../components/index"
 import { GeneroHero, FaraDescripcion, LineaDeTrabajo, ProgramaEmpoderanos, Formacion, RecursosInformativos, EquipoDiciplinario, ApoyoFara } from "../components/sectionsFaraGenero"
+import { useEffect } from "react"
 
 export function GeneroPage() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+
   return (
     <Layout>
       <GeneroHero />
