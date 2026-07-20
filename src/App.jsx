@@ -13,7 +13,9 @@ import {
     GeneroPage,
     BibliotecaFaraPage,
     AgendaFaraPage,
-    Testimonios
+    Testimonios,
+    Escuelas,
+    RelacionesTrabajo
 } from "./pages"
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
                 <Route path="/bibliotecafara" element={<BibliotecaFaraPage />} />
                 <Route path="/agendafara" element={<AgendaFaraPage />} />
                 <Route path="/testimonios" element={<Testimonios />} />
+                <Route path="/escuelas" element={<Escuelas />} />
+                <Route path="/relacionestrabajo" element={<RelacionesTrabajo />} />
 
                 <Route path="*" element={<ErrorPage />} />
                 <Route path="Landing" element={<LandingPage />} />
