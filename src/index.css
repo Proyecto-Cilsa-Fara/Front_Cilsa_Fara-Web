@@ -32,6 +32,10 @@
     clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
 }
 
+.skew-custom-inverse {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 6% 100%);
+}
+
 .text-shadow-custom {
     text-shadow: 0px 2px 4px rgb(0, 0, 0, 0.5);
 }
@@ -88,8 +92,8 @@
 @variant pointer-coarse (@media (pointer: coarse));
 
 @layer base {
-  *:focus-visible {
-    outline: 2px solid var(--color-fara-blue);
-    outline-offset: 2px;
-  }
+    *:focus-visible {
+        outline: 2px solid var(--color-fara-blue);
+        outline-offset: 2px;
+    }
 }
