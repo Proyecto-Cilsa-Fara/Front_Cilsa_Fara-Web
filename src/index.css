@@ -82,6 +82,13 @@
     mask-image: linear-gradient(black 80%, transparent);
 }
 
+.bg-relaciones-labores-image {
+    background-image: url("assets/relaciones-laborales/Relaciones-Laborales-Hero-Image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 .bg-genero-image {
     background-image: url("assets/genero-fara/GeneroHeroImage.webp");
     background-size: cover;
