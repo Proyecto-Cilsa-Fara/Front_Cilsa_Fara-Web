@@ -47,7 +47,7 @@ const INTEGRANTES = [
             "Estudiante de desarrollo de videojuegos, aporta innovación, sensibilidad y compromiso al trabajo colectivo de la Fundación. Participa activamente en la tesorería, las tareas administrativas y redes sociales, fortaleciendo los vínculos intergeneracionales y promoviendo los valores de la justicia restaurativa: diálogo, reparación y comunidad.",
     },
     {
-        name: "Cintia",
+        name: "Cynthia Beilis",
         position: "Prosecretaria",
         photo: CintiaImage,
         color: "bg-fara-teal",
