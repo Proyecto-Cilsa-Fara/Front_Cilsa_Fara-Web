@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from "react"
+import { useState } from "react"
 import { Link, useLocation } from "react-router"
 import { X, MenuIcon } from "../assets/icons"
 import faraLogoImage from "../assets/LOGO-FARA.webp"
@@ -8,8 +8,6 @@ import faraLogoImage4k from "../assets/LOGO-FARA-4k.webp"
 export function NavBar() {
     const [isOpen, setIsOpen] = useState(false)
     const location = useLocation()
-    const institucionalPaths = ["/institucional", "/bibliotecafara", "/agendafara", "/testimonios"]
-    const isInstitucionalActive = institucionalPaths.includes(location.pathname)
 
     return (
         <nav className="bg-white p-4 text-black">
@@ -83,9 +81,12 @@ export function NavBar() {
                         <Link
                             to="/capacitaciones"
                             aria-current={location.pathname === '/capacitaciones' ? 'page' : undefined}
+                            aria-label="Capacitaciones en justicia restaurativa y formación profesional"
+                            onClick={() => setIsOpen(false)}
                             className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
                         >
                             Capacitaciones
+                            <span className="sr-only">en justicia restaurativa y formación profesional</span>
                         </Link>
                     </li>
                     <li className="group focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
@@ -95,15 +96,19 @@ export function NavBar() {
                             className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
                         >
                             Socios
+                            <span className="sr-only">de FARA</span>
                         </Link>
                     </li>
                     <li className="group focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
                         <Link
                             to="/asesoramiento"
                             aria-current={location.pathname === '/asesoramiento' ? 'page' : undefined}
+                            aria-label="Asesoramiento y servicios para organizaciones"
+                            onClick={() => setIsOpen(false)}
                             className="border-b-4 border-b-white px-2 py-4 transition-all duration-300 ease-in-out group-hover:cursor-pointer group-hover:border-b-black focus:border-b-black focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue active:border-b-black active:outline-0"
                         >
                             Asesoramiento
+                            <span className="sr-only">y servicios para organizaciones</span>
                         </Link>
                     </li>
                 </ul>
@@ -132,9 +137,11 @@ export function NavBar() {
                     <Link
                         to="/participa"
                         aria-current={location.pathname === '/participa' ? 'page' : undefined}
+                        aria-label="Participá en pasantías y voluntariados de FARA"
                         className="skew-custom bg-fara-red active:bg-fara-gold hover:bg-fara-gold focus:bg-fara-gold min-h-12 min-w-12 py-2 pr-8 pl-6 text-xl font-bold text-white uppercase shadow-2xl transition-colors duration-300 ease-in-out hover:cursor-pointer"
                     >
                         Participá
+                        <span className="sr-only">en pasantías y voluntariados de FARA</span>
                     </Link>
                 </div>
             </div>
@@ -163,7 +170,7 @@ export function NavBar() {
                                 Biblioteca FARA
                             </Link>
                         </li>
-                        <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
+                        {/* <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
                             <Link
                                 to="/agendafara"
                                 aria-current={location.pathname === "/agendafara" ? "page" : undefined}
@@ -182,7 +189,7 @@ export function NavBar() {
                             >
                                 Testimonios
                             </Link>
-                        </li>
+                        </li> */}
                         <li className="grid min-h-12 min-w-48 place-items-center focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue">
                             <Link
                                 to="/capacitaciones"
@@ -227,9 +234,11 @@ export function NavBar() {
                             <Link
                                 to="/participa"
                                 aria-current={location.pathname === '/participa' ? 'page' : undefined}
+                                aria-label="Participá en pasantías y voluntariados de FARA"
                                 className="skew-custom bg-fara-red active:bg-fara-gold hover:bg-fara-gold focus:bg-fara-gold grid min-h-12 w-48 place-items-center pr-8 pl-6 text-white uppercase transition-colors duration-300 ease-in-out hover:cursor-pointer"
                             >
                                 Participá
+                                <span className="sr-only">en pasantías y voluntariados de FARA</span>
                             </Link>
                         </li>
                     </ul>
