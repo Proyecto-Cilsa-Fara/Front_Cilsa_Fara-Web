@@ -6,10 +6,10 @@ export function BannerContacto() {
   const { onClikEmail, mailtoEmail } = useEmailContact("outlook", "Solicitud de asesoramiento para escuelas");
 
   return (
-    <section className="flex flex-col justify-center w-full pt-12 md:pt-20 lg:items-center">
-      <div className="flex flex-col items-start flex-1">
-        <div className="bg-fara-cyan/20 skew-custom w-5/6 px-5 py-8 lg:py-16">
-          <h2 className="text-3xl font-bold md:text-4xl lg:text-6xl">Escribinos</h2>
+    <section className="flex flex-col justify-center w-full py-12 md:py-20 lg:items-center">
+      <div className="flex flex-col items-start flex-1 md:flex-5">
+        <div className="bg-fara-cyan/20 skew-custom w-5/6 px-5 py-8 lg:py-16 lg:w-3xl lg:text-center">
+          <h2 className="text-3xl font-bold md:text-4xl lg:text-6xl uppercase">Escribinos</h2>
         </div>
       </div>
       <div className='flex-1 px-6 py-4'>
