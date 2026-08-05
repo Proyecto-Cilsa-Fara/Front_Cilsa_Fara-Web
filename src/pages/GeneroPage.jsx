@@ -15,7 +15,7 @@ export function GeneroPage() {
       <FaraDescripcion />
       <LineaDeTrabajo />
       <FraseRestaurativa
-        frase="Restaurar no es volver atrás: es construir condiciones nuevas de dignidad igualdad y no repetición." />
+        frase="Restaurar no es volver atrás: es construir condiciones nuevas de dignidad, igualdad y no repetición." />
       <ProgramaEmpoderanos />
       <Formacion />
       <RecursosInformativos />

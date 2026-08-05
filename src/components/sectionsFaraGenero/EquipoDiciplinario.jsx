@@ -1,4 +1,11 @@
-import React from 'react'
+// Emite las fotos de integrantes como assets reales del build. Sin esto, las rutas
+// "/src/assets/..." del array solo funcionan en dev y se rompen en build/preview
+// (mismo patrón que useGallery.jsx).
+const integrantesImages = import.meta.glob('/src/assets/integrantes/*.webp', {
+  eager: true,
+  query: '?url',
+  import: 'default',
+})
 
 const equipoDiciplinario = [
   {
@@ -43,13 +50,6 @@ const equipoDiciplinario = [
     image: "/src/assets/integrantes/Cintia.webp",
     description: "Formada en Administración de Empresas, Derecho y Psicología de la Familia. Especializada en gestión de recursos y alianzas institucionales",
   },
-  // {
-  //   id: 6,
-  //   nombre: "Lic. Eliana Servera",
-  //   rol: "Docente",
-  //   image: "https://randomuser.me/api/portraits/men/75.jpg",
-  //   description: "Description",
-  // },
 ]
 
 export function EquipoDiciplinario() {
@@ -72,7 +72,12 @@ export function EquipoDiciplinario() {
         {equipoDiciplinario.map((integrante) =>
           <div className="text-center" key={integrante.id}>
             <div className="overflow-hidden rounded-full w-30 h-30 m-auto flex items-center justify-center">
-              <img src={integrante.image} alt={integrante.nombre} loading="lazy" />
+              <img
+                src={integrantesImages[integrante.image] ?? integrante.image}
+                alt={integrante.nombre}
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="flex flex-col mt-6">
               <span className="text-xl font-bold">{integrante.nombre}</span>

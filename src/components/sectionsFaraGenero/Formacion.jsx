@@ -24,41 +24,41 @@ export function Formacion() {
       <div className="grid gap-6 lg:grid-cols-2 font-bold w-full text-fara-gray">
         <ul className="flex flex-col gap-6">
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Introducción a la Justicia Restaurativa</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Facilitación de Prácticas Restaurativas</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Herramientas Restaurativas para Organizaciones</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Atención a Víctimas con Enfoque de Trauma</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Diseño de Programas Restaurativos</p>
           </li>
         </ul>
         <ul className="flex flex-col gap-6">
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Justicia Restaurativa y Perspectiva de Género</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Abordaje de las Violencias en el Ámbito Educativo</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Evaluación de Riesgo y Seguridad</p>
           </li>
           <li className="flex gap-2 items-center">
-            <img className="w-6 h-6" src={BoneteIcon} alt="icono de un bonete" />
+            <img className="w-6 h-6" src={BoneteIcon} alt="" aria-hidden="true" />
             <p className="text-base md:text-xl">Trabajo con Ofensores</p>
           </li>
         </ul>

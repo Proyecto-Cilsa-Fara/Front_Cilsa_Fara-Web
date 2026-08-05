@@ -3,7 +3,7 @@ import { useDocumentMeta } from "../../hooks/useDocumentMeta";
 
 export function GeneroHero() {
 
-  const TITLE = "Genero y Diversidad"
+  const TITLE = "Género y Diversidad"
   const DESCRIPTION =
     "Acompañamos, formamos y transformamos desde una mirada que reconoce el daño, cuida a las personas y exige responsabilidad."
   useDocumentMeta(TITLE, DESCRIPTION);

@@ -19,7 +19,9 @@ export function FaraDescripcion() {
           <img
             src={LogoFara}
             alt="Logo de FARA Género y Diversidad, con el isotipo y el nombre de la organización"
-            className="max-w-full h-auto rounded-lg aspect-auto"
+            width={455}
+            height={143}
+            className="max-w-full h-auto rounded-lg"
           />
         </div>
       </div>
