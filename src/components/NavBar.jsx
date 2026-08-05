@@ -59,7 +59,7 @@ export function NavBar() {
                                 >
                                     Biblioteca FARA
                                 </Link>
-                                <Link
+                                {/* <Link
                                     to="/agendafara"
                                     role="menuitem"
                                     aria-current={location.pathname === "/agendafara" ? "page" : undefined}
@@ -75,7 +75,7 @@ export function NavBar() {
                                     className="block px-4 py-2 text-sm font-bold uppercase hover:bg-fara-gray hover:text-white focus-visible:outline-0 focus-visible:ring-2 focus-visible:ring-fara-blue focus-visible:ring-inset"
                                 >
                                     Testimonios
-                                </Link>
+                                </Link> */}
                             </div>
                         </div>
                     </li>
