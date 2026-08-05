@@ -5,7 +5,7 @@ import { Layout } from "../components/index"
 import { useGallery } from "../hooks/useGallery";
 
 function getImgDescription(src) {
-  const match = src.match(/img(\d+)\.jpeg$/);
+  const match = src.match(/img(\d+)\.webp/);
   return match ? `Imagen ${match[1]} de la galería` : 'Imagen de la galería';
 }
 
@@ -63,10 +63,13 @@ export function BibliotecaFaraPage() {
               aria-label={description}
             >
               <img
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 mb-4"
+                className="w-full object-cover hover:scale-105 transition-transform duration-300 mb-4"
                 src={img.src}
                 alt={description}
                 loading="lazy"
+                width={img.width}
+                height={img.height}
+                style={{ aspectRatio: `${img.width} / ${img.height}` }}
               />
             </a>
           );
