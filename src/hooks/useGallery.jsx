@@ -1,36 +1,21 @@
-import { useState } from 'react'
-import MetaGallery from "../data/meta-gallery.json"
+import { useState } from "react"
 
-// Emite las imágenes de la galería como assets reales del build y devuelve
-// el mapa ruta-original -> URL hasheada. Sin esto, las rutas "/src/assets/..."
-// del JSON solo funcionan en dev y se rompen en build/preview.
-const galleryUrls = import.meta.glob('/src/assets/galeria/*.webp', {
-  eager: true,
-  query: '?url',
-  import: 'default',
-})
+const INITIAL_COUNT = 14
+const BATCH_SIZE = 14
 
-const photos = MetaGallery.map((item) => ({
-  ...item,
-  src: galleryUrls[item.src] ?? item.src,
-}))
+export const useGallery = (photos) => {
+    const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT)
 
-const INITIAL_COUNT = 12
-const BATCH_SIZE = 12
+    const visiblePhotos = photos.slice(0, visibleCount)
+    const hasMore = visibleCount < photos.length
 
-export const useGallery = () => {
-  const [visibleCount, setVisibleCount] = useState(INITIAL_COUNT)
+    const loadMore = () => {
+        setVisibleCount((prev) => Math.min(prev + BATCH_SIZE, photos.length))
+    }
 
-  const visiblePhotos = photos.slice(0, visibleCount)
-  const hasMore = visibleCount < photos.length
-
-  const loadMore = () => {
-    setVisibleCount(prev => Math.min(prev + BATCH_SIZE, photos.length))
-  }
-
-  return {
-    photos: visiblePhotos,
-    hasMore,
-    loadMore
-  }
+    return {
+        photos: visiblePhotos,
+        hasMore,
+        loadMore,
+    }
 }
