@@ -5,7 +5,10 @@ import AgendaGallery from "../data/fara-agenda.json"
 // Emite las imágenes de la galería como assets reales del build y devuelve
 // el mapa ruta-original -> URL hasheada. Sin esto, las rutas "/src/assets/..."
 // del JSON solo funcionan en dev y se rompen en build/preview.
-const galleryUrls = import.meta.glob("/src/assets/galeria/*.webp", {
+// El `**` es obligatorio: las fotos están en subcarpetas (galeria-general/,
+// galeria-mujeres/). Un glob de un solo nivel (`*.webp`) no las captura y las
+// rutas crudas del JSON fallan con 404 en build/preview.
+const galleryUrls = import.meta.glob("/src/assets/galeria/**/*.webp", {
     eager: true,
     query: "?url",
     import: "default",
