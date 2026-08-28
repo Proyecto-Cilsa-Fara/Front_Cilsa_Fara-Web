@@ -31,7 +31,7 @@ export function Credibilidad() {
           <div class="skew-custom absolute w-full translate-x-3 -translate-y-2 bg-fara-cyan px-5 py-6 md:translate-x-5 md:-translate-y-3 md:px-7 lg:py-9"></div>
           <div class="skew-custom absolute w-full -translate-x-3 translate-y-2 bg-fara-red px-5 py-6 md:-translate-x-3 md:translate-y-4 md:px-7 lg:py-9"></div>
           <h2 class="skew-custom text-xl relative w-full bg-fara-gold px-6 py-3 font-bold md:text-2xl lg:text-5xl lg:pr-12">
-            ¿A quiénes acompañamos?
+            Impacto Esperado
           </h2>
         </div>
         <p className="text-lg text-center max-w-3xl md:text-xl lg:text-2xl">

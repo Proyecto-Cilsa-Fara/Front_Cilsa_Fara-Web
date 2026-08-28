@@ -96,6 +96,14 @@
     background-repeat: no-repeat;
 }
 
+.bg-escuela-image {
+    background-image: url("assets/escuelas/Fara-Escuelas-Hero-Image.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
 @variant pointer-coarse (@media (pointer: coarse));
 
 @layer base {
