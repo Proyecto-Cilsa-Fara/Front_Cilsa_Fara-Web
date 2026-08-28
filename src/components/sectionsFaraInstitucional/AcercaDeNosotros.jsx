@@ -1,5 +1,5 @@
-import ImagenAcercaDeNosotros from "../assets/Acerca-de-nosotros-image.webp"
-import { useDocumentMeta } from "../hooks/useDocumentMeta"
+import ImagenAcercaDeNosotros from "../../assets/institucional/Acerca-de-nosotros-image.webp"
+import { useDocumentMeta } from "../../hooks/useDocumentMeta"
 
 export function AcercaDeNosotros() {
     const TITLE = "Acerca de nosotros"

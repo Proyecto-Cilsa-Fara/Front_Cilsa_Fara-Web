@@ -7,72 +7,58 @@ import {
     Politicas,
     Explotacion,
     Violencia,
-    GeneroDiversidad,
-    RelacionesLaborales
 } from "../assets/equipos-multidisciplinarios"
 import { Link } from "react-router"
 
 export function Areas() {
     const areas = [
         {
-            name: "Justicia restaurativa para las víctimas",
-            image: Justicia,
-            color: "bg-fara-red/80",
-            to: "/socios"
-        },
-        {
-            name: "Procesos de restauración para conductas agresivas",
-            image: Politicas,
-            color: "bg-fara-blue/80",
-            to: "/socios"
-        },
-        {
-            name: "Bullying, acoso, amenazas y daños",
-            image: Educacion,
-            color: "bg-fara-gold/80",
-            to: "/socios"
-        },
-        {
             name: "Violencia y explotación sexual",
             image: Explotacion,
             color: "bg-fara-gray/80",
-            to: "/socios"
+            to: "/institucional#violencia-genero",
         },
         {
-            name: "Delitos en línea, deepfake y suplantación de identidad",
-            image: Delitos,
-            color: "bg-fara-lime/80",
-            to: "/socios"
-        },
-        {
-            name: "Prácticas restaurativas en cárceles para prevenir la reincidencia",
+            name: "Niñez y Juventud",
             image: Niñez,
-            color: "bg-fara-red/80",
-            to: "/socios"
+            color: "bg-fara-gold/80",
+            to: "/institucional#ninez-juventud",
         },
         {
-            name: "Educación restaurativa en escuelas",
+            name: "Justicia restaurativa para las víctimas",
+            image: Justicia,
+            color: "bg-fara-blue/80",
+            to: "/institucional#justicia-victimas",
+        },
+        {
+            name: "Políticas públicas restaurativas",
+            image: Politicas,
+            color: "bg-fara-red/80",
+            to: "/institucional#politicas-publicas",
+        },
+        {
+            name: "Facilitación y Mediación en la justicia",
+            image: Delitos,
+            color: "bg-fara-red/80",
+            to: "/institucional#facilitacion-mediacion",
+        },
+        {
+            name: "Educación e inclusión de grupos vulnerables",
+            image: Educacion,
+            color: "bg-fara-lime/80",
+            to: "/institucional#educacion-inclusion",
+        },
+        {
+            name: "Escuela de oficios para emprendedores",
             image: Violencia,
             color: "bg-fara-gold/80",
-            to: "/escuelas"
+            to: "/institucional#escuela-oficios",
         },
         {
-            name: "Facilitación, mediación y círculos",
+            name: "Círculos de Arte",
             image: imgCircArt,
             color: "bg-fara-blue/80",
-            to: "/socios"
-        },
-        {
-            name: "Género y diversidad",
-            image: GeneroDiversidad,
-            color: "bg-fara-gray/80",
-            to: "/generoydiversidad"
-        },
-        {
-            name: "Relaciones Laborales y conflictos en el trabajo",
-            image: RelacionesLaborales,
-            color: "bg-fara-blue/80",
-            to: "/relacionestrabajo"
+            to: "/institucional#circulos-arte",
         },
     ]
 
@@ -89,7 +75,7 @@ export function Areas() {
                 {areas.map((area, index) => (
                     <Link
                         key={area.name + index}
-                        className="relative flex h-64 flex-col justify-center p-4 drop-shadow-lg md:h-56 md:p-5 lg:h-88 group"
+                        className="group relative flex h-64 flex-col justify-center p-4 drop-shadow-lg md:h-56 md:p-5 lg:h-88"
                         to={area.to}
                         aria-label={`Ver más acerca de ${area.name}.`}
                         style={{
@@ -100,11 +86,11 @@ export function Areas() {
                     >
                         {/* Capa de color con opacidad */}
                         <div
-                            className={`absolute top-0 left-0 h-full w-full ${area.color} group-hover:bg-black/60 transition-colors duration-300 ease-in-out`}
+                            className={`absolute top-0 left-0 h-full w-full ${area.color} transition-colors duration-300 ease-in-out group-hover:bg-black/60`}
                         ></div>
 
                         {/* Texto alineado al fondo */}
-                        <h3 className="uppercase relative z-10 mb-2 text-center text-2xl text-white font-bold lg:mb-4 lg:text-3xl">
+                        <h3 className="relative z-10 mb-2 text-center text-2xl font-bold text-white uppercase lg:mb-4 lg:text-3xl">
                             {area.name}
                         </h3>
                     </Link>

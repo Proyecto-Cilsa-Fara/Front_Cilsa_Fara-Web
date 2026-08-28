@@ -1,4 +1,4 @@
-import SOCIOSRESTAURADORES from "../assets/socios-restauradores.webp"
+import SOCIOSRESTAURADORES from "../../assets/socios-restauradores.webp"
 
 export function InstitucionalHero() {
     return (

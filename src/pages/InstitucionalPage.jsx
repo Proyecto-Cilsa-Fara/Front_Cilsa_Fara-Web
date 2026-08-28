@@ -2,19 +2,28 @@ import { useEffect } from "react"
 import { useLocation } from "react-router"
 import {
     DonarSection,
-    Areas,
-    AcercaDeNosotros,
-    InstitucionalHero,
     Legales,
     Integrantes,
     Layout,
 } from "../components/index"
+import {
+    InstitucionalHero,
+    AcercaDeNosotros,
+    AreasDeIncidencia,
+} from "../components/sectionsFaraInstitucional/index"
 
 export function InstitucionalPage() {
-    const { pathname } = useLocation()
+    const { pathname, hash } = useLocation()
     useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace("#", ""))
+            if (element) {
+                element.scrollIntoView()
+                return
+            }
+        }
         window.scrollTo(0, 0)
-    }, [pathname])
+    }, [pathname, hash])
 
     return (
         <Layout>
@@ -24,9 +33,9 @@ export function InstitucionalPage() {
 
             <Integrantes />
 
-            <DonarSection />
+            <AreasDeIncidencia />
 
-            <Areas />
+            <DonarSection />
 
             <Legales />
         </Layout>
