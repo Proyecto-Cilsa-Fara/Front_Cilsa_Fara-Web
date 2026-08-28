@@ -14,11 +14,11 @@ export function EscuelasHero() {
 
   return (
     <section className="w-full">
-      <div className="bg-genero-image relative flex h-dvh w-full flex-col items-center justify-center gap-4 md:h-80 lg:h-150 xl:h-170">
-        <div className="flex flex-col h-full w-full items-center justify-center gap-7 bg-black/50">
-          <h1 className="text-white text-xl font-bold sm:text-2xl md:text-4xl xl:text-6xl max-w-4xl text-center">{TITLE}</h1>
-          <p className="text-white text-base md:text-lg xl:text-xl text-center text-wrap max-w-3xl">{DESCRIPTION}</p>
-          <div className="flex flex-col gap-4 md:flex-row">
+      <div className="bg-escuela-image  relative flex h-dvh w-full flex-col items-center justify-center gap-4 md:h-80 lg:h-150 xl:h-170">
+        <div className="flex flex-col h-full w-full items-center justify-center gap-7 bg-black/50 text-white">
+          <h1 className="px-4 text-5xl font-bold md:text-4xl xl:text-6xl max-w-4xl md:text-center">{TITLE}</h1>
+          <p className="text-base text-start px-4 md:text-lg xl:text-xl md:text-center text-wrap max-w-3xl">{DESCRIPTION}</p>
+          <div className="flex flex-col items-start gap-4 w-full px-4 md:flex-row md:justify-center">
             <a
               href={mailtoEmail}
               onClick={onClikEmail}
