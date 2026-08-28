@@ -1,6 +1,7 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router"
 import { AcercaDe, ServiciosSection, DonarSection, AliadosSection, Areas, Carrousel, Layout, Noticias } from "../components/index"
+import { FaraSections } from "../components/sectionFaraLandingPage/FaraSections"
 
 export function LandingPage() {
     const { pathname, hash } = useLocation()
@@ -27,6 +28,8 @@ export function LandingPage() {
 
             <AcercaDe />
 
+            <FaraSections />
+            
             <Areas />
 
             <ServiciosSection />
