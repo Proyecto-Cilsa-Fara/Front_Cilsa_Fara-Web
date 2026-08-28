@@ -1,0 +1,51 @@
+[
+    {
+        "src": "/src/assets/agenda/evento1.webp",
+        "width": 1332,
+        "height": 1600
+    },
+    {
+        "src": "/src/assets/agenda/evento2.webp",
+        "width": 1080,
+        "height": 1350
+    },
+    {
+        "src": "/src/assets/agenda/evento3.webp",
+        "width": 1280,
+        "height": 1280
+    },
+    {
+        "src": "/src/assets/agenda/evento4.webp",
+        "width": 1170,
+        "height": 2080
+    },
+    {
+        "src": "/src/assets/agenda/evento5.webp",
+        "width": 941,
+        "height": 1672
+    },
+    {
+        "src": "/src/assets/agenda/evento6.webp",
+        "width": 1054,
+        "height": 1492
+    },
+    {
+        "src": "/src/assets/agenda/evento7.webp",
+        "width": 1023,
+        "height": 1537
+    },
+    {
+        "src": "/src/assets/agenda/evento8.webp",
+        "width": 940,
+        "height": 1136
+    },
+    {
+        "src": "/src/assets/agenda/evento9.webp",
+        "width": 1081,
+        "height": 1440
+    },
+    {
+        "src": "/src/assets/agenda/evento10.pdf",
+        "type": "pdf"
+    }
+]
