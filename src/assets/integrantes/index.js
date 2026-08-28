@@ -4,6 +4,9 @@ import ConstanzaImage from "./Constanza.webp"
 import SantiagoCherryImage from "./SantiagoCherry.webp"
 import SilvanaPazImage from "./SilvanaPaz.webp"
 import SilvinaPazImage from "./SilvinaPaz.webp"
+import ElianaCatoggio from "./ElianaCatoggio.webp"
+import EmiliaPeralta from "./Emilia-Peralta.webp"
+import RocioMacarenaOrtiz from "./Rocío-Macarena-Ortíz.webp"
 
 const INTEGRANTES = [
     {
@@ -53,6 +56,30 @@ const INTEGRANTES = [
         color: "bg-fara-teal",
         description:
             "Mexicana de nacimiento y argentina de corazón, combina formación en Administración de Empresas, Derecho y Psicología de la Familia. Especializada en gestión de recursos y alianzas institucionales, impulsa programas restaurativos con sensibilidad social y un enfoque intercultural que conecta comunidades vulnerables con nuevas oportunidades.",
+    },
+    {
+        name: "Lic. Eliana Catoggio",
+        position: "",
+        photo: ElianaCatoggio,
+        color: "bg-fara-cyan",
+        description:
+            "Licenciada en Trabajo Social por la Universidad Nacional de La Plata, con amplia experiencia en el ámbito judicial y administrativo. Actualmente se desempeña en el Cuerpo Técnico del Juzgado de Familia N.º 2 de La Plata y participa en la coordinación de la Unidad de Atención en Conflictos Juveniles (UACJ). Cuenta con experiencia en gestión, redacción de informes, intervención social y facilitación restaurativa, además de manejo de herramientas informáticas y tecnologías de inteligencia artificial.",
+    },
+    {
+        name: "Rocío Macarena Ortíz",
+        position: "",
+        photo: RocioMacarenaOrtiz,
+        color: "bg-fara-gold",
+        description:
+            "",
+    },
+    {
+        name: "Emilia Peralta",
+        position: "",
+        photo: EmiliaPeralta,
+        color: "bg-fara-strong-red",
+        description:
+            "",
     },
 ]
 
