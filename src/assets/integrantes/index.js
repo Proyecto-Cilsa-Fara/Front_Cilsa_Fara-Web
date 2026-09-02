@@ -63,7 +63,7 @@ const INTEGRANTES = [
         photo: ElianaCatoggio,
         color: "bg-fara-cyan",
         description:
-            "Licenciada en Trabajo Social por la Universidad Nacional de La Plata, con amplia experiencia en el ámbito judicial y administrativo. Actualmente se desempeña en el Cuerpo Técnico del Juzgado de Familia N.º 2 de La Plata y participa en la coordinación de la Unidad de Atención en Conflictos Juveniles (UACJ). Cuenta con experiencia en gestión, redacción de informes, intervención social y facilitación restaurativa, además de manejo de herramientas informáticas y tecnologías de inteligencia artificial.",
+            "Eliana es Licenciada en Trabajo Social por la Universidad Nacional de La Plata y forma parte de FARA con entusiasmo y compromiso. Su experiencia en lo social y su sensibilidad para escuchar y acompañar, enriquecen nuestro trabajo cotidiano. Cree en el diálogo, la empatía y la construcción colectiva como caminos para transformar los conflictos y fortalecer la comunidad.",
     },
     {
         name: "Rocío Macarena Ortíz",
@@ -71,7 +71,7 @@ const INTEGRANTES = [
         photo: RocioMacarenaOrtiz,
         color: "bg-fara-gold",
         description:
-            "",
+            "Licenciada y Profesora en Psicología por la UNLP, donde también se desempeña como docente. Su recorrido está especialmente vinculado al trabajo con infancias y adolescencias, la salud mental y el abordaje de situaciones de violencia. Cree en la escucha, el acompañamiento y el trabajo con otros como herramientas para transformar los conflictos. En FARA aporta su mirada desde la Psicología y su compromiso con la construcción de vínculos más cuidados, inclusivos y respetuosos.",
     },
     {
         name: "Emilia Peralta",
@@ -79,7 +79,7 @@ const INTEGRANTES = [
         photo: EmiliaPeralta,
         color: "bg-fara-strong-red",
         description:
-            "",
+            "Estudiante de Derecho y pasante en el Ministerio de Justicia, integra FARA con un fuerte compromiso con la justicia restaurativa y el trabajo en comunidad. Se especializa especialmente en prácticas restaurativas en el ámbito escolar, acompañando espacios de escucha, diálogo y construcción colectiva. Cree en una forma de abordar los conflictos que cuide los vínculos y dé protagonismo a las voces de niños, niñas y adolescentes. Desde FARA, aporta una mirada joven, sensible y comprometida con la transformación de las comunidades educativas.",
     },
 ]
 

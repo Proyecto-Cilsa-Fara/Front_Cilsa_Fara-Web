@@ -17,7 +17,7 @@ export function Integrantes() {
     }, [showAll])
 
     return (
-        <section className="bg-fara-cyan w-full px-5 py-10 md:px-10 lg:px-15 xl:px-20 2xl:px-40">
+        <section className="w-full px-5 py-10 md:px-10 lg:px-15 xl:px-20 2xl:px-40">
             <h1 className="bg-fara-gold mx-auto w-70 py-1 text-center text-3xl font-bold">INTEGRANTES</h1>
 
             <div
@@ -25,28 +25,28 @@ export function Integrantes() {
                 className={`mx-auto w-full p-0 py-5 transition-[height] duration-300 ease-in-out ${!showAll ? "integrantes h-140 overflow-hidden" : "h-full"}`}
             >
                 {/* OJO: Acá sí los mapeás, pero no pongas `flex` en este contenedor */}
-                <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-10">
                     {INTEGRANTES.map((member, index) => (
                         <div
                             key={index}
-                            className="mx-auto mb-8 flex w-full max-w-5xl flex-col overflow-hidden bg-white shadow-2xl md:-skew-x-5 md:flex-row"
+                            className={`${member.color} mx-auto py-6 px-6 flex w-full max-w-5xl flex-col gap-2 overflow-hidden shadow-xl md:-skew-x-3 md:flex-row`}
                         >
                             {/* Imagen */}
-                            <div className="w-full p-8 md:w-1/3 md:skew-x-5">
+                            <div className="w-full md:w-1/3 skew-x-3">
                                 <img
                                     src={member.photo}
                                     alt={member.name}
-                                    className="aspect-square overflow-hidden rounded-2xl object-cover object-center"
+                                    className="aspect-square overflow-hidden object-cover object-center rounded-md"
                                     width="800px"
                                     height="800px"
                                 />
                             </div>
 
                             {/* Contenido */}
-                            <div className="flex w-full flex-col justify-center p-6 md:w-2/3 md:skew-x-5">
-                                <h3 className={`mb-2 p-2 text-2xl font-bold ${member.color}`}>{member.name}</h3>
-                                <p className="text-fara-gray mb-4 px-2 text-lg font-medium">{member.position}</p>
-                                <p className="px-2 text-base text-black">{member.description}</p>
+                            <div className="flex w-full flex-col bg-white gap-2 px-6 py-5 skew-x-3 md:w-2/3 rounded-md">
+                                <h3 className={`text-2xl font-bold`}>{member.name}</h3>
+                                <p className="text-fara-gray text-lg font-medium">{member.position}</p>
+                                <p className="text-base text-black">{member.description}</p>
                             </div>
                         </div>
                     ))}
