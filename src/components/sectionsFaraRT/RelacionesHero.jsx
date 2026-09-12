@@ -27,7 +27,7 @@ export function RelacionesHero() {
               Asesoramiento
             </a>
             <a
-              href="servicios"
+              href="#servicios"
               className="skew-custom bg-fara-red active:bg-fara-strong-red hover:bg-fara-strong-red focus:bg-fara-strong-red text-center px-4 py-3 text-white uppercase shadow-2xl transition-colors duration-300 ease-in-out hover:cursor-pointer font-bold"
               aria-label="Conocer nuestros servicios"
             >

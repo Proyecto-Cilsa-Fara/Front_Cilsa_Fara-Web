@@ -26,8 +26,8 @@ export function FaraSections() {
     return (
         <section className="w-full bg-amber-200">
             <div className="grid grid-cols-1 lg:grid-cols-3">
-                {faraSectionLinks.map((sItem) => (
-                    <div className="relative h-96 bg-black/50 text-white">
+                {faraSectionLinks.map((sItem, index) => (
+                    <div key={sItem.title + index} className="relative h-96 bg-black/50 text-white">
                         <img className="absolute z-10 h-full w-full object-cover" src={sItem.backgroundImg} />
                         {/* Capa de color con opacidad */}
                         <div className="absolute top-0 left-0 z-20 h-full w-full bg-black/60"></div>

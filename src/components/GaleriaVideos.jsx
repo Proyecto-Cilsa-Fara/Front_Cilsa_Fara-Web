@@ -13,7 +13,7 @@ export function GaleriaVideos() {
                             title={video.title}
                             className="aspect-video w-full"
                             allowFullScreen
-                            referrerpolicy="strict-origin-when-cross-origin"
+                            referrerPolicy="strict-origin-when-cross-origin"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         />
                     </div>

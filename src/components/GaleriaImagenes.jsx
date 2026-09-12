@@ -8,12 +8,12 @@ function getImgDescription(src) {
     return match ? `Imagen ${match[1]} de la galería` : "Imagen de la galería"
 }
 
-export function GaleriaImagenes({ photosGallery }) {
+export function GaleriaImagenes({ photosGallery, galleryId = "grid-gallery-fara" }) {
     const { photos, hasMore, loadMore } = useGallery(photosGallery)
 
     useEffect(() => {
         let lightbox = new PhotoSwipeLightbox({
-            gallery: "#grid-gallery-fara",
+            gallery: "#" + galleryId,
             children: "a[id='item-image']",
             pswpModule: () => import("photoswipe"),
         })
@@ -23,7 +23,7 @@ export function GaleriaImagenes({ photosGallery }) {
             lightbox.destroy()
             lightbox = null
         }
-    }, [])
+    }, [galleryId])
 
     return (
         <div>
@@ -31,7 +31,7 @@ export function GaleriaImagenes({ photosGallery }) {
                 role="region"
                 aria-label="Galería de imágenes"
                 className="pswp-gallery mx-auto max-w-6xl columns-1 gap-4 px-8 pt-10 pb-0 md:columns-2 lg:columns-3 xl:columns-4"
-                id="grid-gallery-fara"
+                id={galleryId}
             >
                 {photos.map((img, i) => {
                     const description = getImgDescription(img.src)

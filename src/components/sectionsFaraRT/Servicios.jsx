@@ -2,7 +2,7 @@ import React from 'react'
 
 export function Servicios() {
   return (
-    <section className="flex flex-col justify-center items-center w-full gap-16 py-12 px-10 md:py-20 md:px-32">
+    <section id="servicios" className="flex flex-col justify-center items-center w-full gap-16 py-12 px-10 md:py-20 md:px-32">
       <div className="flex flex-col items-center justify-center gap-8">
         <div className="relative">
           <div className="skew-custom absolute w-full translate-x-3 -translate-y-2 bg-fara-cyan px-5 py-6 md:translate-x-5 md:-translate-y-3 md:px-7 lg:py-9"></div>
